@@ -1,0 +1,19 @@
+[project]
+name = "toolia-bot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "requests (>=2.34.2,<3.0.0)",
+    "bs4 (>=0.0.2,<0.0.3)",
+    "urllib3 (>=2.8.0,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
