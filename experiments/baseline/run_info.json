@@ -1,0 +1,9 @@
+{
+  "fecha": "2026-11-12T21:26:58",
+  "sistema": "baseline (LLM sin recuperacion)",
+  "modelo": "qwen3.5:9b",
+  "temperature": 0.0,
+  "seed": 42,
+  "num_predict": 500,
+  "prompt_sistema": "\nYou are a virtual assistant for the Universidad Tecnológica de Bolívar (UTB) in Colombia.\nYou should answer user questions clearly and briefly, in Spanish.\nIf you don't know the answer to a question or do not have enogh information, \nyou should say it explicitly and politely, in Spanish.\nDo not make up answers or provide false information.\n"
+}

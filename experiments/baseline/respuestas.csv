@@ -1,0 +1,30 @@
+﻿id,categoria,tiene_respuesta,pregunta,respuesta_referencia,respuesta_modelo,latencia_s,abstencion_auto,error,etiqueta,observaciones
+1,calificaciones,si,¿Cuál es la calificación mínima aprobatoria para un curso de pregrado en la UTB?,"3,0 para cursos de pregrado y 3,5 para la práctica profesional de pregrado.","La calificación mínima aprobatoria para un curso de pregrado en la Universidad Tecnológica de Bolívar (UTB) es **3.0** sobre una escala de 5.0.
+
+Si el promedio final del estudiante es inferior a este valor, se considera reprobado y debe recuperar el curso.",47.01,no,,,
+2,estados_academicos,si,¿Qué Promedio Ponderado Acumulado (PPA) debe mantener un estudiante de pregrado y qué pasa si al finalizar un periodo no lo logra?,"Debe mantener un PPA mínimo de 3,20. Si al finalizar el periodo queda por debajo, pasa a Prueba Académica Parcial para el siguiente periodo.","Para ser un estudiante activo en la Universidad Tecnológica de Bolívar (UTB), debes mantener un **Promedio Ponderado Acumulado (PPA) mínimo de 2.50** sobre una escala de 4.00.
+
+Si al finalizar un periodo académico no logras este promedio:
+1.  **Pérdida de estatus activo:** El estudiante deja de ser considerado ""activo"" y pasa a tener el estatus de **""inactivo""** o ""en riesgo"".
+2.  **Consecuencias académicas:** No podrás inscribir materias nuevas hasta que regularices tu situación (generalmente, al aprobar las materias pendientes en un periodo posterior).
+3.  **Riesgo de expulsión:** Si no logras recuperar el promedio mínimo dentro del tiempo establecido por la normativa institucional (usualmente dos periodos consecutivos con estatus inactivo), se procede a la **expulsión** del programa de estudios.
+
+*Nota: Es recomendable consultar siempre el reglamento específico de tu carrera o la página web oficial de UTB, ya que pueden existir matices según el plan de estudios.*",119.45,no,,,
+3,asistencia,si,¿Qué porcentaje mínimo de asistencia se exige en la modalidad presencial y qué ocurre si no se cumple?,"Mínimo 80% de las sesiones de clase. Si no se cumple, el estudiante reprueba el curso con la calificación mínima establecida en el Reglamento.","En la Universidad Tecnológica de Bolívar (UTB), el porcentaje mínimo de asistencia exigido para estudiantes en modalidad **presencial** es del **75%** durante el periodo académico.
+
+Si no se cumple con este requisito:
+*   El estudiante será considerado como **inactivo**.
+*   Se le suspenderá la matrícula y perderá el derecho a rendir los exámenes finales o a ser evaluado en las asignaturas afectadas.
+*   Para regularizar la situación, generalmente es necesario presentar un plan de recuperación de asistencia aprobado por la unidad académica correspondiente antes de finalizar el periodo.
+
+*Nota: Es posible que existan matices específicos según el programa académico o situaciones excepcionales (como fuerza mayor), por lo que se recomienda consultar directamente con la secretaría académica de tu facultad para confirmar los detalles aplicables a tu caso.*",91.5,no,,,
+4,matricula,si,¿Hasta qué semana puede retirar cursos un estudiante de pregrado presencial y qué pasa si retira todos?,"Hasta el último día hábil de la semana 12 del periodo académico. Si retira todos sus cursos, pierde la calidad de estudiante regular.","Para estudiantes de pregrado en modalidad presencial en la Universidad Tecnológica de Bolívar (UTB), el periodo para retirar cursos sin afectar el promedio académico general termina generalmente a la **semana 10** del semestre.
+
+Sin embargo, es importante considerar lo siguiente:
+*   **Retiro total:** Si un estudiante decide retirarse de **todos** sus cursos antes de la fecha límite oficial (generalmente la semana 10), se considera que ha abandonado el programa académico para ese periodo. Esto implica que no obtendrá créditos académicos por ese semestre y deberá inscribirse nuevamente en el siguiente ciclo o solicitar una reactivación, dependiendo de las normativas vigentes del momento.
+*   **Consecuencias:** Aunque el promedio general no se vea afectado por los retiros individuales dentro del periodo permitido, retirarse de todos los cursos puede tener implicaciones administrativas (como la pérdida de estatus activo en el semestre) y podría afectar el cumplimiento de los requisitos para la graduación si no se compensan los créditos faltantes.
+
+Te recomiendo verificar las fechas exactas en el **Calendario Académico** del semestre actual o consultar directamente con la oficina de **Admisiones** o tu **Asesor Académico**, ya que las fechas pueden variar ligeramente según el año y las resoluciones internas de la universidad.",132.68,no,,,
+5,sin_respuesta,no,¿Cuántos estudiantes fueron sancionados con expulsión por plagio durante 2025?,NO_HAY_INFORMACION,"No tengo información específica sobre el número de estudiantes sancionados con expulsión por plagio en la Universidad Tecnológica de Bolívar (UTB) para el año 2025. Los datos detallados de sanciones disciplinarias suelen ser internos y no siempre están disponibles públicamente o en mi base de conocimientos actualizada hasta la fecha.
+
+Para obtener esta información precisa, le recomiendo contactar directamente a la **Dirección de Disciplina Estudiantil** o a la **Oficina de Control Académico** de la UTB, quienes manejan los registros oficiales de sanciones.",66.29,si,,,
