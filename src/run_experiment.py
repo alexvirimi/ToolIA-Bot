@@ -90,7 +90,7 @@ def main():
             "pregunta": fila.pregunta,
             "respuesta_referencia": fila.respuesta_referencia,
             "respuesta_modelo": respuesta.strip(),
-            "latencia_s": latencia,
+            "latencia_s": latencia, # tiempo en segundos que tarda en responder el modelo
             "abstencion_auto": detectar_abstencion(respuesta),
             "error": error,
             "etiqueta": "",       # etiqueta manual

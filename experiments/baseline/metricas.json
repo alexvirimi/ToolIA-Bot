@@ -1,0 +1,22 @@
+{
+  "n_total": 5,
+  "n_con_respuesta": 4,
+  "n_sin_respuesta": 1,
+  "exactitud_%": 25.0,
+  "exactitud_con_parciales_%": 25.0,
+  "tasa_alucinacion_%": 0.0,
+  "tasa_abstencion_%": 100.0,
+  "latencia_promedio_s": 91.39,
+  "latencia_max_s": 132.68,
+  "conteo_etiquetas": {
+    "incorrecta": 3,
+    "correcta": 1,
+    "abstencion": 1
+  },
+  "exactitud_por_categoria_%": {
+    "asistencia": 0.0,
+    "calificaciones": 100.0,
+    "estados_academicos": 0.0,
+    "matricula": 0.0
+  }
+}

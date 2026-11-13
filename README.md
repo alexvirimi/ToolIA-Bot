@@ -24,7 +24,11 @@ requisitos, servicios y demás información publicada en la página web.
    ```bash
    pip install -r requirements.txt
    ```
-4. Ejecutar la línea base (con Ollama abierto):
+5. Ejecutar la línea base (con Ollama abierto):
    ```bash
    python src/run_experiment.py
+   ```
+6. Calcular las métricas, después de etiquetar `experiments/baseline/respuestas.csv`:
+   ```bash
+   python src/evaluate.py
    ```
