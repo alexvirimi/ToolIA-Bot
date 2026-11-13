@@ -1,0 +1,8 @@
+# Una URL por línea. Las líneas que empiezan con # se ignoran.
+# - Página HTML: el script guarda la página y descarga los documentos que enlaza.
+# - Enlace directo a .pdf/.doc/.docx/.xls/.xlsx: se descarga tal cual.
+# Solo se descargan documentos del dominio utb.edu.co.
+
+https://www.utb.edu.co/la-utb/estatutos-y-reglamentos/
+
+# Agrega aquí las demás páginas (calendario académico, admisiones, becas, financiación...)
