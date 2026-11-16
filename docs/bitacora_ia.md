@@ -1,12 +1,13 @@
 # Bitácora de uso de IA
 
->[!note]
->El uso de asistentes de IA (ChatGPT, Claude, Gemini, Copilot u otros) está permitido y se espera, siempre que sea declarado y que el equipo pueda explicar y defender todo lo entregado. Usar IA sin declararlo, o no poder explicar un fragmento de código o texto en la sustentación, se trata como falta de integridad académica.
+> [!note]
+> El uso de asistentes de IA (ChatGPT, Claude, Gemini, Copilot u otros) está permitido y se espera, siempre que sea declarado y que el equipo pueda explicar y defender todo lo entregado. Usar IA sin declararlo, o no poder explicar un fragmento de código o texto en la sustentación, se trata como falta de integridad académica.
 
-| Fecha | Integrante | Herramienta | Para qué se usó | Qué se aceptó, modificó o descartó | Cómo se verificó |
-| ----- | ---------- | ----------- | --------------- | ---------------------------------- | ---------------- |
+| Fecha | Integrante           | Herramienta | Para qué se usó                                                                                                                                                            | Qué se aceptó, modificó o descartó                                                                                                                                                                                                                                                                            | Cómo se verificó                                                                                                                                                                |
+| ----- | -------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 11-11 | Alejandro Villarreal | Claude      | Se utilizó para crear la estructura del código de extracción de datos. El estudiante no está tan familiarizado con el scrapping, por lo que fue necesario la guía del llm. | Se aceptó la estructura general propuesta por Claude, sin embargo se modificó la fomra en cómo realizaba el scrapping. Lo propuesto utilizaba la libería request de python, que la página objetivo rechazaba al reconorcela como una acción automatizada. Se modificó por una solución Playwright + Selenium. | Se verificó mediante prueba y error. Los errores eran de 503 y 403, lo que ocasionó revisar la forma en cómo se estaba pidiendo la información, que terminó causando el cambio. |
 
 ## Reflexión sobre una propuesta de IA rechazada
 
->[!important]
+> [!important]
 > Además, el informe incluye una reflexión de media página con al menos un caso en que la IA propuso algo incorrecto o inadecuado y cómo lo detectaron.
