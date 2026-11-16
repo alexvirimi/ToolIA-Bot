@@ -1,0 +1,30 @@
+{
+  "n_total": 57,
+  "n_con_respuesta": 47,
+  "n_sin_respuesta": 10,
+  "exactitud_%": 2.1,
+  "exactitud_con_parciales_%": 14.9,
+  "tasa_alucinacion_%": 47.4,
+  "tasa_abstencion_%": 100.0,
+  "latencia_promedio_s": 3.81,
+  "latencia_max_s": 11.99,
+  "conteo_etiquetas": {
+    "alucinacion": 27,
+    "abstencion": 19,
+    "parcial": 6,
+    "incorrecta": 4,
+    "correcta": 1
+  },
+  "exactitud_por_categoria_%": {
+    "admisiones": 0.0,
+    "asistencia": 0.0,
+    "becas_financiacion": 0.0,
+    "calificaciones": 50.0,
+    "distinciones": 0.0,
+    "estados_academicos": 0.0,
+    "general": 0.0,
+    "ingles": 0.0,
+    "matricula": 0.0,
+    "web_becas": 0.0
+  }
+}
