@@ -7,13 +7,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
 
-import requests
 from bs4 import BeautifulSoup
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+from playwright.sync_api import Error as PlaywrightError
+from playwright.sync_api import sync_playwright
+from seleniumbase import sb_cdp
+
 
 SCRIPTS_DIR = Path(__file__).resolve().parent
-DATA_DIR = SCRIPTS_DIR.parent / "data"
+RAIZ = SCRIPTS_DIR.parent
+DATA_DIR = RAIZ / "data"
 HTML_DIR = DATA_DIR / "raw" / "html"
 DOCS_DIR = DATA_DIR / "raw" / "docs"
 MANIFEST = DATA_DIR / "manifest.json"
@@ -23,23 +25,16 @@ SOURCES = SCRIPTS_DIR / "sources.txt"
 
 DOMINIO = "utb.edu.co"
 EXTENSIONES = (".pdf", ".doc", ".docx", ".xls", ".xlsx")
-PAUSA_SEGUNDOS = 1.0
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-    ),
-    "Accept-Language": "es-CO,es;q=0.9",
-}
+PAUSA_SEGUNDOS = 3.0
+MAX_INTENTOS_DESCARGA = 5
+ESTADOS_REINTENTABLES = (429, 500, 502, 503, 504)
+TITULOS_VERIFICACION = ("just a moment", "un momento", "attention required", "verificaci")
 
 
-def crear_sesion():
-    sesion = requests.Session()
-    sesion.headers.update(HEADERS)
-    reintentos = Retry(total=3, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504])
-    sesion.mount("https://", HTTPAdapter(max_retries=reintentos))
-    sesion.mount("http://", HTTPAdapter(max_retries=reintentos))
-    return sesion
+class ErrorHTTP(Exception):
+    def __init__(self, status, url):
+        super().__init__(f"HTTP {status} en {url}")
+        self.status = status
 
 
 def es_dominio_utb(url):
@@ -82,24 +77,65 @@ def extraer_enlaces_documentos(pagina_url, contenido):
     soup = BeautifulSoup(contenido, "html.parser")
     enlaces = set()
     for a in soup.find_all("a", href=True):
-        url = urljoin(pagina_url, a["href"].split("#")[0])
+        href = a.get("href")
+        if not isinstance(href, str):
+            continue
+        url = urljoin(pagina_url, href.split("#")[0])
         if es_documento(url) and es_dominio_utb(url):
             enlaces.add(url)
     return sorted(enlaces)
 
 
-def guardar_pagina(sesion, url):
-    r = sesion.get(url, timeout=30)
-    r.raise_for_status()
+def hay_verificacion(page):
+    titulo = page.title().lower()
+    html = page.content().lower()
+    por_titulo = any(t in titulo for t in TITULOS_VERIFICACION)
+    return por_titulo or (len(html) < 30000 and "captcha" in html)
+
+
+def guardar_pagina(page, url):
+    respuesta = page.goto(url, wait_until="domcontentloaded", timeout=60000)
+    if hay_verificacion(page):
+        input(f"Verificación en {url}. Resuélvela tú en la ventana del navegador y pulsa Enter aquí... ")
+        page.wait_for_load_state("domcontentloaded")
+        if hay_verificacion(page):
+            raise ValueError("la verificación no se completó")
+    elif respuesta is not None and respuesta.status >= 400:
+        raise ErrorHTTP(respuesta.status, url)
+    try:
+        page.wait_for_load_state("networkidle", timeout=15000)
+    except PlaywrightError:
+        pass
+    contenido = page.content().encode("utf-8")
     slug = urlparse(url).path.strip("/").replace("/", "_") or "inicio"
-    (HTML_DIR / f"{slug}.html").write_bytes(r.content)
-    return r.content
+    (HTML_DIR / f"{slug}.html").write_bytes(contenido)
+    return contenido
 
 
-def descargar_documento(sesion, url, manifest, origen):
-    r = sesion.get(url, timeout=60)
-    r.raise_for_status()
-    contenido = r.content
+def pedir_archivo(contexto, url):
+    respuesta = None
+    for intento in range(MAX_INTENTOS_DESCARGA):
+        respuesta = contexto.request.get(url, timeout=60000)
+        if respuesta.status not in ESTADOS_REINTENTABLES or intento == MAX_INTENTOS_DESCARGA - 1:
+            break
+        espera = 2 ** (intento + 1)
+        retry_after = respuesta.headers.get("retry-after")
+        if retry_after:
+            try:
+                espera = max(espera, float(retry_after))
+            except ValueError:
+                pass
+        print(f"  HTTP {respuesta.status}; reintentando en {espera:g} s: {url}")
+        time.sleep(espera)
+    if respuesta is None:
+        raise RuntimeError("no se obtuvo respuesta al descargar el archivo")
+    if not respuesta.ok:
+        raise ErrorHTTP(respuesta.status, url)
+    return respuesta.body()
+
+
+def descargar_documento(contexto, url, manifest, origen):
+    contenido = pedir_archivo(contexto, url)
     if url.lower().endswith(".pdf") and not contenido.startswith(b"%PDF"):
         raise ValueError("la respuesta no es un PDF (posible bloqueo del sitio)")
 
@@ -142,55 +178,73 @@ def comparar_pagina(fuente, enlaces, paginas, alertas):
     return ausentes
 
 
+def procesar_fuentes(contexto, page, manifest, paginas, resumen, alertas):
+    vistos = set()
+    for fuente in leer_fuentes():
+        if es_documento(fuente):
+            enlaces = [fuente]
+        else:
+            try:
+                contenido = guardar_pagina(page, fuente)
+            except (PlaywrightError, ErrorHTTP, ValueError) as e:
+                print(f"[error] {fuente}: {e}")
+                resumen["error"] += 1
+                continue
+            enlaces = extraer_enlaces_documentos(fuente, contenido)
+            print(f"{fuente} -> {len(enlaces)} documentos encontrados")
+            if not enlaces:
+                print("  aviso: sin enlaces; revisa data/raw/html/ para ver qué devolvió el sitio")
+            enlaces += comparar_pagina(fuente, enlaces, paginas, alertas)
+            time.sleep(PAUSA_SEGUNDOS)
+
+        for enlace in enlaces:
+            if enlace in vistos:
+                continue
+            vistos.add(enlace)
+            time.sleep(PAUSA_SEGUNDOS)
+            try:
+                estado = descargar_documento(contexto, enlace, manifest, fuente)
+            except ErrorHTTP as e:
+                if e.status in (404, 410):
+                    estado = "desaparecido"
+                    if enlace in manifest:
+                        manifest[enlace]["estado"] = "no_disponible"
+                        manifest[enlace]["ultima_verificacion"] = ahora()
+                    alertas.append(f"documento ya no existe: {enlace}")
+                else:
+                    estado = "error"
+                    print(f"  detalle: {e}")
+            except (PlaywrightError, ValueError) as e:
+                estado = "error"
+                print(f"  detalle: {e}")
+            resumen[estado] += 1
+            print(f"[{estado}] {enlace}")
+
+
 def main():
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     HTML_DIR.mkdir(parents=True, exist_ok=True)
     manifest = cargar_json(MANIFEST)
     paginas = cargar_json(PAGINAS)
-    sesion = crear_sesion()
     resumen = {"nuevo": 0, "actualizado": 0, "sin cambios": 0, "desaparecido": 0, "error": 0}
-    vistos = set()
     alertas = []
 
-    try:
-        for fuente in leer_fuentes():
-            if es_documento(fuente):
-                enlaces = [fuente]
-            else:
-                try:
-                    contenido = guardar_pagina(sesion, fuente)
-                except requests.RequestException as e:
-                    print(f"[error] {fuente}: {e}")
-                    resumen["error"] += 1
-                    continue
-                enlaces = extraer_enlaces_documentos(fuente, contenido)
-                print(f"{fuente} -> {len(enlaces)} documentos encontrados")
-                if not enlaces:
-                    print("  aviso: sin enlaces; revisa data/raw/html/ para ver qué devolvió el sitio")
-                enlaces += comparar_pagina(fuente, enlaces, paginas, alertas)
+    sb = sb_cdp.Chrome(incognito=True)
+    endpoint_url = sb.get_endpoint_url()
 
-            for enlace in enlaces:
-                if enlace in vistos:
-                    continue
-                vistos.add(enlace)
-                time.sleep(PAUSA_SEGUNDOS)
-                try:
-                    estado = descargar_documento(sesion, enlace, manifest, fuente)
-                except requests.HTTPError as e:
-                    if e.response is not None and e.response.status_code in (404, 410):
-                        estado = "desaparecido"
-                        if enlace in manifest:
-                            manifest[enlace]["estado"] = "no_disponible"
-                            manifest[enlace]["ultima_verificacion"] = ahora()
-                        alertas.append(f"documento ya no existe: {enlace}")
-                    else:
-                        estado = "error"
-                        print(f"  detalle: {e}")
-                except (requests.RequestException, ValueError) as e:
-                    estado = "error"
-                    print(f"  detalle: {e}")
-                resumen[estado] += 1
-                print(f"[{estado}] {enlace}")
+    try:
+        with sync_playwright() as p:
+            navegador = p.chromium.connect_over_cdp(endpoint_url)
+            contexto = (
+                navegador.contexts[0]
+                if navegador.contexts
+                else navegador.new_context()
+            )
+            try:
+                page = contexto.pages[0] if contexto.pages else contexto.new_page()
+                procesar_fuentes(contexto, page, manifest, paginas, resumen, alertas)
+            finally:
+                contexto.close()
     finally:
         guardar_json(MANIFEST, manifest)
         guardar_json(PAGINAS, paginas)
