@@ -223,6 +223,7 @@ __marimo__/
 
 */flujo_del_sistema.md
 */raw/
+*/processed/
 */manifest.json
 */pages.json
 */pyautogui.lock
