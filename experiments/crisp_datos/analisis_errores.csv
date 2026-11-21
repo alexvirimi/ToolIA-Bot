@@ -1,0 +1,124 @@
+﻿id,metodo,categoria,tiene_respuesta,estado_fuente,hit_fuente_5,cobertura_localizadores_5,latencia_s,score_top1,top_ids,tipo_error,hipotesis,prioridad_revision,pregunta,pagina_o_seccion,top1_seccion,top1_fragmento
+1,embeddings,calificaciones,si,alias_candidato,0.0,0.0,0.30680770000617485,0.6481537818908691,"[""3137381d1ae7603810afa3b94915bf50d44b118a3990ddcb5f128d2bf8c4b476"", ""5af4471bf1ccdb25bae76ca7258461b74d703784f6da2c4b3780af05fbc39565"", ""a1b8f7c13dc467b11bc5d56c2638714e2f1e40c5f7dbe4c3772d2541eac9e131"", ""380d3ee5f94aea7752fa4100a948935e8aca845aa3626619ca0df2b4fd0cff9e"", ""7e8a6655b1bcc29ab22ea36a4c2a53f0477ef9d4361436e714928083e5a6648c""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Cuál es la calificación mínima aprobatoria para un curso de pregrado en la UTB?,Artículo 51 del Reglamento Estudiantil,### REQUISITOS DE INSCRIPCIÓN,"### REQUISITOS DE INSCRIPCIÓN
+
+- No haber reprobado o cancelado ninguno de los curso matriculados, ni haber estado en Prueba Académica durante la carrera.
+
+- No tener sanciones disciplinarias ni académicas en la hoja de vida.
+
+- Clasificación Saber 11: Inglés 1, 2 o 3 (A1/A2)
+
+- Certificar nivel B2 en inglés al momento de la inscripción. No podrán inscribirse quienes homologuen hasta inglés 5 (B1) al ingresar a la universidad."
+23,embeddings,ingles,si,alias_candidato,0.0,0.0,0.22464289999334142,0.7162997126579285,"[""b012fd9cfe99dc36e36e42e137587acae2c6c0a6e2f8b9021103f59b18fc6c29"", ""8d73c8a4fc918ad0ee993e8080af0b7d003c3623e0dfa501112156cda0cc2ac3"", ""3137381d1ae7603810afa3b94915bf50d44b118a3990ddcb5f128d2bf8c4b476"", ""f075560ff9096b79b7848c54ba6e00cf8c7fac76a3c58a4ff0133f5adc94f13f"", ""2b16ec0c5f36d257d73929f67b549b29053437d330ded17aaa98dc26c25023ad""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Es requisito demostrar nivel B2 de inglés para graduarse de un programa de pregrado presencial en la UTB?,"Reglamento Estudiantil, Art. 78 parágrafo 2",,"Nuevo requisito de grado: Inglés B2
+
+Para estudiantes de pregrado en la modalidad presencial que ingresen a
+ partir del primer periodo del 2024
+ En las mallas curriculares se incluyen 5 cursos que te llevan hasta nivel B1.
+
+ ¿Cómo puedes demostrar que tienes nivel B2?
+ Ruta 1
+ Cursos externos
+ Toma los cursos virtuales del Centro de
+ Idiomas:
+
+ Inglés VI Inglés VII Inglés VIII
+ Nivel B1+ Nivel B2.1 Nivel B2
+
+ Ruta 2
+ Exámenes
+
+ Opción 1 Opción 2
+ Presenta tu certificado Toma y aprueba la
+ B2 obt"
+34,embeddings,matricula,si,alias_candidato,1.0,0.5,0.19891129998723045,0.7052686810493469,"[""2564a86e232ee7fcbf960b93c5d5778ce751a5670af06a4a0a8dd3c8af97174c"", ""57c278f08220897a057fa64e0b9254b39065341240816499ad5dfebb2338780a"", ""577c54b7c11a408dabf88ab4eb9e4168d7463f1369bc7ce4f3d670d6fe831975"", ""e317000722dbe1c89127d5b0d06275eb435b1ce0f8d319a1eb3ae5d52c8ce69f"", ""2f7c99d76887ed9b661c8713eb9ff7e3134145b7e07fb3ae9b1d671d5553ab55""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Hasta qué semana puede retirar cursos un estudiante de pregrado virtual en cada ciclo?,"Reglamento Estudiantil, Art. 40 y Art. 37",ARTÍCULO 40: Un estudiante regular de pregrado en modalidad virtual podrá retirar cursos,"ARTÍCULO 40: Un estudiante regular de pregrado en modalidad virtual podrá retirar cursos
+durante un periodo académico, hasta el último día hábil de la cuarta (4a) semana de cada ciclo.
+En caso tal de retirar todos sus cursos, perdería la calidad de estudiante regular.
+
+PARÁGRAFO 1: Las prácticas profesionales no podrán ser retiradas, salvo autorización previa de
+la dirección de programa.
+
+PARÁGRAFO 2: Los estudiantes que se encuentran en situación de Prueba Académica o
+Recuperación Académica deb"
+38,embeddings,admisiones,si,alias_candidato,0.0,0.0,0.21485410000605043,0.7179771065711975,"[""bc499833b6e4f7d468103097ce510dbcf37b0f20ccbe2d291e2c7aa50a020c98"", ""b989d42b96ebb09dcfb2104984cb3d2cbb1687b1b980846f68cbf0a8df70f3a2"", ""3137381d1ae7603810afa3b94915bf50d44b118a3990ddcb5f128d2bf8c4b476"", ""5ec0722ae2b5a0f43023543b33873832ff898731a90f33aebfcad7ed8ad0720c"", ""d66132b2cd02349cac40f760ffdd9b27aa5d8287284eba7204b0f8e125c1d4b0""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Cuáles son los requisitos para inscribirse por primera vez a un programa de pregrado de la UTB?,"Reglamento Estudiantil, Art. 21 y Art. 23",## ¿Qué es la admisión por Primera Vez a Pregrado?,"## ¿Qué es la admisión por Primera Vez a Pregrado?
+
+Es el proceso a través del cual aquellas personas que aún no han sido estudiantes de la UTB, pueden acceder a uno de nuestros programas de estudio por primera vez, tras haber culminado satisfactoriamente sus estudios de bachillerato.
+
+A continuación encontrarás información importante que debes tener en cuenta al momento de diligenciar la inscripción para solicitar tu admisión.
+
+- Tener el título de bachiller colombiano, o su equivalente en otro"
+39,embeddings,admisiones,si,alias_candidato,0.0,0.0,0.17977889999747276,0.6970765590667725,"[""d66132b2cd02349cac40f760ffdd9b27aa5d8287284eba7204b0f8e125c1d4b0"", ""5ec0722ae2b5a0f43023543b33873832ff898731a90f33aebfcad7ed8ad0720c"", ""96336e0a14805824eb29c414d8626e17f65fa820b39d11e7015835754d0e4b7a"", ""bc499833b6e4f7d468103097ce510dbcf37b0f20ccbe2d291e2c7aa50a020c98"", ""b989d42b96ebb09dcfb2104984cb3d2cbb1687b1b980846f68cbf0a8df70f3a2""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Cuáles son los tipos de admisión para programas de pregrado y posgrado en la UTB?,"Reglamento Estudiantil, Art. 25",## ¿Qué es la admisión por primera vez a posgrado?,"## ¿Qué es la admisión por primera vez a posgrado?
+
+Es el proceso a través del cual aquellas personas desean realizar la totalidad de un programa de posgrado con la UTB, pueden acceder a uno de nuestra oferta de estudios, tras haber culminado satisfactoriamente sus estudios de pregrado.
+
+A continuación encuentre información importante que debe tener en cuenta al momento de diligenciar la inscripción para solicitar su admisión.
+
+- Tener título profesional
+
+- Documento de Identidad (ambas caras en"
+40,embeddings,admisiones,si,alias_candidato,0.0,0.0,0.21776109999336768,0.6912938952445984,"[""e04bef69f3896c0e3f508c1dda11af8e16d0e7b042d265856d9b7dcebd15cc65"", ""4934671c304c63042d92a81c0433e668f996566e819663044cafd96bcb5a2e24"", ""c354652ba57fdb8911bb954972bb59d29bbd4aed9707d8c41259b06146ba063b"", ""3137381d1ae7603810afa3b94915bf50d44b118a3990ddcb5f128d2bf8c4b476"", ""e6667751afd30029cd36013f2603e58a3d9e348fabadad31d85568d642e27877""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Quién no puede solicitar reingreso a la UTB?,"Reglamento Estudiantil, Art. 28 y parágrafo 3",## ¿Qué es la admisión por reingreso?,"## ¿Qué es la admisión por reingreso?
+
+Es el proceso a través del cual las personas que han sido estudiantes de la Universidad Tecnológica de Bolívar y que por alguna de las situaciones previstas en el Reglamento Estudiantil han suspendido su proceso formativo perdiendo la calidad de estudiante regular, contando con el aval de Comité de Facultad, se les permite retomar sus estudios cursando aquellas asignaturas necesarias para concluir el programa.
+
+- Obtener aprobación del comité de Facultad de"
+43,embeddings,distinciones,si,alias_candidato,0.0,0.0,0.23111939999216702,0.6528988480567932,"[""95cd4da482ab215e0736ca8ebb74e043bc7b55ba8038b50097b70fba1c080225"", ""5a1aea4e0a45c8b56278e08484292544b0b35134c37b8e714ac5b945eb1baaf8"", ""d6dbcf2409d7807866de1069a6af30bdad0ced82fd57cde544276df60fe9a6df"", ""660d8526c48d193790a36e02c63c71be516d4f5887edc63392a09a41443ff509"", ""bef186e35268abb822b30fea6079595e413008711cb7504c52660a2bba4c39c6""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Un estudiante sancionado puede recibir distinciones académicas de la UTB?,"Reglamento Estudiantil, Art. 110",### Estudiantes cuyo puntaje global se encuentren por encima de 40 puntos de la media institucional,"### Estudiantes cuyo puntaje global se encuentren por encima de 40 puntos de la media institucional
+
+Si cumples con estos puntajes podrás recibir los siguientes incentivos:
+
+1. Exoneración del pago de derecho a grado. 2. Exención del examen de calidad de Derecho ECAD. 3. Distinción académica en ceremonia pública."
+45,embeddings,matricula,si,alias_candidato,0.0,0.0,0.20863059999828693,0.7333521246910095,"[""53de880f1b9f1cffb6d8ace1d898c6f5325a48cb4eaef4d732fdf2355f294f4b"", ""380d3ee5f94aea7752fa4100a948935e8aca845aa3626619ca0df2b4fd0cff9e"", ""f330b0855d072d5962c3eaf27a003ce05c4de26607fdcacc4012f64bdb500db2"", ""08d6cfd364b86cd889348ae70d064923f40f77b6cfed2389eceed252047ea98d"", ""48cef4954d42972103e32ed683b4eb5576768dd0d8d33a39dae63fece0faf567""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Cuáles son las condiciones para que un estudiante de pregrado cursa un segundo programa en doble programa?,"Reglamento Estudiantil, Art. 74 y Art. 75",## Preguntas frecuentes sobre el doble programa,"## Preguntas frecuentes sobre el doble programa
+
+Respondemos las dudas que tengas sobre el doble programa en la UTB
+
+De acuerdo con el artículo 66 del reglamento estudiantil, un estudiante regular de cualquier programa de pregrado tiene la posibilidad de cursar a la vez un segundo programa de pregrado. Para acceder a esta opción el estudiante debe cumplir las siguientes condiciones:
+
+- Haber completado los dos primeros semestres lectivos del programa inicial con un PPA no inferior a tres, setent"
+2,tfidf,estados_academicos,si,alias_candidato,1.0,0.0,0.008297100008348934,0.40444562279997104,"[""4081de506614d1a7cfb452107f7ad2ac6b0992036602ea9c26f0b4cb7d3cdf21"", ""ae84928c185332ffe854b6d53a593426c24ef39f36a0d3f4167370380c9b9512"", ""7ea261b5aebd167efead5deab37a7aa50d46ad91ef41d28355c9b5ae04d3a6fe"", ""85e9a95c5ffbfd21b31067991b235d490611aae6e49bfcc376fb691f7bc3a984"", ""36457a1da010896c03fdc73a4747a5ec21b5281cf9c103d5e560af4f56effa4e""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Qué Promedio Ponderado Acumulado (PPA) debe mantener un estudiante de pregrado y qué pasa si al finalizar un periodo no lo logra?,Artículo 68 del Reglamento Estudiantil,ARTÍCULO 73: Un estudiante de posgrado debe mantener un Promedio Ponderado Acumulado,"ARTÍCULO 73: Un estudiante de posgrado debe mantener un Promedio Ponderado Acumulado
+(PPA) mínimo de 3,50 para optar a grado.
+
+H. DOBLE PROGRAMA"
+3,tfidf,asistencia,si,alias_candidato,1.0,0.0,0.010338899999624118,0.21889226004017814,"[""23ad5eb850bd26a9e119f1894b921aa0c10c926f94e4ec8f3d50146ae08b814d"", ""16d083a0e77acb650afb4a49ff952e361d0c147c74a4df191f1495121a6be2ed"", ""bf9179d181b9fbbbb330a9b6fd8327711132d071706c2162ff7118abe63278b5"", ""945eed4cbc94af935df4a97eb7f340029bd08a3e21141dadf4d3174807c644ce"", ""1a118c809754a43d0e211d637f14c50854e31f283ddaa6570b156cd0075168a9""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Qué porcentaje mínimo de asistencia se exige en la modalidad presencial y qué ocurre si no se cumple?,Artículo 67 del Reglamento Estudiantil,ARTÍCULO 2. El presente documento rige a partir de su aprobación y permanecerá vigente mientras se,"CONSEJO ACADÉMICO
+ RESOLUCIÓN No. 7 DE 2020
+
+ CONTENIDO
+
+1. PROGRAMA COTERMINAL ................................................................................................................... 4
+
+ 1.1. DURACIÓN DEL COTERMINAL .................................................................................................................... 4
+ 1.2. PROCESO PARA APLICAR A LA MODALIDAD DE COTERMINAL: ........................................................................... 4
+ 1.3. NOTA MÍNIMA"
+21,tfidf,estados_academicos,si,alias_candidato,1.0,0.0,0.009006300009787083,0.4491974184352837,"[""4081de506614d1a7cfb452107f7ad2ac6b0992036602ea9c26f0b4cb7d3cdf21"", ""ae84928c185332ffe854b6d53a593426c24ef39f36a0d3f4167370380c9b9512"", ""7ea261b5aebd167efead5deab37a7aa50d46ad91ef41d28355c9b5ae04d3a6fe"", ""8694e90716e62003697d4e3111a479cc5e3b58b970abf36cbe4c6a0b51256ae7"", ""85e9a95c5ffbfd21b31067991b235d490611aae6e49bfcc376fb691f7bc3a984""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Qué Promedio Ponderado Acumulado (PPA) mínimo debe tener un estudiante de pregrado para optar al título y cuál es para posgrado?,"Reglamento Estudiantil, Art. 78 literal b",ARTÍCULO 73: Un estudiante de posgrado debe mantener un Promedio Ponderado Acumulado,"ARTÍCULO 73: Un estudiante de posgrado debe mantener un Promedio Ponderado Acumulado
+(PPA) mínimo de 3,50 para optar a grado.
+
+H. DOBLE PROGRAMA"
+22,tfidf,admisiones,si,alias_candidato,1.0,0.0,0.009082100004889071,0.2594173809887166,"[""6deacdc1cb85500515a4696f457be7b9dc6d1c61627de58b3bfea1c4ef8efe1b"", ""0a5d78d472318fae619bfcb326a5cf5f70bffe8b36585a6be9efbbf82d0205a0"", ""4081de506614d1a7cfb452107f7ad2ac6b0992036602ea9c26f0b4cb7d3cdf21"", ""ae84928c185332ffe854b6d53a593426c24ef39f36a0d3f4167370380c9b9512"", ""ef4d0562c1e31cf7d76e06999808d80215fe69f2689ea4c0908fd769f55eea9b""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Qué puntaje mínimo global debe obtener un estudiante de pregrado en el examen Saber Pro para optar al título?,"Reglamento Estudiantil, Art. 78 literal c",,"ESTÍMULOS A ESTUDIANTES CON
+PUNTAJES SOBRESALIENTES
+EN EL EXAMEN SABER PRO"
+25,tfidf,distinciones,si,alias_candidato,1.0,0.0,0.0076612999982899055,0.3147394429409744,"[""0350a792429b9bc349957e98b8b05d165d79325e5947ce7c17f9a57c9b9506e4"", ""aa49d54fbcf43ab920160a98cc2bcdd3a4ea69edf2688b8a540506fc81324030"", ""8904adab78ace2d5220e61a6ace5f77fe3beff8fc21eeb06b4133c162a5b6d31"", ""9144573dbd010e4e184d6363c1352e91b23430a5f6cc6cd5a0824f4b51ca63f2"", ""f39a07ddafcfb5469896db8316fda6bf40660b28d3773e6e3c94b397960abaa2""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Cuáles son las condiciones para obtener la distinción Egresado Summa Cum Laude?,"Reglamento Estudiantil, Art. 83","ARTÍCULO 82: El Alcatraz de Oro se otorgará al estudiante de pregrado que, al terminar su","ARTÍCULO 82: El Alcatraz de Oro se otorgará al estudiante de pregrado que, al terminar su
+programa académico, cumpla con las siguientes condiciones:
+
+ a. Ser merecedor de la distinción Summa Cum Laude.
+ b. Haber demostrado durante sus estudios en la Universidad Tecnológica de Bolívar tener los
+ valores de una persona integral, a juicio del decano y el Comité de Escuela y/o Dirección
+ Académica.
+ c. Ser postulado al Consejo Académico por el decano, previa aprobación del Comité de
+ Escuela y/o Dir"
+26,tfidf,distinciones,si,alias_candidato,1.0,0.0,0.00820150000799913,0.20707222130135364,"[""0350a792429b9bc349957e98b8b05d165d79325e5947ce7c17f9a57c9b9506e4"", ""aa49d54fbcf43ab920160a98cc2bcdd3a4ea69edf2688b8a540506fc81324030"", ""8904adab78ace2d5220e61a6ace5f77fe3beff8fc21eeb06b4133c162a5b6d31"", ""9144573dbd010e4e184d6363c1352e91b23430a5f6cc6cd5a0824f4b51ca63f2"", ""6c5549e254fd03f9557d6e51df9427361273be6db5f0ff9a74ecdaebb72620c2""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Cuáles son las condiciones para obtener la distinción Egresado Cum Laude?,"Reglamento Estudiantil, Art. 84","ARTÍCULO 82: El Alcatraz de Oro se otorgará al estudiante de pregrado que, al terminar su","ARTÍCULO 82: El Alcatraz de Oro se otorgará al estudiante de pregrado que, al terminar su
+programa académico, cumpla con las siguientes condiciones:
+
+ a. Ser merecedor de la distinción Summa Cum Laude.
+ b. Haber demostrado durante sus estudios en la Universidad Tecnológica de Bolívar tener los
+ valores de una persona integral, a juicio del decano y el Comité de Escuela y/o Dirección
+ Académica.
+ c. Ser postulado al Consejo Académico por el decano, previa aprobación del Comité de
+ Escuela y/o Dir"
+30,tfidf,estados_academicos,si,alias_candidato,1.0,0.5,0.00864660000661388,0.2657484239658466,"[""92533d625cafb4df220bc7c9b38f0c55ada1e9aa9f296e77d6ee0c0b6793f6b8"", ""d35a7b0a66bc7515593a39d6d0f1b9d60d5ee013327dc9cf37fb2a0389fa53fb"", ""de185093dedadc17b5deaf3b0b87bc9176235c471893e08c701d5820c2a7a7ba"", ""7a6ed24d0e09bc57f841ea6f56fe4a0034da6b19b3d5e4c85e0a45b18de86709"", ""59eb4d8322123bb7d3ee929c3c6b0b699de1a6b021afb77336ddba47b289b869""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Cuándo un estudiante pierde su calidad por bajo rendimiento académico?,"Reglamento Estudiantil, Art. 68 y Parágrafo 1 de Art. 69",ARTÍCULO 71: El estudiante que quede excluido por bajo rendimiento académico no podrá,"ARTÍCULO 71: El estudiante que quede excluido por bajo rendimiento académico no podrá
+solicitar reinicio ni reingreso al mismo programa."
+32,tfidf,asistencia,si,alias_candidato,0.0,0.0,0.008225199999287724,0.19334486987626084,"[""23ad5eb850bd26a9e119f1894b921aa0c10c926f94e4ec8f3d50146ae08b814d"", ""945eed4cbc94af935df4a97eb7f340029bd08a3e21141dadf4d3174807c644ce"", ""f6ba4993c37c16a82450aa223b501d50b8cc4a36042aadfe97dcb0e37c66dfda"", ""d7e52f6f14713e13f425500784edf367583d4da0d5a9dfe9323e30fbfabb5739"", ""fedd5a2fc9211986c78efae79e2b76f491f35c8447de4217775648693346e4e3""]",Localizador no cubierto completamente en top 5,"Revisar fragmentación, continuidad de artículo y ranking; requiere inspeccionar el texto",1,¿Qué porcentaje mínimo de asistencia se exige en un programa presencial y qué ocurre si no se cumple?,"Reglamento Estudiantil, Art. 67",ARTÍCULO 2. El presente documento rige a partir de su aprobación y permanecerá vigente mientras se,"CONSEJO ACADÉMICO
+ RESOLUCIÓN No. 7 DE 2020
+
+ CONTENIDO
+
+1. PROGRAMA COTERMINAL ................................................................................................................... 4
+
+ 1.1. DURACIÓN DEL COTERMINAL .................................................................................................................... 4
+ 1.2. PROCESO PARA APLICAR A LA MODALIDAD DE COTERMINAL: ........................................................................... 4
+ 1.3. NOTA MÍNIMA"

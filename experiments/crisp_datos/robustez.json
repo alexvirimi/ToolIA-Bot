@@ -1,0 +1,47 @@
+[
+  {
+    "pregunta": "¿Dónde puedo consultar cursos y diplomados?",
+    "prueba": "mayus_sin_tildes",
+    "jaccard_top5": 0.42857142857142855
+  },
+  {
+    "pregunta": "¿Dónde puedo consultar cursos y diplomados?",
+    "prueba": "frase_irrelevante",
+    "jaccard_top5": 0.0
+  },
+  {
+    "pregunta": "¿Dónde puedo consultar cursos y diplomados?",
+    "prueba": "error_escritura",
+    "jaccard_top5": 1.0
+  },
+  {
+    "pregunta": "¿Qué servicios ofrece la biblioteca?",
+    "prueba": "mayus_sin_tildes",
+    "jaccard_top5": 0.6666666666666666
+  },
+  {
+    "pregunta": "¿Qué servicios ofrece la biblioteca?",
+    "prueba": "frase_irrelevante",
+    "jaccard_top5": 0.0
+  },
+  {
+    "pregunta": "¿Qué servicios ofrece la biblioteca?",
+    "prueba": "error_escritura",
+    "jaccard_top5": 0.6666666666666666
+  },
+  {
+    "pregunta": "¿Qué porcentaje cubre la Beca Legacy UTB?",
+    "prueba": "mayus_sin_tildes",
+    "jaccard_top5": 0.6666666666666666
+  },
+  {
+    "pregunta": "¿Qué porcentaje cubre la Beca Legacy UTB?",
+    "prueba": "frase_irrelevante",
+    "jaccard_top5": 0.6666666666666666
+  },
+  {
+    "pregunta": "¿Qué porcentaje cubre la Beca Legacy UTB?",
+    "prueba": "error_escritura",
+    "jaccard_top5": 1.0
+  }
+]

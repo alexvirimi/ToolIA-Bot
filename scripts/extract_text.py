@@ -17,6 +17,7 @@ MANIFEST = DATA_DIR / "manifest.json"
 SOURCES = DATA_DIR / "sources.txt"
 
 MIN_CARACTERES = 100
+EXTRACTOR_VERSION = "2.1-conserva-cifras"
 ETIQUETAS_RUIDO = ["script", "style", "noscript", "svg", "nav", "footer", "aside", "form", "iframe"]
 ETIQUETAS_TEXTO = ["h1", "h2", "h3", "h4", "h5", "h6", "p", "li", "table"]
 
@@ -39,7 +40,7 @@ def limpiar(texto):
     texto = texto.replace("\u00ad", "").replace("\xa0", " ")
     texto = re.sub(r"-\n(?=[a-záéíóúñü])", "", texto)
     texto = re.sub(r"[ \t]+", " ", texto)
-    texto = re.sub(r"^\s*\d{1,3}\s*$", "", texto, flags=re.MULTILINE)
+    # Un número aislado puede ser un puntaje o una celda de tabla. No borrarlo.
     texto = re.sub(r"\n{3,}", "\n\n", texto)
     return texto.strip()
 
@@ -47,8 +48,13 @@ def limpiar(texto):
 def pdf_a_paginas(ruta):
     with pymupdf.open(ruta) as doc:
         titulo = (doc.metadata or {}).get("title") or ruta.stem
-        paginas = [{"pagina": i, "texto": limpiar(p.get_text())} for i, p in enumerate(doc, start=1)]
-    return [p for p in paginas if p["texto"]], titulo
+        paginas = []
+        for i, p in enumerate(doc, start=1):
+            texto = limpiar(p.get_text(sort=True))
+            paginas.append({"pagina": i, "texto": texto,
+                            "needs_ocr": len(texto) < 40 and bool(p.get_images())})
+    # Conservar páginas vacías permite detectar extracción incompleta.
+    return paginas, titulo
 
 
 def tabla_a_texto(tabla):
@@ -99,7 +105,8 @@ def html_a_texto(contenido):
 def procesar(ruta, tipo, url_conocida):
     huella = hashlib.sha256(ruta.read_bytes()).hexdigest()
     salida = OUT_DIR / f"{tipo}_{ruta.stem}.json"
-    if salida.exists() and cargar_json(salida).get("sha256_origen") == huella:
+    previo = cargar_json(salida) if salida.exists() else {}
+    if previo.get("sha256_origen") == huella and previo.get("extractor_version") == EXTRACTOR_VERSION:
         return "sin cambios"
 
     if tipo == "pdf":
@@ -120,6 +127,7 @@ def procesar(ruta, tipo, url_conocida):
                 "fuente_url": url,
                 "archivo_origen": str(ruta.relative_to(DATA_DIR.parent)),
                 "sha256_origen": huella,
+                "extractor_version": EXTRACTOR_VERSION,
                 "extraido_en": datetime.now(timezone.utc).isoformat(),
                 "paginas": paginas,
             },

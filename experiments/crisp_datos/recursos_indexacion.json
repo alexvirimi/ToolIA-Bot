@@ -1,0 +1,15 @@
+{
+  "etapa": "indexacion",
+  "duracion_s": 219.37783710000804,
+  "energy_kwh": 0.003927269634288917,
+  "emissions_g_co2e": 1.0191696700639512,
+  "gpu_energy_kwh": 0.0010984183787340063,
+  "cpu_energy_kwh": 0.0016767561727770006,
+  "ram_peak_gib": 23.06981658935547,
+  "cpu_mean_percent": 41.118957345971566,
+  "country": "COL",
+  "city": "Cartagena",
+  "tracking_mode": "machine",
+  "terminado": true,
+  "nota": "Construcción completada con caché previa: NO es la huella total desde cero de todos los vectores. Incluye otras cargas de la máquina; RAM estimada, CPU por Windows EMI y GPU por NVML según codecarbon.log."
+}
