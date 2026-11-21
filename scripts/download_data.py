@@ -21,7 +21,7 @@ DOCS_DIR = DATA_DIR / "raw" / "docs"
 MANIFEST = DATA_DIR / "manifest.json"
 PAGINAS = DATA_DIR / "pages.json"
 CAMBIOS_LOG = DATA_DIR / "changes.log"
-SOURCES = SCRIPTS_DIR / "sources.txt"
+SOURCES = DATA_DIR / "sources.txt"
 
 DOMINIO = "utb.edu.co"
 EXTENSIONES = (".pdf", ".doc", ".docx", ".xls", ".xlsx")
