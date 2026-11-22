@@ -1,0 +1,65 @@
+{
+  "seed": 42,
+  "k": 5,
+  "evidence_verified": false,
+  "recall_at_5_evidence": {},
+  "proxy_metrics": [
+    {
+      "metodo": "embeddings",
+      "n": 47,
+      "hit_fuente_5": 0.5531914893617021,
+      "cobertura_localizadores_5": 0.5425531914893617
+    },
+    {
+      "metodo": "tfidf",
+      "n": 47,
+      "hit_fuente_5": 0.6595744680851063,
+      "cobertura_localizadores_5": 0.46808510638297873
+    }
+  ],
+  "latency": [
+    {
+      "metodo": "embeddings",
+      "media_s": 0.24048372748585647,
+      "mediana_s": 0.21763179999834392,
+      "p95_s": 0.3206826000023284
+    },
+    {
+      "metodo": "tfidf",
+      "media_s": 0.009251493567291767,
+      "mediana_s": 0.008939399995142594,
+      "p95_s": 0.011681450007017702
+    }
+  ],
+  "bootstrap_proxy_ci95_pp": [
+    -8.51063829787234,
+    22.367021276595597
+  ],
+  "mcnemar_source_hit_p": 0.125,
+  "gate": [
+    {
+      "control": "Índice completo respecto de fragmentos aceptados",
+      "estado": "APROBADO"
+    },
+    {
+      "control": "Vectores finitos, no nulos y dimensión homogénea",
+      "estado": "APROBADO"
+    },
+    {
+      "control": "Fuentes trazables en todos los fragmentos",
+      "estado": "APROBADO"
+    },
+    {
+      "control": "Todo el corpus descargado extraído",
+      "estado": "PENDIENTE: consultar faltantes/OCR"
+    },
+    {
+      "control": "Recall@5 de evidencia >=80%",
+      "estado": "INCOMPLETO: faltan relevancias verificadas"
+    },
+    {
+      "control": "Exactitud/fidelidad/alucinación del chatbot",
+      "estado": "FUERA DE ESTE COMPONENTE; experimento del equipo"
+    }
+  ]
+}

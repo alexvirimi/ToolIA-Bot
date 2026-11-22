@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "antes": "Ejercicio NO OFICIAL: cierre de inscripciones el 15 de enero de 2030. Esta fecha es ficticia, solo para verificar actualización del índice.",
+  "despues": "Ejercicio NO OFICIAL: cierre de inscripciones el 22 de enero de 2030. Esta fecha es ficticia, solo para verificar actualización del índice.",
+  "checks": {
+    "no_op_sin_embeddings_nuevos": true,
+    "version_nueva_activa": true,
+    "dato_nuevo_recuperable": true,
+    "dato_anterior_no_activo": true
+  }
+}

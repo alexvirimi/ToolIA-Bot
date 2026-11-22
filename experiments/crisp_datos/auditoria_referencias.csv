@@ -1,0 +1,58 @@
+﻿id,categoria,tiene_respuesta,estado_fuente,articulos
+1,calificaciones,si,alias_candidato,51
+2,estados_academicos,si,alias_candidato,68
+3,asistencia,si,alias_candidato,67
+4,matricula,si,alias_candidato,39
+5,sin_respuesta,no,alias_candidato,110
+6,becas_financiacion,si,no_disponible,1
+7,becas_financiacion,si,no_disponible,1
+8,becas_financiacion,si,no_disponible,2
+9,becas_financiacion,si,no_disponible,2
+10,becas_financiacion,si,no_disponible,2
+11,becas_financiacion,si,no_disponible,3
+12,becas_financiacion,si,no_disponible,3
+13,becas_financiacion,si,no_disponible,3
+14,becas_financiacion,si,no_disponible,3
+15,becas_financiacion,si,no_disponible,3
+16,becas_financiacion,si,no_disponible,5
+17,becas_financiacion,si,no_disponible,4
+18,becas_financiacion,si,no_disponible,4
+19,web_becas,si,exacta,
+20,web_becas,si,exacta,
+21,estados_academicos,si,alias_candidato,78
+22,admisiones,si,alias_candidato,78
+23,ingles,si,alias_candidato,78
+24,distinciones,si,alias_candidato,82
+25,distinciones,si,alias_candidato,83
+26,distinciones,si,alias_candidato,84
+27,estados_academicos,si,alias_candidato,68
+28,estados_academicos,si,alias_candidato,68
+29,estados_academicos,si,alias_candidato,69
+30,estados_academicos,si,alias_candidato,"68, 69"
+31,calificaciones,si,alias_candidato,51
+32,asistencia,si,alias_candidato,67
+33,matricula,si,alias_candidato,39
+34,matricula,si,alias_candidato,"40, 37"
+35,matricula,si,alias_candidato,36
+36,matricula,si,alias_candidato,"35, 37"
+37,matricula,si,alias_candidato,122
+38,admisiones,si,alias_candidato,"21, 23"
+39,admisiones,si,alias_candidato,25
+40,admisiones,si,alias_candidato,28
+41,admisiones,si,alias_candidato,29
+42,general,si,alias_candidato,42
+43,distinciones,si,alias_candidato,110
+44,becas_financiacion,si,alias_candidato,98
+45,matricula,si,alias_candidato,"74, 75"
+46,sin_respuesta,no,alias_candidato,
+47,becas_financiacion,si,exacta,
+48,becas_financiacion,si,exacta,
+49,becas_financiacion,si,no_disponible,
+50,sin_respuesta,no,alias_candidato,69
+51,sin_respuesta,no,alias_candidato,
+52,sin_respuesta,no,alias_candidato,
+53,sin_respuesta,no,alias_candidato,87
+54,sin_respuesta,no,alias_candidato,28
+55,sin_respuesta,no,alias_candidato,51
+56,sin_respuesta,no,alias_candidato,67
+57,sin_respuesta,no,alias_candidato,110

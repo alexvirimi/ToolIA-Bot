@@ -5,15 +5,15 @@ from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 from seleniumbase import sb_cdp
 
+from download_data import es_dominio_utb
+
 
 DOMINIO = "utb.edu.co"
 SITEMAP_URL = f"https://www.{DOMINIO}/sitemap.xml"
-SOURCES = Path(__file__).with_name("sources.txt")
-
-
-def es_dominio_utb(url):
-    host = urlparse(url).hostname or ""
-    return host == DOMINIO or host.endswith("." + DOMINIO)
+SCRIPTS_DIR = Path(__file__).resolve().parent
+RAIZ = SCRIPTS_DIR.parent
+DATA_DIR = RAIZ / "data"
+SOURCES = DATA_DIR / "sources.txt"
 
 
 def extraer_urls_sitemap(contenido):

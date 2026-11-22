@@ -1,0 +1,32 @@
+{
+  "modelo": {
+    "name": "embeddinggemma:300m",
+    "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+    "details": {
+      "parent_model": "embeddinggemma:300m-bf16",
+      "format": "gguf",
+      "family": "gemma3",
+      "families": [
+        "gemma3"
+      ],
+      "parameter_size": "307.58M",
+      "quantization_level": "BF16",
+      "context_length": 2048,
+      "embedding_length": 768,
+      "runner": "ggml"
+    }
+  },
+  "fragmentacion": {
+    "max_caracteres": 1600,
+    "solape": 180
+  },
+  "seed": 42,
+  "k_principal": 5,
+  "objetivo_recall": 0.8,
+  "preguntas_sha256": "359af57b05e0800f7a2d0c9935e5af6896d52687d8472fd8c88f2569eba566e0",
+  "corpus_sha256": "4c10f36f8036e9ffe76484af6411c1a2dc24094b0a6af7a7bee68c870a19d29f",
+  "evaluacion": "TF-IDF frente a embeddings; localizadores automáticos no equivalen a evidencia humana verificada",
+  "ubicacion": "Cartagena, Colombia",
+  "country_iso_code": "COL",
+  "script_sha256": "e56a808c2b7c7c4692e937de24ddcdc3705f9b995c6b17af857e840e13a97192"
+}
