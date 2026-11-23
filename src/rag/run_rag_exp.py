@@ -11,6 +11,7 @@ Ejemplos:
 import argparse
 import json
 import time
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -19,6 +20,7 @@ import pandas as pd
 from rag import AsistenteRAG
 from prompts import TEMPLATE as INSTRUCCIONES
 
+from prompts import TEMPLATE
 ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -83,7 +85,7 @@ def main():
             "k": args.k,
             "umbral_similitud": args.umbral,
             "indice": asistente.indice.estado,
-            "prompt_sistema": INSTRUCCIONES,
+            "prompt_sistema": TEMPLATE,
             "archivo_preguntas": str(args.preguntas),
         }, ensure_ascii=False, indent=2), encoding="utf-8")
 
