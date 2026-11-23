@@ -16,9 +16,10 @@ from pathlib import Path
 
 import pandas as pd
 
-from rag import INSTRUCCIONES, AsistenteRAG
+from rag import AsistenteRAG
+from prompts import TEMPLATE as INSTRUCCIONES
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def recall_auto(fuente_esperada, tiene_respuesta, fragmentos):
