@@ -12,7 +12,7 @@ from config import get_llm
 chain = base_prompt | get_llm() | StrOutputParser()
 
 while True:
-    user_input = input("Usuario: ")
+    user_input = input("Pregunta usuario: ")
     if user_input.lower() in ["exit", "quit", "salir", "terminar"]:
         print("¡Hasta luego!")
         break

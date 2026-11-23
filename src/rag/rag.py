@@ -152,7 +152,7 @@ if __name__ == "__main__":
                 mostrar(res)
         else:
             while True:
-                entrada = input("Usuario: ").strip()
+                entrada = input("Pregunta usuario: ").strip()
                 if entrada.lower() in ["exit", "quit", "salir", "terminar"]:
                     print("¡Hasta luego!")
                     break

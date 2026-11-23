@@ -11,14 +11,18 @@ Ejemplos:
 import argparse
 import json
 import time
+import sys
 from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
 
-from rag import INSTRUCCIONES, AsistenteRAG
+from rag import AsistenteRAG
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "src"))
+
+from prompts import TEMPLATE
 
 
 def recall_auto(fuente_esperada, tiene_respuesta, fragmentos):
@@ -82,7 +86,7 @@ def main():
             "k": args.k,
             "umbral_similitud": args.umbral,
             "indice": asistente.indice.estado,
-            "prompt_sistema": INSTRUCCIONES,
+            "prompt_sistema": TEMPLATE,
             "archivo_preguntas": str(args.preguntas),
         }, ensure_ascii=False, indent=2), encoding="utf-8")
 

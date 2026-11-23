@@ -148,13 +148,13 @@ entorno activado.
    Prueba rápida con pocas preguntas, en una carpeta aparte:
 
    ```powershell
-   python src/rag/run_rag.py --limit 5 --nombre rag_prueba
+   python src/rag/run_rag_exp.py --limit 5 --nombre rag_prueba
    ```
 
    Prueba completa:
 
    ```powershell
-   python src/rag/run_rag.py
+   python src/rag/run_rag_exp.py
    ```
 
    Lee `data/preguntas.csv` y guarda en `experiments/rag/`:
@@ -169,7 +169,7 @@ entorno activado.
    de otro nombre para no mezclar corridas:
 
    ```powershell
-   python src/run_rag.py --umbral 0.55 --nombre rag_u055
+   python src/rag/run_rag_exp.py --umbral 0.55 --nombre rag_u055
    ```
 
 6. Etiquetar manualmente, abrir `experiments/rag/respuestas.csv` y llenar:
@@ -180,7 +180,7 @@ entorno activado.
 
 7. Calcular métricas y comparar con la línea base
    ```powershell
-   python src/metricas_rag.py
+   python src/rag/metricas_rag.py
    ```
 
 ### Estructura de resultados
