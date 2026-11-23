@@ -1,0 +1,131 @@
+"""
+Calcula las métricas de RAG para comparar con la línea base a partir de respuestas.csv, 
+después de llenar manualmente las columnas necesarias (etiqueta y fidelidad).
+
+Ejemplos de uso:
+    python src/metricas_rag.py                  # experiments/rag vs experiments/baseline
+    python src/metricas_rag.py --nombre rag_u055
+"""
+import argparse
+import json
+import sys
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / "src"))
+
+from metricas import calcular, cargar_respuestas, proporcion, validar_etiquetas 
+
+
+DIR = ROOT / "experiments"
+
+# Umbrales de éxito de la propuesta
+U_EXACTITUD, U_DELTA_EXACTITUD = 75.0, 15.0
+U_FIDELIDAD, U_ALUCINACION = 80.0, 15.0
+U_ABSTENCION, U_LATENCIA, U_RECALL = 70.0, 10.0, 80.0
+
+
+def cargar(nombre):
+    ruta = DIR / "respuestas.csv"
+    if not ruta.exists():
+        raise SystemExit(f"No existe {ruta}")
+    df = cargar_respuestas(ruta)
+    error = validar_etiquetas(df)
+    if error:
+        raise SystemExit(f"[{nombre}] {error}")
+    return df
+
+
+def calcular_rag(df):
+    m = calcular(df)
+    # Fidelidad: respuestas no abstenidas respaldadas por los fragmentos
+    if "fidelidad" in df:
+        resp = df[df["etiqueta"] != "abstencion"]
+        marca = resp["fidelidad"].str.strip().str.lower()
+        pendientes = int((~marca.isin(["si", "no"])).sum())
+        if len(resp) and pendientes == 0:
+            m["fidelidad_ic"] = proporcion((marca == "si").sum(), len(resp))
+        else:
+            m["fidelidad_ic"] = {"valor_%": None,
+                                 "nota": f"faltan {pendientes} filas por marcar"}
+    # Recall@k: la fuente esperada aparece entre los fragmentos recuperados
+    if "recall_auto" in df:
+        r = df[(df["tiene_respuesta"] == "si") &
+               df["recall_auto"].isin(["si", "no"])]
+        m["recall_at_k_ic"] = (proporcion((r["recall_auto"] == "si").sum(), len(r)) if len(r) else
+                               {"valor_%": None, "nota": "sin fuente_esperada en el CSV de preguntas"})
+    return m
+
+
+def _v(d):
+    return d.get("valor_%") if isinstance(d, dict) else None
+
+
+def _delta(a, b):
+    return None if a is None or b is None else round(a - b, 1)
+
+
+def comparar(rag, base):
+    """ Comparación entre LLM base y con RAG """
+    ex_r, ex_b = rag["exactitud_%"], base["exactitud_%"]
+    al_r, al_b = rag["tasa_alucinacion_%"], base["tasa_alucinacion_%"]
+    ab_r, fid, rec = rag["tasa_abstencion_%"], _v(
+        rag.get("fidelidad_ic")), _v(rag.get("recall_at_k_ic"))
+    d_ex = _delta(ex_r, ex_b)
+    criterios = {
+        "exactitud >= 75% y +15 pp sobre línea base": None if d_ex is None else (ex_r >= U_EXACTITUD and d_ex >= U_DELTA_EXACTITUD),
+        "fidelidad >= 80%": None if fid is None else fid >= U_FIDELIDAD,
+        "alucinación <= 15%": None if al_r is None else al_r <= U_ALUCINACION,
+        "abstención >= 70%": None if ab_r is None else ab_r >= U_ABSTENCION,
+        "latencia promedio <= 10 s": rag["latencia_promedio_s"] <= U_LATENCIA,
+        "Recall@k >= 80%": None if rec is None else rec >= U_RECALL,
+    }
+    criterios = {k: (None if x is None else bool(x))
+                 for k, x in criterios.items()}
+    cumplidos = sum(1 for x in criterios.values() if x is True)
+    mejora = bool(None not in (ex_r, ex_b, al_r, al_b)
+                  and ex_r > ex_b and al_r < al_b)
+    return {
+        "tabla": {
+            "exactitud_%": {"baseline": ex_b, "rag": ex_r, "delta_pp": d_ex},
+            "alucinacion_%": {"baseline": al_b, "rag": al_r, "delta_pp": _delta(al_r, al_b)},
+            "abstencion_%": {"baseline": base["tasa_abstencion_%"], "rag": ab_r},
+            "latencia_promedio_s": {"baseline": base["latencia_promedio_s"], "rag": rag["latencia_promedio_s"]},
+            "fidelidad_%": {"rag": fid},
+            "recall_at_k_%": {"rag": rec},
+        },
+        "umbrales": criterios,
+        "umbrales_cumplidos": f"{cumplidos}/6",
+        "supera_baseline_en_exactitud_y_alucinacion": mejora,
+        "exito_segun_propuesta": bool(cumplidos >= 5 and mejora),
+        "nota": "None = sin dato (falta etiquetar o fuente_esperada). Con preguntas de desarrollo es solo orientativo.",
+    }
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--nombre", default="rag")
+    parser.add_argument("--base", default="baseline")
+    args = parser.parse_args()
+
+    rag = calcular_rag(cargar(args.nombre))
+    (DIR / args.nombre / "metricas.json").write_text(json.dumps(rag,
+                                                                ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"{args.nombre}\n")
+    print(json.dumps(rag, ensure_ascii=False, indent=2))
+
+    try:
+        base = calcular(cargar(args.base))
+    except SystemExit as e:
+        print(f"\nNo se pudo comparar con la línea base: {e}")
+        return
+    comp = comparar(rag, base)
+    (DIR / f"comparacion_{args.nombre}_vs_{args.base}.json").write_text(
+        json.dumps(comp, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"\n{args.nombre} vs {args.base}")
+    print(json.dumps(comp, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

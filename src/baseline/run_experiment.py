@@ -1,16 +1,20 @@
+from prompts import base_prompt
+from config import get_llm
 import argparse
 import json
 import time
+import sys
 from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
 from langchain_core.output_parsers import StrOutputParser
 
-from config import get_llm
-from prompts import base_prompt
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+
 PREGUNTAS_CSV = ROOT / "data" / "preguntas.csv"
 OUT_DIR = ROOT / "experiments" / "baseline"
 RESPUESTAS_CSV = OUT_DIR / "respuestas.csv"
@@ -90,7 +94,7 @@ def main():
             "pregunta": fila.pregunta,
             "respuesta_referencia": fila.respuesta_referencia,
             "respuesta_modelo": respuesta.strip(),
-            "latencia_s": latencia, # tiempo en segundos que tarda en responder el modelo
+            "latencia_s": latencia,  # tiempo en segundos que tarda en responder el modelo
             "abstencion_auto": detectar_abstencion(respuesta),
             "error": error,
             "etiqueta": "",       # etiqueta manual
