@@ -93,3 +93,101 @@ incompleta mientras falte revisión. No se modifican las 57 preguntas ni la lín
 base histórica. Los PDF escaneados/OCR pendientes se informan; no se afirma que
 todo el corpus descargado esté indexado.
 
+## Ejecutar el sistema RAG paso a paso
+
+El RAG usa el **mismo LLM que la línea base** (`qwen3.5:9b`, temperatura 0, seed 42)
+y añade recuperación de fragmentos desde el índice vectorial. Así, cualquier
+diferencia en los resultados se atribuye a la recuperación documental.
+
+Todos los comandos se ejecutan desde la raíz del proyecto, con Ollama abierto y el
+entorno activado.
+
+1. Instalar prerrequisitos
+   ```powershell
+   ollama pull qwen3.5:9b
+   ollama pull embeddinggemma:300m
+   pip install -r requirements.txt
+   ```
+
+2. Construir el índice vectorial
+   ```powershell
+   python src/embeddings.py --construir
+   ```
+
+   Si no hay información en data/proccessed, hacer lo siguiente:
+
+   ```powershell
+   python scripts/sources_filler.py
+   python scripts/download_data.py
+   python scripts/extract_text.py
+   ```
+
+3. Verificar la recuperación (sin LLM)
+   ```powershell
+   python src/embeddings.py --pregunta "¿Qué se propone la UTB para mejorar la calidad de la formación que ofrece?"
+   ```
+   Devuelve los 5 fragmentos más similares con su procedencia (documento, página,
+   sección, URL). Si estos fragmentos no tienen relación con la pregunta, el problema
+   está en el índice y no en el generador.
+
+4. Hacer preguntas al chatbot RAG
+   ```powershell
+   python src/rag/rag.py                                   # chat por consola
+   python src/rag/rag.py --pregunta "¿Qué se propone la UTB para mejorar la calidad de la formación que ofrece?" --json   # realizar una sola pregunta especifica
+   ```
+
+   Cada respuesta incluye las fuentes citadas y la latencia. Si el contexto recuperado
+   no alcanza, el bot responde que no cuenta con esa información en las fuentes
+   oficiales. 
+   Opciones: 
+   - `--k`: fragmentos a recuperar, 5 por defecto
+   - `--umbral`: similitud mínima del mejor fragmento; por debajo de ella, el bot se abstiene sin
+   llamar al LLM; desactivado por defecto.
+
+5. Correr el conjunto de preguntas con el RAG
+   Prueba rápida con pocas preguntas, en una carpeta aparte:
+
+   ```powershell
+   python src/rag/run_rag_exp.py --limit 5 --nombre rag_prueba
+   ```
+
+   Prueba completa:
+
+   ```powershell
+   python src/rag/run_rag_exp.py
+   ```
+
+   Lee `data/preguntas.csv` y guarda en `experiments/rag/`:
+
+   - `respuestas.csv`: respuesta, latencia, abstención automática, similitud, fuentes
+   citadas y `recall_auto`.
+   - `recuperacion.jsonl`: fragmentos recuperados por pregunta (para el análisis de errores).
+   - `run_info.json`: modelo, parámetros, prompt e información del índice de la corrida.
+
+   Si se interrumpe, al ejecutar de nuevo retoma las preguntas pendientes. 
+   Se pueden probar diferentes configuración, por ejemplo otros umbrales, para esto haz uso 
+   de otro nombre para no mezclar corridas:
+
+   ```powershell
+   python src/rag/run_rag_exp.py --umbral 0.55 --nombre rag_u055
+   ```
+
+6. Etiquetar manualmente, abrir `experiments/rag/respuestas.csv` y llenar:
+   - `etiqueta`: `correcta`, `parcial`, `incorrecta`, `alucinacion` o `abstencion`
+   (las mismas opciones de la línea base).
+   - `fidelidad`: `si` o `no`, solo en las respuestas donde el sistema no se abstuvo
+   (¿la respuesta está respaldada por los fragmentos recuperados?).
+
+7. Calcular métricas y comparar con la línea base
+   ```powershell
+   python src/rag/metricas_rag.py
+   ```
+
+### Estructura de resultados
+
+```text
+experiments/
+├── baseline/          # línea base: respuestas.csv, metricas.json, run_info.json
+├── rag/               # RAG: respuestas.csv, recuperacion.jsonl, metricas.json, run_info.json
+└── comparacion_rag_vs_baseline.json
+```

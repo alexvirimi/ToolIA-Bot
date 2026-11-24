@@ -26,5 +26,26 @@
     "ingles": 0.0,
     "matricula": 0.0,
     "web_becas": 0.0
+  },
+  "exactitud_ic": {
+    "valor_%": 2.1,
+    "aciertos": 1,
+    "total": 47,
+    "ic95_inf_%": 0.4,
+    "ic95_sup_%": 11.1
+  },
+  "alucinacion_ic": {
+    "valor_%": 47.4,
+    "aciertos": 27,
+    "total": 57,
+    "ic95_inf_%": 35.0,
+    "ic95_sup_%": 60.1
+  },
+  "abstencion_ic": {
+    "valor_%": 100.0,
+    "aciertos": 10,
+    "total": 10,
+    "ic95_inf_%": 72.2,
+    "ic95_sup_%": 100.0
   }
 }
