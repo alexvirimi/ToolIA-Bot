@@ -10,34 +10,71 @@ Ejemplos:
 """
 import argparse
 import json
-import time
+import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import unquote
 
 import pandas as pd
 
 from rag import AsistenteRAG
-from prompts import TEMPLATE as INSTRUCCIONES
-
 from prompts import TEMPLATE
+
+
 ROOT = Path(__file__).resolve().parents[2]
 
+# columnas de rag/respuestas.csv
+COLUMNAS = [
+    "id", "categoria", "tiene_respuesta", "pregunta", "respuesta_referencia",
+    "fuente_url", "pagina_o_seccion",
+    "respuesta_modelo", "latencia_s", "latencia_recuperacion_s",
+    "abstencion_auto", "mejor_similitud",
+    "fuentes_recuperadas", "fuentes_citadas", "recall_auto",
+    "error", "etiqueta", "fidelidad", "observaciones",
+]
 
-def recall_auto(fuente_esperada, tiene_respuesta, fragmentos):
+
+def clave_documento(texto) -> str:
+    """Normaliza una fuente a su nombre de documento (sin extensión, página ni
+    índice '[n]'), para comparar una URL esperada con un archivo/título."""
+    t = unquote(str(texto)).strip().lower()
+    t = re.sub(r"^\[\d+\]\s*", "", t)
+    m = re.search(r"([^\s/\\|;,'\"()\[\]]+)\.(pdf|html?|docx?)", t)
+    if m:
+        t = m.group(1)
+    else:
+        t = re.sub(r"\s+p\.?\s*\d+(\s*[-–]\s*\d+)?\s*$", "", t)
+        t = re.split(r"[\\/]", t.split("?")[0].split("#")[0].rstrip("/\\"))[-1]
+    return re.sub(r"[^a-z0-9]+", "", t)
+
+
+def recall_auto(fuente_url, tiene_respuesta, fragmentos):
     """'si' si la fuente esperada aparece en título/archivo/URL de algún fragmento.
+    'no' si falta alguna.
     Es una sugerencia automática, se debe validar manualmente y dejar vacía si no aplica.
     """
-    esperado = str(fuente_esperada or "").strip().lower()
+    esperado =  [clave_documento(u) for u in str(fuente_url or "").split("|") if u.strip()]
     if tiene_respuesta != "si" or not esperado:
         return ""
+    recuperadas = set()
     for f in fragmentos:
-        m = f["metadata"]
-        texto = " ".join([m["title"], m["file"], m["source_url"]]).lower()
-        if esperado in texto:
-            return "si"
-    return "no"
+        m = f.get("metadata", {})
+        for campo in ("file", "title", "source_url"):
+            if m.get(campo):
+                recuperadas.add(clave_documento(m[campo]))
+    return "si" if all(e in recuperadas for e in esperado) else "no"
 
+def fuentes_recuperadas(fragmentos):
+    """Lista ordenada (ranking) de los fragmentos recuperados: '[1] archivo p.N; ...'"""
+    partes = []
+    for i, f in enumerate(fragmentos, start=1):
+        m = f.get("metadata", {})
+        nombre = m.get("file") or m.get("title") or m.get("source_url") or "desconocido"
+        pagina = m.get("page") or m.get("pagina") or f.get("pagina") or ""
+        partes.append(f"[{i}] {nombre}" + (f" p.{pagina}" if pagina else ""))
+    return "; ".join(partes)
 
 def main():
     parser = argparse.ArgumentParser()
@@ -67,6 +104,20 @@ def main():
     pendientes = df[~df["id"].isin(hechas)]
     print(f"{len(pendientes)} preguntas por ejecutar, "
           f"{len(hechas)} estaban hechas.")
+
+    # En caso de que ya se hayan realizado etiquetas y observaciones manuales, no se corromperán
+    orden = COLUMNAS
+    if respuestas_csv.exists() and len(pendientes):
+        existentes = list(pd.read_csv(respuestas_csv, nrows=0,
+                                      encoding="utf-8-sig").columns)
+        if set(existentes) != set(COLUMNAS):
+            print("\nNO SE EJECUTÓ NADA: el archivo existente tiene otras columnas.")
+            print("  Solo en el archivo:", sorted(set(existentes) - set(COLUMNAS)))
+            print("  Solo en el script :", sorted(set(COLUMNAS) - set(existentes)))
+            print("Para no dañar tus etiquetas, usa otra carpeta (--nombre otro) "
+                  "o migra el archivo existente primero.")
+            sys.exit(1)
+        orden = existentes   # respeta el orden que ya tiene el archivo
 
     with AsistenteRAG(k=args.k, umbral=args.umbral) as asistente:
         # Calentamiento: carga los modelos en memoria; no se mide.
@@ -109,12 +160,14 @@ def main():
                 "tiene_respuesta": fila.tiene_respuesta,
                 "pregunta": fila.pregunta,
                 "respuesta_referencia": fila.respuesta_referencia,
-                "fuente_esperada": getattr(fila, "fuente_esperada", ""),
+                "fuente_url": getattr(fila, "fuente_url", ""),
+                "pagina_o_seccion": getattr(fila, "pagina_o_seccion", ""),
                 "respuesta_modelo": res["respuesta"] if res else "",
                 "latencia_s": latencia,
                 "latencia_recuperacion_s": res["latencia_recuperacion_s"] if res else "",
                 "abstencion_auto": ("si" if res["abstencion"] else "no") if res else "",
                 "mejor_similitud": res["mejor_similitud"] if res else "",
+                "fuentes_recuperadas": fuentes_recuperadas(fragmentos),
                 "fuentes_citadas": fuentes,
                 "recall_auto": recall_auto(getattr(fila, "fuente_esperada", ""),
                                            fila.tiene_respuesta, fragmentos),
@@ -123,7 +176,7 @@ def main():
                 # etiqueta manual: ¿respaldada por los fragmentos? solo si no se abstuvo, si|no
                 "fidelidad": "",
                 "observaciones": "",  # análisis manual de la respuesta
-            }])
+            }])[orden]
             registro.to_csv(respuestas_csv, mode="a", index=False,
                             header=not respuestas_csv.exists(), encoding="utf-8-sig")
             with recuperacion_jsonl.open("a", encoding="utf-8") as fh:
