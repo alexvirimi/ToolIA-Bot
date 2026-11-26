@@ -1,28 +1,28 @@
 {
-  "n_total": 55,
-  "n_con_respuesta": 46,
-  "n_con_respuesta_total": 45,
+  "n_total": 57,
+  "n_con_respuesta": 48,
+  "n_con_respuesta_total": 47,
   "n_con_respuesta_parcial": 1,
   "n_sin_respuesta": 9,
-  "exactitud_%": 45.7,
-  "exactitud_con_parciales_%": 73.9,
+  "exactitud_%": 45.8,
+  "exactitud_con_parciales_%": 72.9,
   "tasa_alucinacion_%": 0.0,
-  "tasa_abstencion_total_%": 29.1,
+  "tasa_abstencion_total_%": 29.8,
   "tasa_abstencion_adecuada_%": 100.0,
-  "tasa_abstencion_fallo_%": 15.2,
-  "latencia_promedio_s": 3.7,
-  "latencia_max_s": 12.09,
+  "tasa_abstencion_fallo_%": 16.7,
+  "latencia_promedio_s": 3.79,
+  "latencia_max_s": 11.8,
   "conteo_etiquetas": {
-    "correcta": 21,
+    "correcta": 22,
     "parcial": 13,
     "abstencion": 9,
-    "abstencion_fallo": 7,
+    "abstencion_fallo": 8,
     "incorrecta": 5
   },
   "exactitud_por_categoria_%": {
     "admisiones": 80.0,
     "asistencia": 100.0,
-    "becas_financiacion": 53.3,
+    "becas_financiacion": 52.9,
     "calificaciones": 50.0,
     "distinciones": 80.0,
     "estados_academicos": 83.3,
@@ -32,18 +32,18 @@
     "web_becas": 100.0
   },
   "exactitud_ic": {
-    "valor_%": 45.7,
-    "aciertos": 21,
-    "total": 46,
-    "ic95_inf_%": 32.2,
-    "ic95_sup_%": 59.8
+    "valor_%": 45.8,
+    "aciertos": 22,
+    "total": 48,
+    "ic95_inf_%": 32.6,
+    "ic95_sup_%": 59.7
   },
   "alucinacion_ic": {
     "valor_%": 0.0,
     "aciertos": 0,
-    "total": 55,
+    "total": 57,
     "ic95_inf_%": 0.0,
-    "ic95_sup_%": 6.5
+    "ic95_sup_%": 6.3
   },
   "abstencion_ic": {
     "valor_%": 100.0,
@@ -53,15 +53,15 @@
     "ic95_sup_%": 100.0
   },
   "abstencion_fallo_ic": {
-    "valor_%": 15.2,
-    "aciertos": 7,
-    "total": 46,
-    "ic95_inf_%": 7.6,
-    "ic95_sup_%": 28.2
+    "valor_%": 16.7,
+    "aciertos": 8,
+    "total": 48,
+    "ic95_inf_%": 8.7,
+    "ic95_sup_%": 29.6
   },
   "fidelidad_ic": {
     "valor_%": null,
-    "nota": "faltan 39 filas por marcar"
+    "nota": "faltan 40 filas por marcar"
   },
   "recall_at_k_ic": {
     "valor_%": 55.6,
