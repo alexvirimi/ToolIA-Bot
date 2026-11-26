@@ -74,8 +74,6 @@ def fuentes_recuperadas(fragmentos):
         pagina = m.get("page") or m.get("pagina") or f.get("pagina") or ""
         partes.append(f"[{i}] {nombre}" + (f" p.{pagina}" if pagina else ""))
     return "; ".join(partes)
-# -----------------------------------------------------------------------------
-
 
 def main():
     if len(sys.argv) != 2:

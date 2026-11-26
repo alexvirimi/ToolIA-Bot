@@ -56,7 +56,7 @@ def recall_auto(fuente_url, tiene_respuesta, fragmentos):
     Es una sugerencia automática, se debe validar manualmente y dejar vacía si no aplica.
     """
     esperado =  [clave_documento(u) for u in str(fuente_url or "").split("|") if u.strip()]
-    if tiene_respuesta != "si" or not esperado:
+    if tiene_respuesta not in ("si", "parcial") or not esperado:
         return ""
     recuperadas = set()
     for f in fragmentos:
