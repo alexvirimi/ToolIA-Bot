@@ -8,14 +8,14 @@
   "exactitud_con_parciales_%": 14.6,
   "tasa_alucinacion_%": 47.4,
   "tasa_abstencion_total_%": 33.3,
-  "tasa_abstencion_adecuada_%": 55.6,
-  "tasa_abstencion_fallo_%": 18.8,
+  "tasa_abstencion_adecuada_%": 100.0,
+  "tasa_abstencion_fallo_%": 16.7,
   "latencia_promedio_s": 3.81,
   "latencia_max_s": 11.99,
   "conteo_etiquetas": {
     "alucinacion": 27,
-    "abstencion_fallo": 13,
-    "abstencion": 6,
+    "abstencion": 11,
+    "abstencion_fallo": 8,
     "parcial": 6,
     "incorrecta": 4,
     "correcta": 1
@@ -47,17 +47,17 @@
     "ic95_sup_%": 60.1
   },
   "abstencion_ic": {
-    "valor_%": 55.6,
-    "aciertos": 5,
+    "valor_%": 100.0,
+    "aciertos": 9,
     "total": 9,
-    "ic95_inf_%": 26.7,
-    "ic95_sup_%": 81.1
+    "ic95_inf_%": 70.1,
+    "ic95_sup_%": 100.0
   },
   "abstencion_fallo_ic": {
-    "valor_%": 18.8,
-    "aciertos": 9,
+    "valor_%": 16.7,
+    "aciertos": 8,
     "total": 48,
-    "ic95_inf_%": 10.2,
-    "ic95_sup_%": 31.9
+    "ic95_inf_%": 8.7,
+    "ic95_sup_%": 29.6
   }
 }
