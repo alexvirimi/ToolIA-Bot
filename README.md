@@ -6,6 +6,13 @@ estudiantes, aspirantes, docentes y administrativos realicen preguntas en lengua
 sobre reglamentos, manual de convivencia, calendario académico, procesos administrativos, 
 requisitos, servicios y demás información publicada en la página web.
 
+## Descarga semanal de fuentes en Azure
+
+El [Job de Azure Container Apps](deploy/azure/README.md) ejecuta
+`scripts/download_data_azure.py` los lunes a las 03:00 a. m. de Colombia
+y guarda los resultados en Azure Files. `scripts/download_data.py` sigue
+disponible para descargas manuales.
+
 ## Instalación y ejecución
 
 **Requisitos previos:** Python 3.14.

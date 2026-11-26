@@ -1,0 +1,9 @@
+*
+!Dockerfile.azure
+!deploy/
+!deploy/azure/
+!deploy/azure/requirements.txt
+!scripts/
+!scripts/download_data_azure.py
+!data/
+!data/sources.txt
