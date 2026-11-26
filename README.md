@@ -18,7 +18,9 @@ requisitos, servicios y demás información publicada en la página web.
 3. (Recomendado) Crear un entorno virtual:
    ```bash
    python -m venv .venv
-   .venv\Scripts\activate # Windows (Mac/Linux: source .venv/bin/activate)
+   .venv\Scripts\activate 
+      # O
+   .\.venv314\Scripts\Activate.ps1 # Windows (Mac/Linux: source .venv/bin/activate)
    ```
 4. Instalar dependencias:
    ```bash
@@ -26,7 +28,7 @@ requisitos, servicios y demás información publicada en la página web.
    ```
 5. Ejecutar la línea base (con Ollama abierto):
    ```bash
-   python src/run_experiment.py
+   python src/baseline/run_experiment.py
    ```
 6. Calcular las métricas, después de etiquetar `experiments/baseline/respuestas.csv`:
    ```bash
