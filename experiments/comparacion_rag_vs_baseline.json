@@ -1,0 +1,40 @@
+{
+  "tabla": {
+    "exactitud_%": {
+      "baseline": 2.1,
+      "rag": 44.7,
+      "delta_pp": 42.6
+    },
+    "alucinacion_%": {
+      "baseline": 47.4,
+      "rag": 5.3,
+      "delta_pp": -42.1
+    },
+    "abstencion_%": {
+      "baseline": 100.0,
+      "rag": 90.0
+    },
+    "latencia_promedio_s": {
+      "baseline": 3.81,
+      "rag": 3.68
+    },
+    "fidelidad_%": {
+      "rag": null
+    },
+    "recall_at_k_%": {
+      "rag": 53.2
+    }
+  },
+  "umbrales": {
+    "exactitud >= 75% y +15 pp sobre línea base": false,
+    "fidelidad >= 80%": null,
+    "alucinación <= 15%": true,
+    "abstención >= 70%": true,
+    "latencia promedio <= 10 s": true,
+    "Recall@k >= 80%": false
+  },
+  "umbrales_cumplidos": "3/6",
+  "supera_baseline_en_exactitud_y_alucinacion": true,
+  "exito_segun_propuesta": false,
+  "nota": "None = sin dato (falta etiquetar o fuente_esperada). Con preguntas de desarrollo es solo orientativo."
+}

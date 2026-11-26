@@ -3,8 +3,8 @@ Calcula las métricas de RAG para comparar con la línea base a partir de respue
 después de llenar manualmente las columnas necesarias (etiqueta y fidelidad).
 
 Ejemplos de uso:
-    python src/metricas_rag.py                  # experiments/rag vs experiments/baseline
-    python src/metricas_rag.py --nombre rag_u055
+    python src/rag/evaluate_rag.py                  # experiments/rag vs experiments/baseline
+    python src/rag/evaluate_rag.py --nombre rag_u055
 """
 import argparse
 import json
@@ -27,7 +27,7 @@ U_ABSTENCION, U_LATENCIA, U_RECALL = 70.0, 10.0, 80.0
 
 
 def cargar(nombre):
-    ruta = DIR / "respuestas.csv"
+    ruta = DIR / nombre / "respuestas.csv"
     if not ruta.exists():
         raise SystemExit(f"No existe {ruta}")
     df = cargar_respuestas(ruta)
@@ -109,17 +109,21 @@ def main():
     parser.add_argument("--base", default="baseline")
     args = parser.parse_args()
 
-    rag = calcular_rag(cargar(args.nombre))
+    df_rag = cargar(args.nombre)
+    print(f"RAG : {(DIR / args.nombre / 'respuestas.csv').resolve()}")
+    rag = calcular_rag(df_rag)
     (DIR / args.nombre / "metricas.json").write_text(json.dumps(rag,
                                                                 ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"{args.nombre}\n")
     print(json.dumps(rag, ensure_ascii=False, indent=2))
 
     try:
-        base = calcular(cargar(args.base))
+        df_base = cargar(args.base)
     except SystemExit as e:
         print(f"\nNo se pudo comparar con la línea base: {e}")
         return
+    print(f"\nBASE: {(DIR / args.base / 'respuestas.csv').resolve()}")
+    base = calcular(df_base)
     comp = comparar(rag, base)
     (DIR / f"comparacion_{args.nombre}_vs_{args.base}.json").write_text(
         json.dumps(comp, ensure_ascii=False, indent=2), encoding="utf-8")
