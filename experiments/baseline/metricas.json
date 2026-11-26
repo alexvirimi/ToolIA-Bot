@@ -1,16 +1,21 @@
 {
   "n_total": 57,
-  "n_con_respuesta": 47,
-  "n_sin_respuesta": 10,
+  "n_con_respuesta": 48,
+  "n_con_respuesta_total": 47,
+  "n_con_respuesta_parcial": 1,
+  "n_sin_respuesta": 9,
   "exactitud_%": 2.1,
-  "exactitud_con_parciales_%": 14.9,
+  "exactitud_con_parciales_%": 14.6,
   "tasa_alucinacion_%": 47.4,
-  "tasa_abstencion_%": 100.0,
+  "tasa_abstencion_total_%": 33.3,
+  "tasa_abstencion_adecuada_%": 55.6,
+  "tasa_abstencion_fallo_%": 18.8,
   "latencia_promedio_s": 3.81,
   "latencia_max_s": 11.99,
   "conteo_etiquetas": {
     "alucinacion": 27,
-    "abstencion": 19,
+    "abstencion_fallo": 13,
+    "abstencion": 6,
     "parcial": 6,
     "incorrecta": 4,
     "correcta": 1
@@ -18,21 +23,21 @@
   "exactitud_por_categoria_%": {
     "admisiones": 0.0,
     "asistencia": 0.0,
-    "becas_financiacion": 0.0,
-    "calificaciones": 50.0,
-    "distinciones": 0.0,
-    "estados_academicos": 0.0,
+    "becas_financiacion": 11.8,
+    "calificaciones": 100.0,
+    "distinciones": 20.0,
+    "estados_academicos": 16.7,
     "general": 0.0,
     "ingles": 0.0,
-    "matricula": 0.0,
+    "matricula": 14.3,
     "web_becas": 0.0
   },
   "exactitud_ic": {
     "valor_%": 2.1,
     "aciertos": 1,
-    "total": 47,
+    "total": 48,
     "ic95_inf_%": 0.4,
-    "ic95_sup_%": 11.1
+    "ic95_sup_%": 10.9
   },
   "alucinacion_ic": {
     "valor_%": 47.4,
@@ -42,10 +47,17 @@
     "ic95_sup_%": 60.1
   },
   "abstencion_ic": {
-    "valor_%": 100.0,
-    "aciertos": 10,
-    "total": 10,
-    "ic95_inf_%": 72.2,
-    "ic95_sup_%": 100.0
+    "valor_%": 55.6,
+    "aciertos": 5,
+    "total": 9,
+    "ic95_inf_%": 26.7,
+    "ic95_sup_%": 81.1
+  },
+  "abstencion_fallo_ic": {
+    "valor_%": 18.8,
+    "aciertos": 9,
+    "total": 48,
+    "ic95_inf_%": 10.2,
+    "ic95_sup_%": 31.9
   }
 }

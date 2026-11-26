@@ -46,6 +46,14 @@ El sistema reconoce explícitamente que no cuenta con información suficiente en
 |----------|-----------|----------|-------------|
 | ¿Cuál es el costo de la maestría en inteligencia artificial de la UTB? | No cuento con información publicada sobre el costo de la maestría en inteligencia artificial en las fuentes de la UTB, por lo que no puedo responder con certeza. Te recomiendo consultar la página de posgrados. | abstencion | Rechazo fundamentado sin inventar datos. Adecuado para preguntas sin respuesta en las fuentes. |
 
+### Abstencion_fallo
+
+El sistema reconoce explícitamente que no cuenta con información suficiente en los fragmentos recuperados para responder y evita inventar una respuesta. Sin embargo, la información solicitada sí se encuentra disponible en la base documental institucional, por lo que la abstención se produce debido a un fallo en el proceso de recuperación de información (retrieval). Por ejemplo:
+
+| pregunta | respuesta | etiqueta | observación |
+|----------|-----------|----------|-------------|
+| ¿Cuántas veces puede un estudiante obtener el estímulo B2? | No cuento con información suficiente en los documentos disponibles para responder esta pregunta con certeza. | abstencion_fallo | El modelo se abstiene correctamente al no disponer de evidencia en el contexto recuperado. Pero, la información sí está disponible en el reglamento institucional, por lo que se identifica un fallo en la recuperación documental. |
+
 ## 2. Resumen de decisión
 
 | Situación | Etiqueta sugerida |
@@ -55,6 +63,7 @@ El sistema reconoce explícitamente que no cuenta con información suficiente en
 | Dato falso, contradictorio o no responde | incorrecta |
 | Inventa datos, cifras, fuentes o fechas inexistentes | alucinacion |
 | Dice que no tiene información y no responde | abstencion |
+| Se abstiene porque la información existe, pero no fue recuperada | abstencion_fallo |
 
 >[!important]
 >Si una respuesta mezcla un dato verdadero con uno inventado, se etiqueta como alucinacion. Si omite información pero no inventa nada, es parcial.

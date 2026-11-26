@@ -1,7 +1,9 @@
 """
 Calcula las métricas de la línea base a partir de respuestas.csv, después
 de llenar a mano la columna 'etiqueta' con alguna de estas opciones:
-    correcta | parcial | incorrecta | alucinacion | abstencion
+    correcta | parcial | incorrecta | alucinacion | abstencion | abstencion_fallo
+Disponibilidad documental:
+    si | parcial | no
 """
 
 import json

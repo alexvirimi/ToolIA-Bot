@@ -1,18 +1,30 @@
 {
   "tabla": {
-    "exactitud_%": {
+    "exactitud_con_parciales_%": {
       "baseline": 2.1,
-      "rag": 44.7,
-      "delta_pp": 42.6
+      "rag": 43.8,
+      "delta_pp": 41.7
+    },
+    "exactitud_estricta_%": {
+      "baseline": 2.1,
+      "rag": 43.8
     },
     "alucinacion_%": {
       "baseline": 47.4,
       "rag": 5.3,
       "delta_pp": -42.1
     },
-    "abstencion_%": {
-      "baseline": 100.0,
-      "rag": 90.0
+    "abstencion_adecuada_%": {
+      "baseline": 55.6,
+      "rag": 100.0
+    },
+    "abstencion_total_%": {
+      "baseline": 33.3,
+      "rag": 31.6
+    },
+    "abstencion_fallo_%": {
+      "baseline": 18.8,
+      "rag": 18.8
     },
     "latencia_promedio_s": {
       "baseline": 3.81,
@@ -21,7 +33,7 @@
     "fidelidad_%": {
       "rag": null
     },
-    "recall_at_k_%": {
+    "recall_at_5_%": {
       "rag": 53.2
     }
   },
@@ -29,12 +41,12 @@
     "exactitud >= 75% y +15 pp sobre línea base": false,
     "fidelidad >= 80%": null,
     "alucinación <= 15%": true,
-    "abstención >= 70%": true,
+    "abstención adecuada >= 70%": true,
     "latencia promedio <= 10 s": true,
-    "Recall@k >= 80%": false
+    "Recall@5 >= 80%": false
   },
   "umbrales_cumplidos": "3/6",
   "supera_baseline_en_exactitud_y_alucinacion": true,
   "exito_segun_propuesta": false,
-  "nota": "None = sin dato (falta etiquetar o fuente_esperada). Con preguntas de desarrollo es solo orientativo."
+  "nota": "La exactitud considera respuestas correctas y parciales. La abstención adecuada se calcula sobre preguntas sin información documental. abstencion_fallo identifica abstenciones ante información disponible. None = sin dato."
 }
