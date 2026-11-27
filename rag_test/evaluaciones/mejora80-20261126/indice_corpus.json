@@ -1,0 +1,29 @@
+{
+  "fingerprint": "9dd61bac1f9859d89e71de1bb1f96befa231100a56be270ecf709c71a25099c9",
+  "collection": "crisp_9dd61bac1f9859d89e71de1b",
+  "count": 9281,
+  "dimension": 768,
+  "model": {
+    "name": "embeddinggemma:300m",
+    "digest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+    "details": {
+      "parent_model": "embeddinggemma:300m-bf16",
+      "format": "gguf",
+      "family": "gemma3",
+      "families": [
+        "gemma3"
+      ],
+      "parameter_size": "307.58M",
+      "quantization_level": "BF16",
+      "context_length": 2048,
+      "embedding_length": 768,
+      "runner": "ggml"
+    }
+  },
+  "embedding_seconds": 18.427595199999814,
+  "index_seconds": 20.555513899999823,
+  "status": "construido",
+  "new": 12,
+  "reused": 9269,
+  "legacy_reused": 9021
+}
