@@ -1,9 +1,9 @@
 # Análisis de la línea base del asistente UTB
 
-Esta tabla resume los casos de error más claros de la línea base, con caso, id, pregunta, respuesta de referencia, lo que respondió el modelo, tipo de error e hipótesis de causa. Presenta 20 casos seleccionados de la evaluación de la línea base (modelo sin recuperación documental), a partir del archivo 'respuestas.csv' superando el mínimo de 10 solicitado.
-Se incluyen errores de contenido, respuestas parciales, abstenciones injustificadas y un fallo técnico. La selección permite ilustrar los principales comportamientos observados, pero no reemplaza el análisis cuantitativo de las 57 preguntas.
-
 ## 1. Casos representativos de error
+
+Esta tabla resume los casos de error más claros de la línea base, con caso, id, pregunta, respuesta de referencia, lo que respondió el modelo, tipo de error e hipótesis de causa. Presenta 20 casos seleccionados de la evaluación de la línea base (modelo sin recuperación documental), a partir del archivo `respuestas.csv` superando el mínimo de 10 solicitado.
+Se incluyen errores de contenido, respuestas parciales, abstenciones injustificadas y un fallo técnico. La selección permite ilustrar los principales comportamientos observados, pero no reemplaza el análisis cuantitativo de las 57 preguntas.
 
 | Caso | ID | Pregunta | Respuesta de referencia | Respuesta del modelo | Etiqueta | Análisis del error |
 | --- | --- | --- | --- | --- | --- | --- |
