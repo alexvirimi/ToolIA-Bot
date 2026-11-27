@@ -71,7 +71,7 @@ Estos resultados muestran que, aunque el modelo tiene capacidad para reconocer a
 
 | Clasificación | Cantidad | Porcentaje |
 | --- | --- | --- |
-| Alucinación | 27 | 47.7% |
+| Alucinación | 27 | 47.4% |
 | Abstención por fallo | 10 | 17,5 % |
 | Abstención adecuada | 9 | 15,8 % |
 | Parcial | 6 | 10,5 % |
