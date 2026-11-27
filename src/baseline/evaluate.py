@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from metricas import calcular, cargar_respuestas, validar_etiquetas
+from metricas import calcular, cargar_respuestas, validar_etiquetas, validar_abstenciones
 
 
 DIR = ROOT / "experiments" / "baseline"
@@ -24,6 +24,9 @@ def main():
     error = validar_etiquetas(df)
     if error:
         print(error)
+        return
+    if not validar_abstenciones(df):
+        print("Error en la validación de las abstenciones.")
         return
 
     metricas = calcular(df)

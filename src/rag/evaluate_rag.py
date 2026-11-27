@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from metricas import calcular, cargar_respuestas, proporcion, validar_etiquetas
+from metricas import calcular, cargar_respuestas, proporcion, validar_etiquetas, validar_abstenciones
 
 
 DIR = ROOT / "experiments"
@@ -33,6 +33,9 @@ def cargar(nombre):
     error = validar_etiquetas(df)
     if error:
         raise SystemExit(f"[{nombre}] {error}")
+    if not validar_abstenciones(df):
+            print("Error en la validación de las abstenciones.")
+            return
     return df
 
 

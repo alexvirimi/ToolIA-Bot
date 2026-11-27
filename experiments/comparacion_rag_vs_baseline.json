@@ -23,7 +23,7 @@
       "rag": 29.8
     },
     "abstencion_fallo_%": {
-      "baseline": 16.7,
+      "baseline": 20.8,
       "rag": 16.7
     },
     "latencia_promedio_s": {
@@ -31,7 +31,7 @@
       "rag": 3.79
     },
     "fidelidad_%": {
-      "rag": null
+      "rag": 77.5
     },
     "recall_at_5_%": {
       "rag": 55.6
@@ -39,7 +39,7 @@
   },
   "umbrales": {
     "exactitud >= 75% y +15 pp sobre línea base": false,
-    "fidelidad >= 80%": null,
+    "fidelidad >= 80%": false,
     "alucinación <= 15%": true,
     "abstención adecuada >= 70%": true,
     "latencia promedio <= 10 s": true,

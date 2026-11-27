@@ -60,8 +60,11 @@
     "ic95_sup_%": 29.6
   },
   "fidelidad_ic": {
-    "valor_%": null,
-    "nota": "faltan 40 filas por marcar"
+    "valor_%": 77.5,
+    "aciertos": 31,
+    "total": 40,
+    "ic95_inf_%": 62.5,
+    "ic95_sup_%": 87.7
   },
   "recall_at_k_ic": {
     "valor_%": 55.6,
