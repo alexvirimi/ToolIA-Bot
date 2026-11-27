@@ -1,0 +1,779 @@
+﻿id,categoria,tiene_respuesta,pregunta,respuesta_referencia,fuente_url,pagina_o_seccion,respuesta_modelo,latencia_s,latencia_recuperacion_s,fin_generacion,tokens_generados,abstencion_auto,citas_validas,hit_fuente_at_5,etiqueta,fidelidad,observaciones
+1,calificaciones,si,¿Cuál es la calificación mínima aprobatoria para un curso de pregrado en la UTB?,"3,0 para cursos de pregrado y 3,5 para la práctica profesional de pregrado.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 51 del Reglamento Estudiantil,"La calificación mínima aprobatoria para un curso de pregrado en la UTB depende del tipo de asignatura o práctica específica, según los fragmentos proporcionados:
+
+*   **Para el Consultorio Jurídico como práctica de pregrado:** La nota mínima aprobatoria es **3.5**.
+    *   *Condición:* Se entiende aprobado cuando el estudiante obtiene esta nota mínima al final del semestre [1][2].
+    *   *Excepción (Reprobación automática):* El estudiante que falte sin justificación más del 20% de los turnos asignados reprobará con una nota de **0.5**, independientemente de su desempeño en otros aspectos [1][2].
+    *   *Rango de calificación:* La nota final oscila entre 0.5 y 5.0, considerando desempeño, interés en asesorías, evaluación de informes y actuación ante despachos judiciales; no se califican casos archivados por desinterés del usuario o sin despliegue de actuación [1][2].
+
+*   **Para el Trabajo de Grado:** La calificación mínima aprobatoria es **3.50**.
+    *   *Aplicación:* Esta regla aplica tanto al Trabajo de Grado como a su sustentación [3][5].
+
+No se encuentra evidencia en los fragmentos que establezca una calificación mínima única y general para todos los cursos de pregrado, diferenciándose específicamente la práctica del Consultorio Jurídico y el Trabajo de Grado con el valor de 3.5 (o 3.50).",10.2818,1.6106,stop,330,no,[1] [2] [3] [5],no,,,
+2,estados_academicos,si,¿Qué Promedio Ponderado Acumulado (PPA) debe mantener un estudiante de pregrado y qué pasa si al finalizar un periodo no lo logra?,"Debe mantener un PPA mínimo de 3,20. Si al finalizar el periodo queda por debajo, pasa a Prueba Académica Parcial para el siguiente periodo. La aplicación del art. 68 exige créditos matriculados acumulados superiores a los correspondientes al primer nivel del programa.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 68 del Reglamento Estudiantil,"Un estudiante de pregrado debe mantener un Promedio Ponderado Acumulado (PPA) mínimo de 3,20 [1]. Esta regla aplica cuando los créditos matriculados acumulados por el estudiante son mayores que los créditos correspondientes al primer nivel de su programa [1].
+
+Si al finalizar un periodo no logra obtener un PPA igual o superior a 3,20:
+*   Quedará en condición de Prueba Académica Parcial para el siguiente periodo [1].
+
+**Cálculo del PPA:**
+El PPA se calcula sumando los productos de los créditos de todos los cursos de cada período por la calificación definitiva obtenida y dividiendo esta suma entre el total de créditos cursados. El resultado se expresa con dos decimales y se aproxima por defecto a la centésima más cercana [2]. No se tendrán en cuenta los créditos de los cursos reprobados que han sido repetidos y aprobados [4].
+
+**Consecuencias posteriores (si aplica):**
+*   Si el estudiante inicia un periodo en condición de Prueba Académica Parcial y no logra obtener un PPA igual o superior a 3,20, pasará a estar en condición de Prueba Académica Total (PAT) para el siguiente periodo [1].
+*   Si el estudiante inicia un periodo en condición de Prueba Académica Total (PAT), no logra obtener un Promedio Ponderado del Periodo (PPP) igual o superior a 3,20 y obtiene un PPA inferior a 3,20, perderá su calidad de estudiante quedando en condición de excluido por bajo rendimiento [1].
+
+**Nota sobre poblaciones:**
+Estas reglas específicas para pregrado no se aplican a estudiantes de posgrado, quienes deben mantener un PPA mínimo de 3,50 para optar a grado [3].",10.7242,0.3208,stop,399,no,[1] [2] [3] [4],no,,,
+3,asistencia,si,¿Qué porcentaje mínimo de asistencia se exige en la modalidad presencial y qué ocurre si no se cumple?,"Mínimo 80% de las sesiones de clase. Si no se cumple, el estudiante reprueba el curso con la calificación mínima establecida en el Reglamento.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 67 del Reglamento Estudiantil,"En la modalidad presencial, un estudiante deberá asistir como mínimo al **80%** de las sesiones de clase [1]. Si no cumple con este porcentaje, reprobará con la calificación mínima establecida en el Reglamento Estudiantil [1].
+
+**Excepciones y condiciones adicionales:**
+*   En los cursos de programas de posgrado en modalidad presencial se debe reportar una calificación durante el periodo, obtenida a través de diversas estrategias de evaluación [2].
+*   En los programas en modalidad presencial, ninguna calificación puede ser modificada pasados cinco (5) días calendario después del cierre del periodo académico [5].",4.3388,0.2119,stop,131,no,[1] [2] [5],no,,,
+4,matricula,si,¿Hasta qué semana puede retirar cursos un estudiante de pregrado presencial y qué pasa si retira todos?,"Hasta el último día hábil de la semana 12 del periodo académico. Si retira todos sus cursos, pierde la calidad de estudiante regular. Las prácticas requieren autorización previa para retirarse. En Prueba o Recuperación Académica se requiere autorización de la dirección; en Recuperación no se permite retirar todos los cursos.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 39 del Reglamento Estudiantil,"Un estudiante regular de pregrado en modalidad presencial podrá retirar cursos hasta el último día hábil de la decimosegunda (12a) semana del periodo académico [1].
+
+Si el estudiante retira la totalidad de sus cursos, perdería la calidad de estudiante regular [1].
+
+**Excepciones y condiciones que cambian la aplicación de la regla:**
+*   **Prácticas profesionales:** No podrán ser retiradas, salvo autorización previa de la dirección del programa [1].
+*   **Situación de Prueba Académica o Recuperación Académica:** Deberán contar con la autorización de su respectiva dirección de programa para el retiro de los cursos [1].
+*   **Recuperación Académica (RA):** No podrán solicitar el retiro de la totalidad de sus cursos [1].
+
+*(Nota: Existe una disposición transitoria en el Informe de Gestión 2021 que amplía el retiro hasta la semana 15 para estudiantes en PA y RA sin consultar al Director, permitiendo a los de RA retirar la totalidad si lo ven conveniente; sin embargo, esta es una medida temporal derivada de un informe anterior y no forma parte del Reglamento Estudiantil 2026 vigente que establece las reglas generales [4].)*",7.8172,0.2216,stop,270,no,[1] [4],no,,,
+5,sin_respuesta,no,¿Cuántos estudiantes fueron sancionados con expulsión por plagio durante 2025?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículo 110; el Reglamento define las sanciones, pero no publica estadísticas anuales de casos.","SIN_EVIDENCIA. Los fragmentos proporcionados establecen las normas sobre sanciones (incluyendo la expulsión) y califican el plagio en Trabajos de Grado como falta gravísima, pero no contienen ningún dato estadístico, registro de casos ni información sobre cuántos estudiantes fueron sancionados con expulsión específicamente durante el año 2025.",2.9899,0.2077,stop,76,no,,,,,
+6,becas_financiacion,si,¿Qué descuento recibe un Estudiante de Honor para un curso de inglés por extensión UTB y cuál es su vigencia?,"El Estudiante de Honor recibe un **descuento del 100% para un curso de inglés por extensión UTB**, sujeto a la apertura del curso con su respectivo punto de equilibrio y cupo máximo por cohorte. Además, obtiene: * Distinción académica en ceremonia pública. * Taller de liderazgo y habilidades comunicativas. Este estímulo es **intransferible, no canjeable y tiene una vigencia de tres (3) años** a partir de la fecha de emisión de la distinción, para ser redimido únicamente por el beneficiario.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 1 literal 1","El Estudiante de Honor recibe un **descuento del 100%** para un curso de inglés por extensión UTB [2]. La vigencia de este estímulo es de **tres (3) años** a partir de la fecha de emisión de la distinción, y debe ser redimido únicamente por el beneficiario [1][2].
+
+**Condiciones y excepciones que cambian la aplicación o redención del descuento:**
+*   **Sujeto a disponibilidad:** El descuento está sujeto a la apertura del curso con su respectivo punto de equilibrio y cupo máximo por cohorte [2].
+*   **Redención para otros cursos:** El descuento podrá ser redimido para otro curso ofrecido por extensión UTB siempre y cuando el estudiante haya cumplido con el requisito formativo de inglés establecido en el artículo 78 parágrafo 2 del Reglamento Estudiantil [2].
+*   **Carácter del estímulo:** Es intransferible y no canjeable [1][2].
+*   **Costo del examen de dominio:** Para acceder a los beneficios (incluido el descuento), el estudiante debe tomar y aprobar el examen de dominio del Centro de Idiomas. Si el estudiante está matriculado en los cursos de inglés por extensión UTB, su examen de dominio no tendrá costo [3].
+*   **Limitación temporal de beneficio:** Los beneficios otorgados por alcanzar el nivel B2 en inglés solo podrán ser obtenidos una vez por estudiante [4].
+*   **Requisitos previos para la distinción (Artículo 87 Reglamento Estudiantil):** Aunque no se detalla su contenido específico en los fragmentos, es requisito base para acceder a cualquier estímulo de Estudiante de Honor o Meritorio [1][2].
+*   **Requisitos generales para postulación al estímulo B2 (aplicables al contexto del descuento):** No haber cancelado o reprobado cursos ni estar en Prueba Académica; no tener sanciones disciplinarias ni académicas; Clasificación Saber 11 de inglés 1, 2 o 3; Certificar nivel B2 al momento de la inscripción; Haber alcanzado el nivel B2 en un lapso de máximo 5 periodos académicos [4].",12.5547,0.2127,stop,472,no,[1] [2] [3] [4],si,,,
+7,becas_financiacion,si,¿Qué descuento recibe un Estudiante Meritorio para un curso de inglés por extensión UTB y cuál es su vigencia?,"El Estudiante Meritorio recibe un **descuento del 50% para un curso de inglés por extensión UTB**, sujeto a la apertura del curso con su respectivo punto de equilibrio y cupo máximo por cohorte. Además, obtiene: * Distinción académica en ceremonia pública. * Taller de liderazgo y habilidades comunicativas. Este estímulo es **intransferible, no canjeable y tiene una vigencia de tres (3) años** a partir de la fecha de emisión de la distinción, para ser redimido únicamente por el beneficiario.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 1 literal 2","El Estudiante Meritorio recibe un **descuento del 50%** para un curso de inglés por extensión UTB [2]. Este estímulo tiene una **vigencia de tres (3) años** a partir de la fecha de emisión de la distinción y es redimible únicamente por el beneficiario [1][2].
+
+**Condiciones y excepciones que cambian la aplicación o redención del descuento:**
+*   **Sujeto a disponibilidad:** El descuento está sujeto a la apertura del curso, al cumplimiento del punto de equilibrio y al cupo máximo por cohorte [2].
+*   **Redención para otros cursos:** El descuento puede ser redimido para otro curso ofrecido por extensión UTB siempre y cuando el estudiante haya cumplido con el requisito formativo de inglés establecido en el artículo 78 parágrafo 2 del Reglamento Estudiantil [2].
+*   **Carácter del estímulo:** Es intransferible y no canjeable [1][2].
+
+**Requisitos previos para acceder a la distinción (y por ende al descuento):**
+*   Debe ser estudiante de pregrado.
+*   Debe cumplir con los requisitos establecidos en el artículo 87 del Reglamento Estudiantil [1][2].
+*   Para obtener la distinción de Estudiante Meritorio, se requiere haber alcanzado el nivel B2 en inglés (según el contexto general de estímulos por dominio del inglés) y aprobar el examen de dominio del Centro de Idiomas con nivel B2 en las 4 habilidades [3][4].
+*   Requisitos generales para los estímulos por dominio del inglés (aplicables al proceso de selección que habilita la distinción): No haber cancelado o reprobado cursos, no estar en Prueba Académica, no tener sanciones disciplinarias ni académicas, y clasificar en Saber 11 con inglés A1/A2 [4].
+*   El examen de dominio tiene costo para el estudiante, salvo que esté matriculado en los cursos de inglés por extensión UTB [3].",10.9869,0.2217,stop,439,no,[1] [2] [3] [4],si,,,
+8,becas_financiacion,si,¿Cuál es el estímulo por dominio del inglés B2 para estudiantes de pregrado y quién designa los cupos?,"El estímulo por dominio del inglés B2 consiste en un **descuento del 50% en la matrícula de pregrado del siguiente semestre** para los estudiantes más destacados, según los criterios específicos establecidos. La **Vicerrectoría Administrativa designará el número de cupos disponibles por semestre**.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 2","El estímulo por dominio del inglés B2 para estudiantes de pregrado consiste en un **descuento del 50% en la matrícula del siguiente semestre** [1][2].
+
+La **Vicerrectoría Administrativa** es la entidad que designa el número de cupos disponibles por semestre [2].
+
+**Condiciones y excepciones aplicables:**
+
+*   **Población aplicable:** Estudiantes de pregrado [1].
+*   **Periodo de vigencia del estímulo:** El beneficio solo puede ser obtenido una vez por estudiante a lo largo de su carrera, aunque la postulación se realiza en cada convocatoria que se abra [2].
+*   **Requisitos previos para postular:**
+    *   No haber cancelado o reprobado ningún curso matriculado.
+    *   No haber estado en Prueba Académica durante la carrera.
+    *   No tener sanciones disciplinarias ni académicas en la hoja de vida [2].
+    *   Clasificación Saber 11 en inglés nivel A1, A2, 1, 2 o 3 (no se aceptan quienes homologuen hasta inglés 5/B1 al ingresar) [2].
+*   **Requisitos para obtener el estímulo:**
+    *   Haber alcanzado el nivel B2 en un lapso de máximo 5 periodos académicos [2][4].
+    *   Tomar y aprobar el examen de dominio del Centro de Idiomas de la UTB con nivel B2 en las 4 habilidades (habla, escucha, lectura y escritura) [2][4].
+*   **Costo del examen:** El estudiante asume el costo de la prueba de dominio. Si el estudiante está matriculado en los cursos de inglés por extensión UTB, el examen no tendrá costo [2][4].
+*   **Autorización/Responsable del proceso:** La unidad académica encargada de la enseñanza de inglés es responsable de coordinar y administrar la inscripción, verificar requisitos, organizar el examen y mantener registros [2].",11.6383,0.1923,stop,434,no,[1] [2] [4],si,,,
+9,becas_financiacion,si,¿Cuáles son los requisitos de inscripción para el estímulo por dominio del inglés B2?,"Los aspirantes deben cumplir con los siguientes requisitos: a) No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera. b) No tener sanciones disciplinarias ni académicas en la hoja de vida. c) Clasificación Saber 11: inglés 1, 2 o 3 (A1/A2). d) Certificar nivel B2 en inglés al momento de la inscripción. No podrán inscribirse quienes homologuen hasta inglés 5 (B1) al ingresar a la universidad.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 2, Requisitos de inscripción","Para obtener el estímulo por dominio del inglés B2, deben cumplirse las siguientes condiciones y excepciones según los fragmentos [1], [3] y [5]:
+
+**Requisitos de inscripción (Aplicables a todos):**
+*   **Académico:** No haber cancelado o reprobado ninguno de los cursos matriculados ni haber estado en Prueba Académica durante la carrera. [1][3][5]
+*   **Disciplinario/Académico:** No tener sanciones disciplinarias ni académicas en la hoja de vida. [1][3][5]
+*   **Clasificación Saber 11:** Debe haber obtenido inglés 1, 2 o 3 (nivel A1/A2). [1][3][5]
+*   **Nivel actual:** Certificar nivel B2 en inglés al momento de la inscripción. [1][3][5]
+    *   **Excepción de ingreso:** No podrán inscribirse quienes homologuen hasta inglés 5 (B1) al ingresar a la universidad. [1][3][5]
+
+**Requisitos específicos para certificar el nivel B2 (Vía Examen):**
+*   Debe tomarse y aprobarse el examen de dominio del Centro de Idiomas de la UTB con nivel B2 en cada una de las 4 habilidades: habla, escucha, lectura y escritura. [1]
+*   **Costo:** El estudiante asume el costo de la prueba. Si el estudiante está matriculado en los cursos de inglés por extensión UTB (Inglés VI, VII o VIII), su examen de dominio no tendrá costo. [1]
+*   **Vigencia del estímulo:** Solo se aceptará el examen para evaluar el nivel de competencia alcanzado en un lapso de máximo 5 periodos académicos. [1]
+
+**Condiciones adicionales y limitaciones:**
+*   **Frecuencia de postulación:** El estudiante podrá inscribirse en cada convocatoria que se abra, pero los beneficios otorgados por alcanzar el nivel B2 solo podrán ser obtenidos una vez por estudiante. [1]
+*   **Población aplicable (Nota sobre la modalidad):** La Resolución No. 02 de 2024 aplica a estudiantes de pregrado en general para promover la adquisición temprana del nivel B2 y incentivar la inscripción en los cursos complementarios (inglés 6, 7 y 8). [1]
+    *   *Nota:* El fragmento [4] menciona un ""Nuevo requisito de grado"" específico para estudiantes de pregrado en la modalidad presencial que ingresen a partir del primer periodo del 2024, pero este texto describe los cursos curriculares (hasta B1) y las rutas para demostrar el B2, sin excluir explícitamente a otros grupos del estímulo descrito en la Resolución [1], salvo por la restricción de homologación al ingreso.
+*   **Autoridad responsable:** La unidad académica encargada de la enseñanza de inglés es responsable de coordinar, verificar requisitos, organizar la postulación y mantener el registro. [1]
+
+**Beneficio otorgado:**
+*   Descuento del 50% en la matrícula de pregrado del siguiente semestre para los estudiantes más destacados (según criterios específicos y cupos designados por la Vicerrectoría Administrativa). [1][2]",18.2668,0.1998,stop,720,no,[1] [2] [3] [4] [5],si,,,
+10,becas_financiacion,si,¿Cuántas veces puede un estudiante obtener el estímulo por alcanzar el nivel B2 en inglés?,"El estudiante podrá inscribirse en cada convocatoria que se abra; **sin embargo, los beneficios otorgados por alcanzar el nivel B2 en inglés solo podrán ser obtenidos una vez por estudiante**.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 2, Parágrafo 1","Un estudiante puede obtener el estímulo por alcanzar el nivel B2 en inglés **una sola vez** a lo largo de su trayectoria.
+
+Esta limitación se establece explícitamente en la normativa vigente:
+*   Los beneficios otorgados por alcanzar el nivel B2 en inglés solo podrán ser obtenidos una vez por estudiante [3].
+*   El estímulo consiste en un descuento del 50% en la matrícula del siguiente semestre, el cual es asignado a los estudiantes más destacados según criterios específicos [3], [4].
+
+Aunque el proceso de postulación permite inscribirse en cada convocatoria que se abra, la obtención efectiva del beneficio (el descuento) no es acumulable ni repetible para el mismo estudiante [3].",4.8873,0.2113,stop,153,no,[3] [4],si,,,
+11,becas_financiacion,si,¿Cuáles son los beneficios de la Beca a la Excelencia y desempeño integral (All-round Scholarship)?,"La Beca a la Excelencia y desempeño integral otorga los siguientes beneficios: a) **Beca del 100% de la matrícula de pregrado**. La Vicerrectoría Administrativa designará el número de cupos disponibles por semestre. b) Desarrollo Personal: Talleres de liderazgo y habilidades comunicativas, mentoría personalizada. c) Distinción académica en ceremonia pública.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 3","Los beneficios de la Beca a la Excelencia y desempeño integral (All-round Scholarship) son:
+
+1.  **Beca del 100% de la matrícula de pregrado**: La Vicerrectoría Administrativa designará el número de cupos disponibles por semestre [1].
+2.  **Desarrollo Personal**: Incluye talleres de liderazgo y habilidades comunicativas, así como mentoría personalizada [1].
+3.  **Distinción académica en ceremonia pública** [1].
+
+**Condiciones y restricciones aplicables a los beneficios:**
+
+*   **Duración del beneficio**: Aplica únicamente para el primer y segundo semestre académico del programa para el cual el estudiante haya sido admitido [5].
+*   **Requisitos para mantener el beneficio del segundo semestre**:
+    *   Aprobar mínimo el 80% de los créditos matriculados en el semestre [5].
+    *   Contar con un promedio general acumulado mínimo de 3,5 [5].
+    *   No contar con sanciones disciplinarias [5].
+    *   Participar en las actividades de Ecosistema universitario [5].
+    *   No aplazar la continuidad de sus estudios [5].
+*   **No acumulabilidad**: Este beneficio no es acumulable con otras becas, apoyos económicos o créditos condonables otorgados por la Universidad o por terceros [5].
+*   **Disponibilidad presupuestal**: El otorgamiento del beneficio está sujeto a la disponibilidad de recursos definida por la Universidad [5].
+*   **Limitación de obtención**: La beca solo podrá ser obtenida una vez por estudiante, aunque el aspirante pueda inscribirse en cada convocatoria que se abra [1].",10.0118,0.2018,stop,366,no,[1] [5],si,,,
+12,becas_financiacion,si,¿Cuáles son los criterios de selección de la Beca a la Excelencia y desempeño integral?,"Los criterios de selección son: a) Desempeño Académico: PPA superior a 4.0. b) Participación en actividades extracurriculares en la UTB: semilleros de investigación, grupos institucionales de voluntariado, representación en órganos colegiados, la Academia de Liderazgo para Alumnos (ALAS), el programa Ubuntu de monitorias académicas, el de Asesores TAE o como líderes de grupos estudiantiles. c) Logros en competencias/instancias externas a la UTB: congresos, concursos nacionales o internacionales, becas de movilidad, modelo de naciones unidas, entre otros.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 3, Criterios de selección","Los criterios de selección para la **Beca a la Excelencia y desempeño integral** (All-round Scholarship) son los siguientes, según la Resolución No. 02 de 2024 [2]:
+
+1.  **Desempeño Académico:** PPA superior a 4.0 [2].
+2.  **Participación en actividades extracurriculares en la UTB:** Debe incluirse al menos una de las siguientes:
+    *   Semilleros de investigación.
+    *   Grupos institucionales de voluntariado.
+    *   Representación en órganos colegiados.
+    *   Academia de Liderazgo para Alumnos (ALAS).
+    *   Programa Ubuntu de monitorías académicas.
+    *   Programa de Asesores TAE.
+    *   Liderazgo de grupos estudiantiles [2].
+3.  **Logros en competencias/instancias externas a la UTB:** Participación en congresos, concursos nacionales o internacionales, becas de movilidad, modelo de naciones unidas, entre otros [2].
+
+**Condiciones adicionales y excepciones aplicables:**
+
+*   **Población objetivo:** Estudiantes de pregrado con buen rendimiento académico que lideran procesos y participan regularmente en actividades extracurriculares e institucionales [1].
+*   **Limitación de obtención:** La beca solo podrá ser obtenida **una vez** por estudiante, aunque el aspirante pueda inscribirse en cada convocatoria que se abra [2].
+*   **Proceso de evaluación:** Los estudiantes preseleccionados deben realizar una presentación ante el Consejo Académico/Comité Rectoral y un comité designado por la Vicerrectoría Académica evaluará las aplicaciones según rúbrica establecida [2].
+*   **Notificación:** La notificación se realiza antes del inicio del siguiente semestre de pregrado [2].
+*   **Cupos:** La Vicerrectoría Administrativa designará el número de cupos disponibles por semestre [2].
+
+**Nota sobre la distinción con otra beca:**
+No confundir con la ""Beca a la Excelencia y Talento Caribe"", que tiene requisitos distintos (nacimiento/residencia en Costa Caribe, edad menor de 20 años, bachillerato en últimos dos años, SISBÉN IV) y cubre el 98% de la matrícula [4][5]. La Beca a la Excelencia y desempeño integral no exige residencia en la costa ni límite de edad específico en los criterios listados, sino participación institucional y externa.",14.2648,0.2163,stop,547,no,[1] [2] [4] [5],si,,,
+13,becas_financiacion,si,¿Cómo se evalúa la Beca a la Excelencia y desempeño integral y cuándo se notifica?,La evaluación se realiza de la siguiente manera: a) Los estudiantes preseleccionados realizarán presentación ante el Consejo Académico/Comité Rectoral. b) Un comité designado por la Vicerrectoría Académica evaluará las aplicaciones según rúbrica establecida. c) Notificación antes del inicio del siguiente semestre de pregrado.,https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 3, Evaluación","La evaluación de la **Beca a la Excelencia y desempeño integral** (All-round Scholarship) sigue el siguiente proceso según los fragmentos [2]:
+
+1.  **Presentación ante comité:** Los estudiantes preseleccionados deben realizar una presentación ante el Consejo Académico/Comité Rectoral.
+2.  **Evaluación por rúbrica:** Un comité designado por la Vicerrectoría Académica evalúa las aplicaciones utilizando una rúbrica establecida.
+3.  **Notificación:** La notificación se realiza antes del inicio del siguiente semestre de pregrado [2].
+
+**Condiciones y excepciones relevantes para la evaluación y notificación:**
+
+*   **Cupos limitados:** La Vicerrectoría Administrativa designa el número de cupos disponibles por semestre, lo cual afecta directamente a cuántos estudiantes pueden ser evaluados y seleccionados en cada ciclo [2].
+*   **Oportunidad única:** Esta beca solo puede ser obtenida una vez por estudiante, independientemente de las convocatorias subsiguientes [2].
+*   **Evidencia requerida:** Los aspirantes deben proporcionar evidencia de sus logros como parte del proceso de postulación que antecede a la evaluación [2].
+*   **Criterios previos a la evaluación:** Para llegar a la etapa de evaluación, el estudiante debe cumplir con los criterios de elegibilidad (PPA > 4.0, participación en actividades extracurriculares específicas y logros externos) verificados por Ecosistema Universitario antes de ser preseleccionado [2].
+*   **Datos históricos de selección:** En 2025, se entregó la beca a 3 estudiantes entre 75 postulados que cumplieron los requisitos, lo que ilustra el resultado del proceso de evaluación y notificación en ese periodo específico [3].
+
+**Nota sobre otras becas:**
+Los fragmentos proporcionan información detallada sobre la **Beca a la Excelencia y Talento Caribe** (que cubre el 98% de la matrícula y requiere residencia en la Costa Caribe), pero no se solicita su evaluación ni notificación, por lo que no se incluyen sus reglas específicas más allá de distinguir que es un programa diferente [4][5].",11.8824,0.1983,stop,475,no,[2] [3] [4] [5],si,,,
+14,becas_financiacion,si,¿Cuántas veces puede obtenerse la Beca a la Excelencia y desempeño integral?,"El estudiante podrá inscribirse en cada convocatoria que se abra; **sin embargo, la beca a la Excelencia y desempeño integral (All-round Scholarship) solo podrá ser obtenida una vez por estudiante**.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 3, Parágrafo 1","La Beca a la Excelencia y desempeño integral (All-round Scholarship) solo puede ser obtenida **una vez** por estudiante [2].
+
+Aunque el estudiante podrá inscribirse en cada convocatoria que se abra, la beca es única para cada beneficiario [2].",1.9191,0.2023,stop,57,no,[2],si,,,
+15,becas_financiacion,si,¿Qué unidad se encarga de difundir y procesar las aplicaciones de la Beca a la Excelencia?,"**Ecosistema Universitario** será la unidad encargada de: * Difundir la información en los diferentes canales institucionales. * Recibir y revisar las aplicaciones de los estudiantes, verificando que cumplan con los criterios de elegibilidad. * Facilitar el proceso de evaluación en el comité designado por la Vicerrectoría Académica.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 3, Parágrafo 2","La unidad encargada de difundir la información y revisar/procesar las aplicaciones es **Ecosistema Universitario**.
+
+Esta unidad tiene las siguientes funciones específicas según los fragmentos:
+*   Difundir la información en los diferentes canales institucionales [2].
+*   Recibir y revisar las aplicaciones de los estudiantes.
+*   Verificar que cumplan con los criterios de elegibilidad [2].
+*   Facilitar el proceso de evaluación en el comité designado por la Vicerrectoría Académica [2].
+
+No se menciona ninguna otra unidad con estas funciones combinadas para esta beca específica en los fragmentos proporcionados.",4.5361,0.213,stop,137,no,[2],si,,,
+16,becas_financiacion,si,¿Son acumulables los beneficios de la política de estímulos y becas con otros descuentos de la universidad?,"No. **Los beneficios otorgados a través de esta política de estímulos y becas no son acumulables con otros beneficios o descuentos ofrecidos por la universidad.** Un estudiante que ya reciba otro tipo de beca o descuento aplicable a su matrícula no podrá sumar el porcentaje de esta beca a dicho beneficio. En tales casos, **se aplicará únicamente el beneficio de mayor valor económico o el más favorable para el estudiante**.",https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 5","No son acumulables. Los beneficios otorgados a través de esta política de estímulos y becas no pueden sumarse ni combinarse con otros beneficios o descuentos ofrecidos por la universidad [1][3]. Si un estudiante ya recibe otro tipo de beca, crédito condonable, apoyo financiero similar o cualquier descuento aplicable a su matrícula, no podrá postularse a esta política porque estos beneficios no son acumulables [4]. En tales casos, se aplicará únicamente el beneficio de mayor valor económico o el más favorable para el estudiante [1]. Además, si ya eres beneficiario de otra beca, crédito condonable o apoyo financiero similar, no podrás postularte a la beca PATH específicamente [4].",4.7283,0.2124,stop,151,no,[1] [3] [4],si,,,
+17,becas_financiacion,si,¿Qué estímulos existen para estudiantes con puntajes sobresalientes en Saber Pro?,"La Resolución No. 01 de 2025 establece para estudiantes presenciales con Saber Pro desde resultados de 2024 y puntaje global al menos 40 puntos por encima de la media institucional: exoneración de derechos de grado, exención ECAD y distinción pública. Para los cinco mejores puntajes UTB que cumplan esa condición: beca de posgrado presencial propio del 100%, 75%, 50%, 25% y 25%, respectivamente. En empate se otorga al mayor PPA. Exige no haber sido sancionado, resultados sin observaciones/investigación ICFES y paz y salvo. Beca intransferible, no canjeable, vigencia de dos años desde el grado. El art. 5 deroga expresamente Res. 05/2023 y modifica art. 4 de Res. 02/2024: no presentar los incentivos anteriores como vigentes.",https://www.utb.edu.co/wp-content/uploads/2025/07/Res-No-1-Consejo-Academico-SABER-PRO-2025.pdf,"Resolución No. 01 de 2025, arts. 1-5, pp. 1-2","Basado estrictamente en los fragmentos proporcionados, existen dos regímenes normativos distintos que aplican según el año de la prueba y la resolución vigente. La **Resolución No. 01 del 24 de abril de 2025** deroga a la Resolución No. 05 de 2023 [4].
+
+A continuación, se detallan los estímulos aplicables según el periodo y las condiciones específicas:
+
+### 1. Régimen Vigente (Desde abril de 2025)
+Aplicable a estudiantes de **programas presenciales** que presenten la prueba con resultados del año **2024 o posteriores**, cumpliendo con los requisitos generales de [4]:
+*   No haber sido sancionado disciplinariamente.
+*   No tener observaciones sobre la validez de los resultados ni procesos de investigación por parte del ICFES.
+*   Encontrarse a paz y salvo con la Universidad.
+
+**Criterios de otorgamiento (Resolución No. 01 de 2024, ARTÍCULO 2):**
+El beneficio principal es una **beca para programas de posgrado presencial** (especialización o maestría) propios de la UTB, condicionada a superar la media institucional del año en que se presentó la prueba en **40 puntos**:
+
+| Puesto Global UTB | Condición de Puntaje | Estímulo Otorgado |
+| :--- | :--- | :--- |
+| **1er lugar** | +40 puntos sobre la media institucional | Beca del **100%** del valor de la matrícula para posgrado presencial. |
+| **2do lugar** | +40 puntos sobre la media institucional | Beca del **75%** del valor de la matrícula para posgrado presencial. |
+| **3er lugar** | +40 puntos sobre la media institucional | Beca del **50%** del valor de la matrícula para posgrado presencial. |
+| **4to y 5to lugar** | +40 puntos sobre la media institucional | Beca del **25%** del valor de la matrícula para posgrado presencial. |
+
+*   **Tie-breaker:** Si dos o más estudiantes cumplen los requisitos para un mismo incentivo, se entrega el beneficio a quien tenga el mayor Promedio Ponderado Acumulado (PPA) [4].
+*   **Estímulos adicionales (ARTÍCULO 1 de la misma resolución):** Todos los estudiantes que cumplan con el criterio de puntaje (+40 puntos sobre media institucional) reciben:
+    *   Exoneración del pago de derecho a grado.
+    *   Exención del Examen de Calidad de Derecho (ECAD).
+    *   Distinción académica por mejores resultados en Saber PRO en ceremonia pública.
+
+**Vigencia y naturaleza de la beca (ARTÍCULO 4):**
+*   Vigencia: **Dos (2) años**.
+*   Inicio de vigencia: A partir de la **fecha de grado**.
+*   Redención: Únicamente por el beneficiario.
+*   Características: Intransferible y no canjeable [4].
+
+---
+
+### 2. Régimen Anterior (Derogado, pero documentado para referencia histórica)
+Aplicable a estudiantes que presentaron la prueba con resultados del año **2023** (antes de la derogación en abril de 2025). Este régimen se aplicaba a estudiantes de pregrado sin restricción explícita de modalidad presencial en el texto de la resolución original, aunque la nueva resolución limita los estímulos actuales a programas presenciales [1][4].
+
+**Criterios y Estímulos (Resolución No. 05 de 2023):**
+*   **Puestos 1 al 10 a nivel nacional (según listado ICFES):**
+    *   Beca del **100%** para programas de maestría.
+    *   Exención de trabajo de grado con nota de 5.0 o exención en evaluaciones finales de cursos matriculados con nota de 5.0 (si no aplica el primero).
+    *   Exención de preparatorios para el programa de Derecho.
+    *   Distinción académica pública [1].
+*   **Puestos 11 al 20 a nivel nacional:**
+    *   Beca del **100%** para programas de especialización.
+    *   Exención en evaluaciones finales de cursos matriculados con nota de 5.0.
+    *   Exención de preparatorios para el programa de Derecho.
+    *   Distinc",26.9354,0.2067,length,1000,no,[1] [4],si,,,
+18,becas_financiacion,si,¿Qué oficina verifica los puntajes Saber Pro y notifica a los beneficiarios de los estímulos?,La **oficina de Planeación y Gestión de la Calidad** se encargará de: * La verificación de los puntajes. * La notificación a los estudiantes beneficiarios. * La coordinación con otras dependencias para la entrega de los estímulos correspondientes.,https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf,"Resolución No. 02 de 2024, Art. 4, Parágrafo","La oficina encargada de verificar los puntajes, notificar a los estudiantes beneficiarios y coordinar la entrega de los estímulos es la **Oficina de Planeación y Gestión de la Calidad** [2].
+
+Esta función se establece explícitamente en el parágrafo del Artículo 4 de la Resolución No. 02 de 2024, la cual regula los estímulos por puntajes sobresalientes en Saber Pro para estudiantes de pregrado. Los fragmentos no mencionan ninguna otra oficina con esta competencia específica ni indican cambios en esta atribución en las resoluciones posteriores (como la Resolución No. 1 del Consejo Académico de 2025), aunque estas últimas derogan o modifican los criterios de otorgamiento y vigencias de las becas.",6.9673,0.2034,stop,167,no,[2],si,,,
+19,web_becas,si,¿Qué porcentaje de la matrícula cubre la Beca Legacy UTB para el primer y segundo semestre?,"La **Beca Legacy UTB** ofrece un beneficio económico parcial que **cubre el 50% del valor total de la matrícula del primer y segundo semestre**, siempre y cuando se cumplan las condiciones de continuidad. Este beneficio no es reembolsable. Está dirigida a estudiantes nuevos que iniciarán en el periodo 2026-2.",https://www.utb.edu.co/apoyo-financiero/becas/beca-legacy-utb/,P?gina web UTB: Beca Legacy.,"La Beca Legacy UTB cubre el 50% del valor total de la matrícula del primer y segundo semestre [1][3].
+
+**Condiciones y excepciones aplicables:**
+*   **Población objetivo:** Estudiantes nuevos que inicien en el periodo 2026-2 [2].
+*   **Requisitos previos para aplicar:**
+    *   Haber obtenido mínimo 250 puntos globales en la prueba SABER 11° (ICFES) [4].
+    *   Ser admitido en alguno de los programas de Pregrado ofrecidos por la UTB [4].
+    *   Pertenecer al Sisbén hasta el grupo C7 [4].
+    *   Inscribirse formalmente mediante el formulario oficial dispuesto por la universidad [4].
+    *   Anexar una carta de motivación respondiendo a la pregunta ""¿Cómo profesional de la UTB qué legado crees que le dejarías a la sociedad?"" con una extensión máxima de 1 cuartilla [4].
+*   **Naturaleza del beneficio:** No es reembolsable [1][4].
+*   **Condición de continuidad:** El beneficio aplica siempre y cuando se cumplan las condiciones de continuidad [1][4].
+*   **Proceso de pago:** Una vez aprobados los documentos, se recibe por correo electrónico el recibo para el pago del 50% del valor de la matrícula del primer semestre [4].
+
+**Nota sobre otros programas:** La Beca Ondas Bolívar cubre el 100% de la matrícula, pero no aplica a la pregunta específica sobre la Beca Legacy UTB [5].",9.5066,0.2982,stop,355,no,[1] [2] [3] [4] [5],si,,,
+20,web_becas,si,¿Cuáles son las condiciones para mantener la Beca Legacy UTB en el segundo semestre?,"Para mantener el beneficio del segundo semestre el estudiante debe: 1. Aprobar mínimo el 80% de los créditos matriculados en el semestre. 2. Contar con un promedio general acumulado mínimo de 3,5. 3. No contar con sanciones disciplinarias. 4. Participar en las actividades de Ecosistema Universitario. 5. No aplazar la continuidad de sus estudios. Además, este beneficio no es acumulable con otras becas, apoyos económicos o créditos condonables otorgados por la Universidad o por terceros.",https://www.utb.edu.co/apoyo-financiero/becas/beca-legacy-utb/,P?gina web UTB: Beca Legacy.,"No hay evidencia en los fragmentos que especifique las condiciones particulares para **mantener** la Beca Legacy UTB específicamente en el **segundo semestre**. Los fragmentos proporcionan información sobre:
+
+1.  **Población objetivo:** Estudiantes nuevos que iniciarán en el periodo 2026-2 [1].
+2.  **Beneficio económico:** Cubre el 50% del valor total de la matrícula del primer y segundo semestre, siempre y cuando se cumplan las condiciones de continuidad [2][3].
+3.  **Requisitos para aplicar (ingreso):** Haber obtenido mínimo 250 puntos globales en SABER 11°, ser admitido en pregrado, pertenecer al Sisbén hasta el grupo C7, inscribirse formalmente y anexar una carta de motivación [4].
+4.  **Requisitos para mantener la beca (general):** No tener sanciones académicas ni disciplinarias, estar al día con los pagos y compromisos, demostrar condiciones de vulnerabilidad económica en Sisbén IV dentro de los grupos establecidos por la UTB, ser estudiante regular y cumplir requisitos académicos [5].
+5.  **Compromiso futuro:** Destinar un porcentaje de ingresos mensuales cuando sean egresados y devenguen más de 2 SMMLV [5].
+
+**Falta evidencia específica** que detalle si existen condiciones adicionales o distintas para el mantenimiento en el segundo semestre respecto al primer, o que aclare qué constituye exactamente las ""condiciones de continuidad"" mencionadas en los fragmentos [2][3] más allá de los requisitos generales listados en [5].",9.3226,0.2059,stop,347,no,[1] [2] [3] [4] [5],si,,,
+21,estados_academicos,si,¿Qué Promedio Ponderado Acumulado (PPA) mínimo debe tener un estudiante de pregrado para optar al título y cuál es para posgrado?,"PPA mínimo de 3,20 para estudiantes de pregrado y mínimo 3,50 para estudiantes de posgrado. Todo estudiante que culmine un programa académico recibirá un diploma una vez cumpla los requisitos, entre ellos alcanzar dicho PPA.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 78 literal b","Para optar al título, los promedios mínimos requeridos son:
+
+*   **Estudiantes de pregrado:** 3,20 [5].
+*   **Estudiantes de posgrado:** 3,50 [1], [5].
+
+**Condiciones y excepciones aplicables:**
+
+*   **Cálculo del PPA:** Se calcula sumando los productos de los créditos de todos los cursos de cada período por la calificación definitiva y dividiendo entre el total de créditos cursados. El resultado se expresa con dos decimales y se aproxima por defecto a la centésima más cercana [3]. No se tienen en cuenta los créditos de cursos reprobados que han sido repetidos y aprobados [4].
+*   **Condición de Prueba Académica (Pregrado):** Si un estudiante finaliza un periodo con un PPA inferior a 3,20, queda en condición de Prueba Académica Parcial para el siguiente periodo. Si inicia un periodo en esta condición y no logra un PPA igual o superior a 3,20, pasa a Prueba Académica Total (PAT). Si inicia en PAT y obtiene un Promedio Ponderado del Periodo (PPP) inferior a 3,20 (lo que resulta en un PPA final inferior a 3,20), pierde su calidad de estudiante y queda excluido por bajo rendimiento [2].
+*   **Aplicación de la regla de Prueba Académica:** El artículo sobre las condiciones de prueba académica se aplica cuando los créditos matriculados acumulados son mayores que los créditos correspondientes al primer nivel del programa [2].
+*   **Requisitos adicionales para optar al título (Pregrado):** Además del PPA, el estudiante debe haber aprobado todos los cursos, cumplido requisitos del programa, obtenido un puntaje global mínimo de 100 puntos en Saber Pro (si presentó la prueba a partir de 2024), cumplir con la Ruta de Autonomía y Éxito Profesional si es exigible, estar a paz y salvo con la universidad y no estar sancionado [5].
+*   **Requisito adicional para optar al título (Pregrado presencial):** Debe demostrar un nivel B2 en inglés (aplica para estudiantes que iniciaron estudios a partir del 1 de enero de 2024) [5].
+*   **Vigencia:** Estas normas derogan el Reglamento Estudiantil contenido en la Resolución 03 del 2 de agosto de 2017 y las resoluciones que lo modificaron hasta la Nro. 08 del 11 de diciembre de 2023 [5].",14.9761,0.2182,stop,568,no,[1] [2] [3] [4] [5],no,,,
+22,admisiones,si,¿Qué puntaje mínimo global debe obtener un estudiante de pregrado en el examen Saber Pro para optar al título?,"Para optar al título, el estudiante de pregrado debe haber presentado y obtenido, en el Examen de Estado de la Calidad de la Educación Superior - Saber Pro, un **puntaje global mínimo de 100 puntos**. Este requisito aplica para los estudiantes que hayan presentado las pruebas SABER PRO a partir del año 2024.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 78 literal c","Para optar al título, un estudiante de pregrado debe cumplir con las siguientes condiciones según los fragmentos:
+
+**1. Puntaje mínimo requerido:**
+*   Debe obtener un **puntaje global mínimo de 100 puntos** en el promedio de las competencias genéricas del examen Saber Pro [3].
+*   Este requisito aplica específicamente a estudiantes que hayan presentado la prueba **a partir del año 2024** [3].
+
+**2. Excepciones y matices importantes:**
+*   **Doble titulación:** Si el estudiante cursa dos pregrados del mismo nivel, puede presentar un único examen Saber Pro (si cumple con los requisitos de ICFES), pero la Universidad Tecnológica de Bolívar (UTB) podrá exigir la presentación del Examen de Estado para cada pregrado de forma independiente [5].
+*   **Verificación específica:** Para estudiantes de doble programa que soliciten grado simultáneamente, deben verificar con cada Dirección de Programa el requisito relacionado con las Pruebas ICFES Saber Pro y tener el puntaje mínimo de 100 puntos en el promedio de las competencias genéricas para ambos programas [4].
+*   **Derogación normativa:** La Resolución No. 01 de 2026 deroga resoluciones anteriores (como la Resolución No. 05 del 15 de junio de 2023) que contenían reglas previas, estableciendo el nuevo estándar de 100 puntos [4].
+
+**Nota sobre estímulos vs. requisito para título:**
+Los fragmentos mencionan incentivos adicionales (como exoneración de pago a grado o becas para posgrado) para estudiantes con puntajes *sobresalientes* (por encima de la media institucional o en los primeros puestos nacionales/locales), pero estos son beneficios extra y no sustituyen el requisito base de 100 puntos para obtener el título [2].",12.1343,0.2171,stop,408,no,[2] [3] [4] [5],no,,,
+23,ingles,si,¿Es requisito demostrar nivel B2 de inglés para graduarse de un programa de pregrado presencial en la UTB?,"Sí. Todos los programas de pregrado en la modalidad presencial tendrán como requisito **demostrar un nivel B2 de conocimiento en el idioma inglés**, de acuerdo con lo establecido en los procedimientos que para tal efecto fije la universidad, de conformidad con el Marco Común Europeo de referencia para las lenguas. Este requisito aplica para estudiantes que iniciaron sus estudios a partir del 1 de enero de 2024.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 78 parágrafo 2","No, no es un requisito general para graduarse; es un **nuevo requisito de grado** aplicable exclusivamente a estudiantes de pregrado en modalidad **presencial** que ingresen a partir del **primer periodo del 2024**.
+
+Para estos estudiantes específicos, la normativa establece lo siguiente:
+
+1.  **Requisito de nivel:** Se debe demostrar el dominio del inglés al nivel **B2**.
+2.  **Formas de demostración (Rutas):**
+    *   **Ruta 1 (Cursos externos):** Aprobar los cursos virtuales del Centro de Idiomas (Inglés VI, VII y VIII) que llevan hasta nivel B1+ y B2.
+    *   **Ruta 2 (Exámenes internacionales):** Presentar un certificado de suficiencia en una prueba internacional aceptada con nivel B2.
+3.  **Restricción de homologación:** No podrán inscribirse quienes hayan homologado hasta el nivel **Inglés 5 (B1)** al ingresar a la universidad. Deben certificar nivel B2 al momento de la inscripción o cumplir las rutas anteriores.
+4.  **Excepción para estudiantes no elegibles por periodo de ingreso:** Los estudiantes que ingresaron antes del primer periodo del 2024 **no** están sujetos a este nuevo requisito de grado específico (pueden tomar el examen de clasificación si ya no están en primer semestre, pero esto es distinto al requisito de graduación B2).
+5.  **Consecuencia del incumplimiento:** Si bien la evidencia menciona que ""No podrán inscribirse quienes homologuen hasta inglés 5"", para el contexto de graduación (requisito de grado), el incumplimiento implicaría no cumplir con los requisitos de salida establecidos en las mallas curriculares actualizadas para este periodo.
+
+**Nota sobre estímulos:** Existe un estímulo de descuento del 50% en matrícula para quienes alcancen el nivel B2, pero esto es un beneficio adicional y no la definición del requisito de graduación en sí mismo. El requisito de graduación se aplica a todos los ingresantes desde el primer periodo del 2024 en modalidad presencial, independientemente de si postulan al estímulo o no.
+
+**Fuentes:**
+*   Requisito de grado B2 y periodo de ingreso: [3]
+*   Restricción de homologación hasta Inglés 5 (B1): [3], [4]
+*   Formas de demostrar nivel (Cursos vs Exámenes): [3]
+*   Contexto de estudiantes no en primer semestre (excepción a la prueba de clasificación, pero no al requisito de grado B2 si aplica por periodo): [1]
+*   Requisitos generales de inscripción que también son condiciones para acceder a los beneficios del estímulo (pero el requisito de grado es específico del periodo 2024): [4], [5]",15.7971,0.199,stop,612,no,[1] [3] [4] [5],no,,,
+24,distinciones,si,¿Cuáles son las condiciones para obtener la distinción Alcatraz de Oro?,"El Alcatraz de Oro se otorgará al estudiante de pregrado que, al terminar su programa académico, cumpla con las siguientes condiciones: a) Ser merecedor de la distinción Summa Cum Laude. b) Haber demostrado durante sus estudios en la UTB tener los valores de una persona integral, a juicio del decano y el Comité de Escuela y/o Dirección Académica. c) Ser postulado al Consejo Académico por el decano, previa aprobación del Comité de Escuela y/o Dirección Académica.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 82","Para obtener la distinción **Alcatraz de Oro**, el estudiante debe cumplir con las siguientes condiciones, según el Reglamento Estudiantil 2026 (ARTÍCULO 82 y ARTÍCULO 81):
+
+**Condiciones principales:**
+1.  **Población aplicable:** Debe ser un estudiante de pregrado que esté terminando su programa académico [1][2].
+2.  **Distinción previa obligatoria:** Debe ser merecedor de la distinción **Egresado Summa Cum Laude** [1].
+3.  **Valores personales:** Haber demostrado durante sus estudios en la Universidad Tecnológica de Bolívar tener los valores de una persona integral, a juicio del decano y el Comité de Escuela y/o Dirección Académica [1].
+4.  **Procedimiento de postulación:** Debe ser postulado al Consejo Académico por el decano, previa aprobación del Comité de Escuela y/o Dirección Académica [1].
+
+**Condiciones para obtener la distinción Egresado Summa Cum Laude (requisito previo):**
+Para cumplir con el requisito anterior, el estudiante debe cumplir las condiciones del ARTÍCULO 84:
+*   **Promedio:** Tener un Promedio Ponderado Acumulado (PPA) entre el 3% más alto de los Promedios Ponderados Acumulados históricos de los egresados de la Escuela en los últimos cinco (5) años, incluyendo los de su promoción [5].
+*   **Historial académico:** No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera [5].
+*   **Disciplina:** No tener en la hoja de vida sanciones disciplinarias ni académicas [5].
+*   **Duración del programa:** Cursar y aprobar todos los cursos del programa en un periodo no superior al número de periodos estipulados en el Plan de Estudios [5].
+
+**Excepción para estudiantes de doble programa:**
+Los estudiantes que cursen un doble programa y cumplan los demás requisitos para el otorgamiento de estas distinciones (incluyendo la condición de PPA del 3% más alto, no haber reprobado cursos, no tener sanciones y tener valores integrales), serán **exonerados del cumplimiento** de la condición de cursar el programa en un periodo no superior al estipulado en el Plan de Estudios [5].
+
+**Nota sobre versiones anteriores:**
+El Reglamento Estudiantil 2026 deroga las resoluciones anteriores (desde la Resolución 03 del 2 de agosto de 2017 hasta la Nro. 08 del 11 de diciembre de 2023), por lo que solo se aplican las reglas contenidas en este reglamento actualizado [5].",15.6494,0.2194,stop,608,no,[1] [2] [5],no,,,
+25,distinciones,si,¿Cuáles son las condiciones para obtener la distinción Egresado Summa Cum Laude?,"La distinción de Egresado Summa Cum Laude se otorgará al estudiante de pregrado que, al terminar su programa académico, cumpla las siguientes condiciones: a) Tener un PPA entre el 1% más alto de los Promedios Ponderados Acumulados históricos de los egresados de la Escuela en los últimos cinco (5) años, incluyendo los de su promoción. b) No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera. c) No tener en la hoja de vida sanciones disciplinarias ni académicas. d) Cursar y aprobar todos los cursos del programa en un periodo no superior al número de periodos estipulados en el Plan de Estudios.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 83","Para obtener la distinción de **Egresado Summa Cum Laude**, el estudiante de pregrado debe cumplir, al terminar su programa académico, con las siguientes condiciones (Reglamento-Estudiantil-2026, ARTÍCULO 83):
+
+1.  **Promedio Ponderado Acumulado (PPA):** Debe tener un PPA entre el **1% más alto** de los Promedios Ponderados Acumulados históricos de los egresados de la Escuela en los últimos cinco (5) años, incluyendo los de su propia promoción [1].
+2.  **Historial Académico:** No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera [1].
+3.  **Hoja de Vida:** No tener sanciones disciplinarias ni académicas en su hoja de vida [1].
+4.  **Duración del Programa:** Cursar y aprobar todos los cursos del programa en un periodo no superior al número de periodos estipulados en el Plan de Estudios [1].
+
+**Excepción para estudiantes de doble programa:**
+Los estudiantes que cursen un doble programa están exonerados del cumplimiento del requisito anterior (literal d), es decir, no se les exige terminar en el periodo estipulado si cumplen los demás requisitos [1].
+
+**Distinción relacionada (Alcatraz de Oro):**
+Existe una distinción superior llamada **Alcatraz de Oro**, que requiere además ser merecedor de la distinción Summa Cum Laude y cumplir con criterios de valores integrales postulados por el decano y el Comité de Escuela/Dirección Académica [2].
+
+**Distinción inferior (Egresado Cum Laude):**
+Existe una distinción con requisitos similares pero menos exigentes llamada **Egresado Cum Laude**, que requiere un PPA entre el **3% más alto** en lugar del 1% y comparte los otros tres requisitos de conducta y duración [3].",11.6284,0.2222,stop,429,no,[1] [2] [3],no,,,
+26,distinciones,si,¿Cuáles son las condiciones para obtener la distinción Egresado Cum Laude?,"La distinción de Egresado Cum Laude se otorgará al estudiante de pregrado que, al terminar su programa académico, cumpla las siguientes condiciones: a) Tener un PPA entre el 3% más alto de los Promedios Ponderados Acumulados históricos de los egresados de la Escuela en los últimos cinco (5) años, incluyendo los de su promoción. b) No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera. c) No tener en la hoja de vida sanciones disciplinarias ni académicas. d) Cursar y aprobar todos los cursos del programa en un periodo no superior al número de periodos estipulados en el Plan de Estudios. Los estudiantes de doble programa que cumplan los demás requisitos están exonerados del requisito de duración, según el parágrafo del art. 83 para estas distinciones.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 84","Para obtener la distinción **Egresado Cum Laude**, el estudiante de pregrado debe cumplir, al terminar su programa académico, con las siguientes condiciones según el Artículo 84 del Reglamento Estudiantil 2026 [1]:
+
+*   **Promedio Ponderado Acumulado (PPA):** Debe tener un PPA entre el 3% más alto de los Promedios Ponderados Acumulados históricos de los egresados de la Escuela en los últimos cinco (5) años, incluyendo los de su promoción [1].
+*   **Historial académico:** No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera [1].
+*   **Hoja de vida:** No tener sanciones disciplinarias ni académicas en la hoja de vida [1].
+*   **Duración del programa:** Cursar y aprobar todos los cursos del programa en un periodo no superior al número de periodos estipulados en el Plan de Estudios [1].
+
+**Excepción para estudiantes de doble programa:**
+Los estudiantes que cursen doble programa, si cumplen con los demás requisitos anteriores (a, b y c), serán exonerados del cumplimiento del requisito de duración (literal d) [1].
+
+*Nota: No se incluyen condiciones específicas para el ""Alcatraz de Oro"" ni para la ""Tesis Laureada/Trabajo de Grado Laureado"", ya que la pregunta se refiere exclusivamente a la distinción Egresado Cum Laude.*",9.2598,0.2647,stop,326,no,[1],no,,,
+27,estados_academicos,si,"¿En qué condición queda un estudiante de pregrado que al finalizar un periodo no obtiene un PPA igual o superior a 3,20?","El estudiante que finalizando un periodo no logre obtener un PPA igual o superior a 3,20, quedará en condición de **Prueba Académica Parcial para el siguiente periodo**. Este artículo se aplica cuando los créditos matriculados acumulados por el estudiante sean mayores que los créditos correspondientes al primer nivel de su programa.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 68 y Glosario (PRUEBA ACADÉMICA PARCIAL - PAP)","El estudiante quedará en condición de **Prueba Académica Parcial (PAP)** para el siguiente periodo.
+
+**Condiciones y excepciones aplicables:**
+
+*   **Requisito previo de población:** Esta regla aplica a estudiantes de pregrado que cursen créditos acumulados mayores que los correspondientes al primer nivel de su programa [2].
+*   **Condición del promedio:** Se aplica cuando el estudiante finaliza un periodo con un Promedio Ponderado Acumulado (PPA) inferior a 3,20 [2].
+*   **Consecuencia inmediata:** El estudiante pasa automáticamente a la condición de Prueba Académica Parcial para el siguiente periodo [2].
+*   **Definición normativa:** La Prueba Académica Parcial es el estado académico en el que se encuentra un estudiante que al finalizar un período obtiene un PPA inferior a 3,20 [3].
+
+**Nota sobre otras condiciones (no aplicables directamente a la pregunta pero relevantes para el contexto normativo):**
+*   Si el estudiante ya estuviera en condición de Prueba Académica Total (PAT) y no lograra obtener un PPP igual o superior a 3,20 (y consecuentemente un PPA inferior), perdería su calidad de estudiante quedando excluido por bajo rendimiento [2].
+*   Si el estudiante está en condición de Prueba Académica Parcial e inicia el siguiente periodo con un PPA inferior a 3,20, pasará a estar en condición de Prueba Académica Total (PAT) [2].
+*   La Recuperación Académica solo aplica si el estudiante inicia un periodo en PAT y logra un PPP igual o superior a 3,20 pero no obtiene un PPA igual o superior a 3,20; requiere autorización de la dirección del programa para matricularse [1].",11.3043,0.2272,stop,396,no,[1] [2] [3],no,,,
+28,estados_academicos,si,"¿En qué condición pasa un estudiante que inicia un periodo en Prueba Académica Parcial y no obtiene un PPA igual o superior a 3,20?","El estudiante que, iniciando un periodo en condición de Prueba Académica Parcial, no logre obtener un PPA igual o superior a 3,20, pasará a estar en condición de **Prueba Académica Total (PAT)** para el siguiente periodo.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 68 y Glosario (PRUEBA ACADÉMICA TOTAL - PAT)","El estudiante pasará a estar en condición de **Prueba Académica Total (PAT)** para el siguiente periodo.
+
+**Condiciones y excepciones aplicables:**
+*   **Requisito previo:** El estudiante debe haber iniciado el periodo en condición de Prueba Académica Parcial (PAP).
+*   **Causa:** Al finalizar el periodo, no logra obtener un Promedio Ponderado Acumulado (PPA) igual o superior a 3,20.
+*   **Vigencia de la regla:** Esta transición se rige por el Reglamento Estudiantil 2026 (vigente desde la derogación del reglamento anterior en agosto de 2017).
+*   **Condición de aplicación general:** El artículo que establece esta regla solo aplica cuando los créditos matriculados acumulados por el estudiante son mayores que los créditos correspondientes al primer nivel de su programa [1].
+
+**Consecuencias posteriores (si aplica):**
+Si el estudiante, iniciando un periodo en condición de PAT, no logra obtener un PPA igual o superior a 3,20, quedará **excluido por bajo rendimiento** (pierde su calidad de estudiante) [1]. Si logra un PPP $\ge$ 3,20 pero mantiene un PPA < 3,20, pasará a condición de **Recuperación Académica** [2].",8.826,0.2336,stop,299,no,[1] [2],no,,,
+29,estados_academicos,si,"¿En qué condición queda un estudiante que inicia un periodo en Prueba Académica Total, obtiene un PPP igual o superior a 3,20 pero no un PPA igual o superior a 3,20?","El estudiante estará en condición de **Recuperación Académica** cuando, iniciando un periodo en Prueba Académica Total (PAT), logra un Promedio Ponderado del Periodo (PPP) igual o superior a 3,20 pero no logra obtener un PPA igual o superior a 3,20. La Recuperación Académica solo será aplicable si el estudiante continúa sus estudios en el período inmediatamente siguiente y deberá contar con la autorización de su dirección de programa para realizar la matrícula académica.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 69","El estudiante queda en **condición de Recuperación Académica**.
+
+**Condiciones y requisitos para aplicar esta regla:**
+*   **Estado previo obligatorio:** El estudiante debe iniciar el periodo en condición de **Prueba Académica Total (PAT)** [1][3].
+*   **Requisito de rendimiento del periodo:** Debe lograr un **Promedio Ponderado del Periodo (PPP) igual o superior a 3,20** [1][3].
+*   **Condición de exclusión:** No debe lograr obtener un **Promedio Ponderado Acumulado (PPA) igual o superior a 3,20** [1][3].
+    *   *Nota:* Según el Artículo 68, si se cumple esta situación (PPP $\ge$ 3.20 pero PPA < 3.20), el estudiante pasa automáticamente a Recuperación Académica y no es excluido por bajo rendimiento en ese momento [2].
+
+**Condiciones de aplicación y vigencia:**
+*   **Aplicabilidad temporal:** La condición de Recuperación Académica solo será aplicable si el estudiante continúa sus estudios en el **período inmediatamente siguiente** [1].
+*   **Requisito administrativo:** El estudiante deberá contar con la **autorización de su dirección de programa** para realizar la matrícula académica durante este periodo [1].
+*   **Ámbito de aplicación:** Este artículo se aplica cuando los créditos matriculados acumulados por el estudiante sean mayores que los créditos correspondientes al primer nivel de su programa [2].
+
+**Consecuencias del incumplimiento (si no logra PPA $\ge$ 3,20 en la siguiente etapa):**
+*   Si el estudiante, estando en condición de Recuperación Académica, **no logra obtener un PPA igual o superior a 3,20** al finalizar el periodo subsiguiente, **perderá su calidad de estudiante** quedando en condición de **excluido por bajo rendimiento** [1].
+
+**Definiciones relevantes:**
+*   **Prueba Académica Total (PAT):** Estado en el que se encuentra un estudiante que al finalizar un período y estando en Prueba Académica Parcial obtiene un PPA inferior a 3,20 [3].
+*   **Recuperación Académica:** Estado académico en el que se encuentra un estudiante que al finalizar un periodo y estando en Prueba Académica Total tiene un PPP igual o superior a 3,20 y su PPA es inferior a 3,20 [3].",15.3299,0.228,stop,548,no,[1] [2] [3],no,,,
+30,estados_academicos,si,¿Cuándo un estudiante pierde su calidad por bajo rendimiento académico?,"El estudiante que, iniciando un periodo en Prueba Académica Total (PAT), no logre obtener un Promedio Ponderado del Periodo (PPP) igual o superior a 3,20 y, en consecuencia, obtenga un PPA inferior a 3,20, **perderá su calidad de estudiante quedando en condición de excluido por bajo rendimiento**.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 68 y Parágrafo 1 de Art. 69","Un estudiante pierde su calidad de estudiante regular de la Universidad Tecnológica de Bolívar por bajo rendimiento académico en las siguientes situaciones, según el Reglamento Estudiantil 2026 y los informes de gestión:
+
+1. **Al finalizar un periodo sin alcanzar el PPA mínimo:**  
+   - Si al finalizar un periodo el estudiante no logra obtener un Promedio Ponderado Acumulado (PPA) igual o superior a **3,20**, queda en condición de **Prueba Académica Parcial** para el siguiente periodo [5].
+
+2. **Al iniciar un periodo en Prueba Académica Parcial sin alcanzar el PPA mínimo:**  
+   - Si al iniciar un periodo en condición de Prueba Académica Parcial, no logra obtener un PPA igual o superior a **3,20**, pasa a estar en condición de **Prueba Académica Total (PAT)** para el siguiente periodo [5].
+
+3. **Al iniciar un periodo en Prueba Académica Total (PAT) sin alcanzar los promedios mínimos:**  
+   - Si al iniciar un periodo en condición de PAT, no logra obtener un Promedio Ponderado del Periodo (PPP) igual o superior a **3,20** y, en consecuencia, obtiene un PPA inferior a **3,20**, pierde su calidad de estudiante quedando en condición de **excluido por bajo rendimiento** [4][5].
+
+4. **En condición de Recuperación Académica sin alcanzar el PPA mínimo:**  
+   - Un estudiante que inicia un periodo en Prueba Académica Total (PAT), logra un PPP igual o superior a 3,20 pero no obtiene un PPA igual o superior a 3,20, queda en condición de **Recuperación Académica** [4].  
+   - Si en esta condición no logra obtener un PPA igual o superior a **3,20**, pierde su calidad de estudiante quedando en condición de **excluido por bajo rendimiento** [4].
+
+5. **Exclusión definitiva:**  
+   - El estudiante excluido por bajo rendimiento académico **no podrá solicitar reinicio ni reingreso al mismo programa** [1].
+
+6. **Aplicabilidad del artículo 68:**  
+   - Estas reglas se aplican cuando los créditos matriculados acumulados por el estudiante sean mayores que los créditos correspondientes al primer nivel de su programa [5].
+
+7. **Estrategas de apoyo (contexto histórico):**  
+   - En 2018, la universidad implementó estrategias como inducción a estudiantes nuevos, cátedra de desarrollo universitario, programas de refuerzo académico, asistencia académica y consejerías académicas para apoyar a estudiantes con bajo rendimiento [3]. Sin embargo, estas no alteran las condiciones normativas actuales de exclusión por bajo rendimiento.
+
+**Resumen de condiciones clave:**
+- PPA mínimo requerido: **3,20** [5].
+- PPP mínimo en PAT: **3,20** [4][5].
+- Autorización de la dirección del programa necesaria para matrícula académica en Recuperación Académica [4].
+- Exclusión definitiva implica prohibición de reinicio o reingreso al mismo programa [1].
+
+No se mencionan excepciones adicionales que modifiquen estas reglas en los fragmentos proporcionados.",18.3799,0.2847,stop,709,no,[1] [3] [4] [5],no,,,
+31,calificaciones,si,"¿Cuál es la calificación mínima aprobatoria para cursos de pregrado, posgrado y práctica profesional de pregrado?","La calificación mínima aprobatoria es: * **3,0 para cursos de pregrado**. * **3,5 para cursos de posgrado**. * **3,5 para la práctica profesional de pregrado** (parágrafo 1 del Art. 51). Los trabajos de grado de pregrado y posgrado serán calificados de acuerdo con los reglamentos institucionales de Trabajo de Grado.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 51","Para responder a tu pregunta sobre las calificaciones mínimas aprobatorias, se deben distinguir los siguientes casos según la evidencia proporcionada:
+
+**1. Cursos de Pregrado**
+*   **Calificación mínima:** 3,0 [1].
+    *   *Nota:* Este valor aplica a los cursos generales de pregrado. Para el Trabajo de Grado de pregrado, la regla es distinta (ver punto 2).
+
+**2. Cursos de Posgrado**
+*   **Calificación mínima:** 3,5 [1].
+    *   *Nota:* Este valor aplica a los cursos generales de posgrado. Para el Trabajo de Grado de posgrado, la regla es distinta (ver punto 2).
+
+**3. Práctica Profesional de Pregrado**
+*   **Calificación mínima:** 3,5 [1].
+    *   *Excepción / Modificación específica:* Si la práctica profesional se sustituye o complementa mediante un **Seminario de Profundización**, la nota mínima requerida para aprobar dicha alternativa es superior a **3,5** (es decir, debe ser mayor estrictamente a 3,5) [5].
+    *   *Excepción / Exclusiones:* Las siguientes actividades están excluidas de estas reglas de homologación y calificación estándar:
+        *   Actividades de consultorio jurídico de estudiantes de Derecho durante los dos últimos años (reguladas por Ley 583 de 2000) [5].
+        *   La modalidad ""Judicatura"" de estudiantes de Derecho en el año inmediatamente posterior a la finalización de estudios (regulada por Decreto 1862 de 1989 y Ley 552 de 1992) [5].
+        *   Actividades clínicas de estudiantes de Psicología (mencionadas como excluidas en el texto, aunque no se especifica la nota mínima alternativa para ellas en los fragmentos) [5].
+
+**4. Trabajo de Grado (Pregrado y Posgrado)**
+*   **Calificación mínima:** La evidencia presenta dos normas distintas que deben aplicarse según la facultad o reglamento específico vigente:
+    *   Según el Reglamento Estudiantil 2026, los trabajos de grado se califican según sus propios reglamentos institucionales [1].
+    *   Sin embargo, existen resoluciones específicas que establecen notas mínimas cuantitativas distintas a las generales:
+        *   **Facultad de Ingeniería:** La nota mínima aprobatoria es **4,00** (rango 4,00 - 5,00) [2].
+        *   **Reglamento General de Trabajos de Grado y otras facultades (ej. Ciencias Básicas):** La nota mínima aprobatoria es **3,50** [3], [4].
+
+**Resumen de diferencias clave:**
+*   Los cursos generales tienen notas más bajas (3,0 para pregrado, 3,5 para posgrado).
+*   La práctica profesional estándar requiere 3,5.
+*   El Trabajo de Grado tiene requisitos propios que varían por facultad (4,00 en Ingeniería vs 3,50 en otras según los fragmentos citados).
+*   Existe una excepción específica para la alternativa de Seminario de Profundización en prácticas profesionales, que exige superar estrictamente el 3,5.",18.6793,0.3065,stop,720,no,[1] [2] [3] [4] [5],no,,,
+32,asistencia,si,¿Qué porcentaje mínimo de asistencia se exige en un programa presencial y qué ocurre si no se cumple?,"Un estudiante de modalidad presencial deberá asistir como **mínimo al 80% de las sesiones de clase** y no podrá faltar sin justificación válida. De no cumplir con este porcentaje, **reprobará con la calificación mínima establecida en este Reglamento**. La asistencia puntual a las sesiones académicas durante el período académico es obligatoria y los profesores llevarán un control a partir del primer día de clase.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 67","Para un estudiante de modalidad presencial, el porcentaje mínimo de asistencia exigido es del **80%** de las sesiones de clase [1]. Si no se cumple con este porcentaje, el estudiante **reprobará** la asignatura con la calificación mínima establecida en el Reglamento Estudiantil [1].
+
+Adicionalmente, para cualquier modalidad supletiva (como el Programa Coterminal), también se exige un mínimo del **80%** de asistencia [5].
+
+**Condiciones y excepciones relevantes:**
+*   **Población aplicable:** La regla del 80% aplica específicamente a estudiantes de **modalidad presencial** [1].
+*   **Exclusión de población:** La asistencia a clase está reservada únicamente a los **estudiantes regulares** de la Universidad; no aplica para asistentes sin evaluación previa autorización [3].
+*   **Control de asistencia:** Los profesores llevan un control de la asistencia puntual a partir del **primer día de clase** durante el período académico [2].
+*   **Justificación:** No se podrá faltar sin una **justificación válida**; de no asistir, se considera falta [1].
+*   **Vigencia de normas supletivas:** Las reglas sobre modalidades (incluyendo el 80% de asistencia para coterminal) rigen mientras se mantenga la Emergencia Sanitaria por COVID-19 o hasta que finalicen las situaciones derivadas de ella, según resolución de mayo de 2020 [4][5].
+*   **Nota mínima asociada:** En el caso específico del Programa Coterminal (que también requiere 80% de asistencia), la nota mínima exigida es de **3.5** [5].",10.4496,0.2414,stop,361,no,[1] [2] [3] [4] [5],no,,,
+33,matricula,si,¿Hasta qué semana puede retirar cursos un estudiante de pregrado presencial y qué pasa si retira todos sus cursos?,"Un estudiante regular de pregrado en modalidad presencial podrá retirar cursos durante un periodo académico, **hasta el último día hábil de la decimosegunda (12ª) semana**. En caso tal de retirar todos sus cursos, **perdería la calidad de estudiante regular**. Parámetros adicionales: * Las prácticas profesionales no podrán ser retiradas, salvo autorización previa de la dirección de programa. * Los estudiantes en Prueba Académica o Recuperación Académica deberán contar con autorización de su respectiva dirección de programa para el retiro de los cursos. * Los estudiantes en Recuperación Académica no podrán solicitar el retiro de la totalidad de sus cursos.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 39","Un estudiante regular de pregrado en modalidad presencial podrá retirar cursos hasta el último día hábil de la decimosegunda (12a) semana del periodo académico [1].
+
+Si el estudiante retira la totalidad de sus cursos, perdería la calidad de estudiante regular [1].
+
+**Excepciones y condiciones que cambian la aplicación de la regla:**
+
+*   **Prácticas profesionales:** No podrán ser retiradas, salvo autorización previa de la dirección del programa [1].
+*   **Situación de Prueba Académica o Recuperación Académica:** Los estudiantes en estas situaciones deberán contar con la autorización de su respectiva dirección de programa para retirar cursos [1].
+*   **Recuperación Académica (Restricción específica):** Los estudiantes en situación de Recuperación Académica no podrán solicitar el retiro de la totalidad de sus cursos [1].
+
+*(Nota: La información sobre ampliación hasta la semana 15 y excepciones para PA/RA sin consultar al director se encuentra en un informe de gestión transitorio de 2021 [4], pero el Reglamento Estudiantil 2026 vigente [1] establece la regla general de la semana 12 y las condiciones actuales.)*",6.9408,0.2289,stop,262,no,[1] [4],no,,,
+34,matricula,si,¿Hasta qué semana puede retirar cursos un estudiante de pregrado virtual en cada ciclo?,"Un estudiante regular de pregrado en modalidad virtual podrá retirar cursos durante un periodo académico, **hasta el último día hábil de la cuarta (4ª) semana de cada ciclo**. En caso tal de retirar todos sus cursos, perdería la calidad de estudiante regular. El periodo académico regular de los programas en modalidad virtual tiene una duración de 20 semanas, dividido en cuatro ciclos de cinco semanas cada uno.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 40 y Art. 37","Un estudiante regular de pregrado en modalidad virtual podrá retirar cursos hasta el último día hábil de la cuarta (4a) semana de cada ciclo [1].
+
+**Excepciones y condiciones que modifican esta regla:**
+
+*   **Prácticas profesionales:** No podrán ser retiradas, salvo autorización previa de la dirección del programa [1].
+*   **Situación de Prueba Académica o Recuperación Académica:** Deberán contar con autorización de su respectiva dirección de programa para retirar cursos [1].
+*   **Recuperación Académica (caso específico):** No podrán solicitar el retiro de la totalidad de sus cursos [1].
+*   **Modificación transitoria (Informe de Gestión 2021):** Existe una ampliación hasta la semana 15 para el retiro de materias matriculadas en el periodo, permitiendo que estudiantes en Prueba Académica (PA) y Recuperación Académica (RA) retiren asignaturas sin consultar a su Director de Programa, y los estudiantes en RA pueden retirar la totalidad del semestre si lo ven conveniente o necesario [5].
+*   **Consecuencia de retiro total:** Si el estudiante retira todos sus cursos, pierde la calidad de estudiante regular [1][2].",7.8625,0.1278,stop,271,no,[1] [2] [5],no,,,
+35,matricula,si,¿Cuál es la carga académica máxima de un estudiante regular de pregrado presencial en matrícula completa?,"El art. 36 modificado por la Resolución No. 03 de 2026 establece matrícula completa de hasta 18,5 créditos o el máximo determinado por el nivel del programa. La dirección puede autorizar hasta 20 créditos con PPA mayor de 4,00. La versión anterior permitía 18 créditos; si se citan ambas, debe distinguirse la modificación.",https://www.utb.edu.co/wp-content/uploads/2026/10/Reglamento-Estudiantil-2026.pdf,"Art. 36 modificado por Resolución No. 03 de 2026, p. 19","La carga académica máxima para un estudiante regular de pregrado en modalidad presencial en matrícula completa es **hasta 20 créditos**, sujeto a las siguientes condiciones y excepciones:
+
+*   **Requisito previo obligatorio:** La autorización para cursar hasta 20 créditos corresponde exclusivamente a estudiantes que tengan un Promedio Ponderado Académico (PPA) **mayor de cuatro (4,00)**.
+*   **Autorización necesaria:** Esta matrícula superior a la carga estándar requiere la **autorización de la dirección del programa**.
+*   **Carga estándar sin autorización especial:** Si el estudiante no cumple con el requisito de PPA mayor a 4.00 o no cuenta con la autorización específica, la carga máxima en matrícula completa es de **hasta 18 créditos** (según [1]) o **hasta 18.5 créditos** (según [2], versión modificada por Resolución No. 03 de 2026).
+*   **Determinación alternativa:** En todos los casos, la carga máxima no puede exceder el número de créditos máximo determinado por el nivel del programa en el cual se encuentra el estudiante.
+
+**Diferencia entre versiones normativas:**
+Existe una discrepancia en los fragmentos proporcionados respecto al límite estándar sin autorización especial:
+*   El fragmento [1] (Reglamento-Estudiantil-2026-actualizado_compressed) establece el límite estándar en **18 créditos**.
+*   El fragmento [2] (Reglamento-Estudiantil-2026 modificado por Resolución No. 03 de 2026) establece el límite estándar en **18.5 créditos**.
+Dado que el fragmento [2] indica explícitamente que fue modificado por una resolución posterior, la cifra de **18.5 créditos** es la aplicable bajo la versión más reciente citada, siempre que no se solicite la autorización para llegar a los 20 créditos.
+
+*Nota: Los límites de matrícula parcial (hasta 8 o 8.5 créditos) y la duración del periodo académico (16 semanas) no afectan el cálculo de la carga máxima en matrícula completa, salvo por la restricción del nivel del programa.*",12.3949,0.2194,stop,474,no,[1] [2],si,,,
+36,matricula,si,¿Cuánto dura el periodo académico regular en modalidad presencial y en modalidad virtual?,"* **Modalidad presencial:** el periodo académico regular tiene una duración de **16 semanas** (Art. 35). * **Modalidad virtual:** el periodo académico regular tiene una duración de **20 semanas, dividido en cuatro ciclos de cinco semanas cada uno** (Art. 37).",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 35 y Art. 37","El periodo académico regular tiene las siguientes duraciones según la evidencia:
+
+*   **Modalidad Presencial:** Tiene una duración de 16 semanas [2].
+*   **Modalidad Virtual:** Tiene una duración de 20 semanas, divididas en cuatro ciclos de cinco semanas cada uno [1].
+
+**Condiciones y excepciones relevantes:**
+
+*   **Carga académica en modalidad virtual (Pregrado):** Un estudiante regular podrá optar por matricularse en una carga de hasta 6 créditos en cada ciclo [3].
+*   **Excepción para Práctica Profesional (Modalidad Virtual):** Se permitirá matricular el número de créditos correspondientes a este curso, sin límite estricto de los 6 créditos generales [3].
+*   **Excepción para Posgrado en modalidad virtual:** La Universidad podrá autorizar la matrícula de un número superior de créditos por ciclo académico si el nivel académico del programa o su reglamentación específica así lo contemplan [3].
+*   **Retiro de cursos (Modalidad Virtual):** Un estudiante regular puede retirar cursos hasta el último día hábil de la cuarta semana de cada ciclo. Si retira todos sus cursos, pierde la calidad de estudiante regular [4].
+    *   Las prácticas profesionales no pueden retirarse salvo autorización previa de la dirección del programa [4].
+    *   Los estudiantes en situación de Prueba Académica o Recuperación Académica necesitan autorización de su dirección para retirar cursos; los de Recuperación Académica no pueden solicitar el retiro de la totalidad de sus cursos [4].
+
+**Nota sobre la información presencial:** El fragmento [5] describe las características de las clases presenciales (encuentros en aulas, bioseguridad, asistencia obligatoria) y menciona una transición hacia la presencialidad completa a partir del segundo semestre de 2021, pero no modifica la duración del periodo académico regular definida en los artículos 35 y 37 [5].",11.1979,0.2196,stop,411,no,[1] [2] [3] [4] [5],no,,,
+37,matricula,si,¿Cuál es el reembolso parcial de la matrícula si un estudiante se retira por semanas transcurridas?,"Si un estudiante es autorizado a retirarse de un programa en el cual se encuentra matriculado, tiene derecho al reembolso parcial del valor cancelado de la matrícula de acuerdo con el número de semanas que hayan transcurrido desde el inicio del período académico: * **75%**: Primera semana. * **50%**: Segunda semana. * **25%**: Tercera semana. A partir de la cuarta semana de clases, el estudiante no tendrá derecho a reembolso alguno.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 122 y parágrafo 1","Si un estudiante es autorizado a retirarse de un programa en el cual se encuentra matriculado, tiene derecho al reembolso parcial del valor cancelado de la matrícula según el número de semanas transcurridas desde el inicio del período académico, con las siguientes condiciones y excepciones:
+
+**Porcentaje de reembolso por semana:**
+*   **75%**: Primera semana [1][2].
+*   **50%**: Segunda semana [1][2].
+*   **25%**: Tercera semana [1][2].
+
+**Excepciones y prohibiciones:**
+*   **Cero reembolso**: A partir de la cuarta semana de clases, el estudiante no tendrá derecho a reembolso alguno [1][2].
+*   **Plazo límite**: El estudiante debe presentar su solicitud antes del último día hábil de la tercera semana. Cualquier solicitud posterior a esta fecha (es decir, desde la cuarta semana en adelante) no será aceptada [1][5].
+*   **Retiro voluntario de cursos**: No habrá devolución parcial del valor de la matrícula por reducción de créditos debido al retiro voluntario de cursos [1].
+*   **Aplazamiento de práctica profesional**: El aplazamiento de la práctica profesional no da derecho a la devolución de la matrícula [1].
+*   **Retiro de materias individuales**: No genera devolución [5].
+
+**Modalidad Virtual:**
+*   Para seminarios de profundización, el proceso se realiza según lo indicado en el Reglamento Estudiantil y los porcentajes son idénticos (75%, 50%, 25% para las primeras tres semanas; 0% a partir de la cuarta) [2].
+
+**Condiciones adicionales aplicables:**
+*   **Destinatario del pago**: La devolución siempre se efectúa al titular que realizó el pago. Si el pago fue con entidades como Estrella o Cooaceded y el estudiante está a paz y salvo, la devolución se realiza al estudiante o al acudiente; si no, se realiza al acudiente salvo sustento de ingresos del estudiante [5].
+*   **Gastos financieros**: Todas las devoluciones se realizan con descuento por gastos financieros según la forma en que se efectuó el pago [5].
+*   **Crédito ICETEX**: Si el pago fue con Crédito ICETEX, la devolución se efectúa directamente a esta entidad [5].
+*   **Proceso de solicitud**: Se requiere descargar, diligenciar y firmar el Formato Solicitud Devolución, adjuntar documentos soporte legibles en PDF (DNI, certificado bancario, soportes según motivo) y enviarlo al correo devolucionesmatricula@utb.edu.co con el asunto específico [2].
+*   **Tiempo de procesamiento**: El proceso tarda hasta 15 días hábiles a partir de la recepción completa de los documentos [5].
+*   **Corrección de errores**: Si hay errores, se notificará al solicitante quien tendrá un plazo máximo de 48 horas para corregirlo y reenviarlo [5].",17.0543,0.2419,stop,644,no,[1] [2] [5],no,,,
+38,admisiones,si,¿Cuáles son los requisitos para inscribirse por primera vez a un programa de pregrado de la UTB?,"Todo aspirante a ser admitido a un programa de pregrado de la Universidad Tecnológica de Bolívar, deberá inscribirse y acreditar los siguientes requisitos: a) Tener el título de bachiller colombiano o su equivalente en otros países, avalado por la autoridad correspondiente del país. b) Haber presentado el examen de estado de educación media o su equivalente en el extranjero aprobado por el ICFES, cuya validez determinará la universidad. La inscripción a cualquier programa debe formalizarse a través de la Oficina de Admisiones y Registro Académico dentro de los plazos establecidos por la universidad.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 21 y Art. 23","Para inscribirse por primera vez a un programa de pregrado de la UTB, se deben cumplir los siguientes requisitos y condiciones según los fragmentos [2], [3] y [4]:
+
+**Requisitos generales (aplicables a todos):**
+*   Tener el título de bachiller colombiano o su equivalente en otros países avalado por la autoridad competente.
+*   Haber presentado el examen de Estado ICFES Saber 11°.
+*   Documento de identidad (ambas caras en una página).
+*   Una foto a color fondo blanco tamaño 3×4 en formato JPG.
+*   Recibo de pago del estudio de homologación de asignaturas.
+*   Acta de grado de bachiller:
+    *   Para estudiantes graduados: copia del acta de grado.
+    *   Para estudiantes cursando último grado: certificado del colegio donde conste que están cursando el último año de educación media.
+    *   **Condición importante:** El acta de grado será un requisito para la matrícula del segundo periodo académico [2], [3].
+*   Resultados Pruebas de Estado ICFES Saber 11°.
+*   Certificado de afiliación a EPS vigente emitido por la entidad de salud correspondiente o resultado de consulta en ADRES.
+
+**Requisitos adicionales para extranjeros o egresados de instituciones extranjeras:**
+Si eres extranjero o te graduaste de una institución de educación superior en el exterior, debes cargar adicionalmente:
+*   Copia de pasaporte.
+*   Visa de estudiante (si no tiene visa, se puede entregar un certificado de admisión para su trámite).
+*   Acta de grado de bachiller o diploma traducido al idioma español y apostillado.
+*   Seguro internacional que cubra toda la estancia académica [2], [3].
+
+**Procedimiento y condiciones del proceso:**
+*   **Formulario:** Se debe diligenciar el formulario de inscripción eligiendo la opción ""primera vez"". La información registrada debe ser veraz; con su diligenciamiento se autoriza a la Universidad a verificar los datos ante las instancias correspondientes [2], [3].
+*   **Acceso al formulario (Nota de actualización en fragmento [3]):** El acceso se realiza únicamente con el correo electrónico. No se necesita usuario ni contraseña inicialmente; al registrarse, se recibe un enlace personal que sirve como medio de acceso y llave para guardar avances o volver a ingresar. La solicitud solo se envía al seleccionar la opción «Finalizar y enviar». Si falta algún documento obligatorio, el sistema no permitirá enviar la solicitud [3].
+*   **Constancia:** Al finalizar y enviar la solicitud, se recibe en el correo una constancia de inscripción. No es necesario imprimir ni guardar capturas de pantalla como respaldo (según fragmento [3]), aunque el fragmento [2] recomienda imprimir inmediatamente o copiar/pegar en Word si no se puede imprimir.
+*   **Pago:** Una vez verificados los requisitos, se recibe una carta con información relevante, fecha de inicio de clases, inducción y usuario/clave para el pago de la matrícula mediante el portal de pagos [2], [3].
+*   **Matrícula automática:** Todas las materias del primer semestre serán matriculadas por la Universidad. Se puede consultar el horario en la plataforma Banner con el usuario y contraseña recibidos [2], [3].
+*   **Veracidad de datos:** El aspirante certifica que la información y documentos son veraces. Cualquier falsedad constituye un delito sancionado por la ley y es causal automática de anulación del proceso de admisión y/o expulsión de la Universidad [2], [3].
+*   **Tratamiento de datos:** El aspirante autoriza el tratamiento de sus datos personales conforme a la política de la UTB (recolección, almacenamiento, uso, etc.) y reconoce sus derechos bajo la Ley 1581 de 2012 y Decreto 1377 de 2013. Las consultas y reclamos pueden presentarse al correo secretariageneral@utb.edu.co o teléfono +57 5 6535200 – 6619240 [2], [3].
+*   **Asignación de credenciales:** Al finalizar el diligenciamiento (según fragmento [2]) o tras verificar requisitos (según fragmento [4]), se recibe información para ingresar al portal de pagos. El fragmento [2] menciona asignar usuario y contraseña, mientras que el [3] indica que el acceso inicial es solo por correo; ambas versiones deben considerarse según la etapa del proceso descrita en cada texto.
+
+**Excepciones o notas específicas:**
+*   Para",27.0883,0.196,length,1000,no,[2] [3] [4],no,,,
+39,admisiones,si,¿Cuáles son los tipos de admisión para programas de pregrado y posgrado en la UTB?,Los tipos de admisión para los programas de pregrado o posgrado son: a. Primera vez b. Reinicio c. Reingreso d. Transferencia externa e. Transferencia interna.,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 25","Los tipos de admisión para los programas de pregrado o posgrado en la UTB son:
+
+*   Primera vez [5]
+*   Reinicio [5]
+*   Reingreso [5]
+*   Transferencia externa [5]
+*   Transferencia interna [5]
+
+El Reglamento Estudiantil vigente (Resolución que deroga el Reglamento de 2017 y sus modificaciones) establece estos cinco tipos sin añadir excepciones específicas sobre plazos, requisitos previos o poblaciones aplicables distintas a la definición general en el Artículo 25 dentro de los fragmentos proporcionados [5].",4.1616,0.2048,stop,130,no,[5],no,,,
+40,admisiones,si,¿Quién no puede solicitar reingreso a la UTB?,"No podrá ser admitido como estudiante de reingreso aquel aspirante que: * Haya sido **excluido por bajo rendimiento académico**. * Haya sido **sancionado con la expulsión**. Además, el estudiante que se encuentre en condición de **Recuperación Académica no podrá solicitar reingreso**.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 28 y parágrafo 3","No pueden solicitar reingreso a la UTB los siguientes estudiantes, según la evidencia proporcionada:
+
+1.  **Estudiantes en condición de Recuperación Académica:** No podrán solicitar reingreso [3].
+2.  **Estudiantes excluidos por bajo rendimiento académico:** No podrán ser admitidos como reingresos si han sido excluidos por esta causa [3].
+3.  **Estudiantes sancionados con expulsión:** No podrán ser admitidos como reingresos si han sido sancionados con la expulsión [3].
+4.  **Estudiantes de pregrado que exceden el plazo de conservación de calidad:** Aquellos que, habiendo concluido su plan de estudios y estando realizando opciones de Trabajo de Grado, no culminen y aprueben su opción de grado dentro del plazo de **un año** (contado desde la modificación por Resolución No 01 de 2026) deberán solicitar reingreso; por tanto, si han excedido este tiempo sin culminar, entran en el proceso de reingreso, pero la prohibición aplica a quienes están en recuperación académica o fueron expulsos/excluidos.
+5.  **Estudiantes de maestría investigativa o doctorado que exceden el plazo de conservación de calidad:** Aquellos que, habiendo aprobado todos los cursos exceptuando el trabajo o tesis, no culminen y aprueben su opción de grado dentro del plazo de **dos años** (contado desde la modificación por Resolución No 01 de 2026) deberán solicitar reingreso.
+
+**Condiciones y excepciones relevantes:**
+*   Para ser admitido como estudiante de reingreso, el aspirante debe haber perdido su condición de estudiante regular por alguna situación prevista en el Reglamento Estudiantil [1].
+*   El récord académico del estudiante se conservará intacto únicamente si cumple con los requisitos para el reingreso (no estar excluido ni sancionado) y obtener el aval del Comité Curricular [1].
+*   La dirección de programa o la decanatura establecerá los requisitos y decidirá sobre el reingreso; en caso de ser aceptado, le aplicará el plan de estudios vigente en el momento del reingreso [3].
+*   Cualquier falsedad en los documentos entregados constituye un delito y es causal automática de anulación del proceso de admisión y/o expulsión, lo que implicaría la prohibición futura de solicitar reingreso [1], [4].",14.8219,0.189,stop,531,no,[1] [3] [4],no,,,
+41,admisiones,si,¿Cuál es el límite de homologación de cursos en una transferencia externa?,La homologación de cursos en una transferencia externa **no podrá superar el 50% de los créditos académicos del plan de estudios**. La Vicerrectoría Académica podrá ajustar este porcentaje de acuerdo con los convenios específicos con otras universidades.,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 29, parágrafo 2","El límite de homologación de cursos en una transferencia externa es que no podrá superar el **50% de los créditos académicos** del plan de estudios [1].
+
+**Excepciones y condiciones:**
+*   La Vicerrectoría Académica podrá ajustar este porcentaje (incluyendo el límite del 50%) de acuerdo con los convenios específicos que la Universidad tenga con otras universidades [1].",4.2926,0.1942,stop,85,no,[1],no,,,
+42,general,si,¿A cuántas horas de trabajo del estudiante equivale un crédito académico?,"Un crédito académico equivale a **cuarenta y ocho (48) horas de trabajo del estudiante** durante el tiempo en el que se desarrolla el curso, distribuidas en horas de acompañamiento directo y horas de trabajo independiente.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 42","Un crédito académico equivale a **cuarenta y ocho (48) horas** de trabajo del estudiante [1][2].
+
+Estas 48 horas comprenden la sumatoria de:
+*   Horas de acompañamiento directo del docente (HAD).
+*   Horas de trabajo independiente (HTI) dedicadas a actividades de estudio, prácticas u otras necesarias para alcanzar los resultados de aprendizaje [2].
+
+**Distribución de las horas según el tipo de programa y curso:**
+
+1.  **Programas de pregrado (general):**
+    *   La distribución debe obedecer a una relación **1:2** (por cada hora de acompañamiento directo corresponden dos horas de trabajo independiente) [2].
+    *   Excepción para cursos con laboratorios: Las HAD incluyen horas en aula y laboratorio. Para las HTI, la relación es **1:2** respecto a las horas en aula y **2:1** respecto a las horas de laboratorio [2].
+
+2.  **Programas del área de la salud (pregrado):**
+    *   Regirá un protocolo de práctica diferente conforme a normatividad legal vigente; no se aplica la regla general de 48 horas por crédito en su totalidad para el tiempo de práctica profesional [2][3].
+
+3.  **Programas de posgrado:**
+    *   **Especialización:** Relación de distribución de horas **1:2** (igual que pregrado general) [3].
+    *   **Maestría y Doctorado:** Relación de distribución de horas **1:3** (por cada hora de acompañamiento directo corresponden tres horas de trabajo independiente) [3].
+    *   Para cursos asociados a trabajo de investigación o grado en posgrado, la proporción de trabajo independiente debe ser mayor; el rango de horas de acompañamiento directo estará entre **10% y 15%** por cada crédito [3].
+
+**Definición de Práctica Profesional (Pregrado):**
+*   La totalidad del tiempo no cuenta como crédito académico.
+*   Cursos con duración entre 20 y 24 semanas y 40 horas semanales de dedicación equivalen a **9 créditos académicos**, los cuales representan el **70%** del trabajo total de la práctica [2].",13.2811,0.2133,stop,483,no,[1] [2] [3],no,,,
+43,distinciones,si,¿Un estudiante sancionado puede recibir distinciones académicas de la UTB?,"No. El art. 110 establece expresamente: El estudiante que sea sancionado por cualquier motivo no podrá recibir ninguna de las distinciones académicas establecidas en este Reglamento. Debe considerarse esta prohibición general, además de los requisitos particulares de los arts. 83, 84 y 87.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, art. 110, p. 38; complementa arts. 81-88","No, un estudiante sancionado no puede recibir distinciones académicas de la UTB.
+
+**Condición general:**
+*   **Prohibición:** El estudiante que sea sancionado por cualquier motivo no podrá recibir ninguna de las distinciones académicas establecidas en el Reglamento Estudiantil [1].
+*   **Alcance:** Esta prohibición aplica a todas las distinciones académicas establecidas en dicho reglamento [1].
+
+**Excepciones o matices sobre la naturaleza de los estímulos (no aplican a sancionados):**
+*   Los beneficios otorgados a través de la política de estímulos y becas no son acumulables con otros beneficios o descuentos ofrecidos por la universidad [4].
+*   Existen incentivos específicos para estudiantes cuyo puntaje global se encuentre por encima de 40 puntos de la media institucional, los cuales incluyen: exoneración del pago de derecho a grado, exención del examen de calidad ECAD y distinción académica en ceremonia pública [3]. Sin embargo, dado que el Artículo 110 prohíbe expresamente recibir *ninguna* distinción académica si hay sanción, estos incentivos no son aplicables a un estudiante sancionado.
+
+**Historial normativo (contexto de vigencia):**
+*   El Reglamento Estudiantil actualizado (que contiene el Artículo 110) deroga resoluciones anteriores que modificaban reglamentos previos desde agosto de 2017 hasta diciembre de 2023 [p. 42].",9.0333,0.2089,stop,327,no,[1] [3] [4],no,,,
+44,becas_financiacion,si,¿Qué sucede con el beneficio de beca de un estudiante suspendido de la Universidad?,"Un estudiante que haya sido suspendido de la Universidad pierde los siguientes derechos durante el doble del tiempo de la sanción, contado a partir del momento en que se autorice su reingreso a la Universidad: * Ser representante de los estudiantes en cualquier organismo de la Universidad. * Ser representante de la Universidad en cualquier evento interno o externo. * **Ser becario de la Universidad.** Si es becario al momento de la sanción, perderá ese beneficio a partir de la fecha de la notificación.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 98","Si un estudiante es suspendido de la Universidad, pierde el beneficio de beca bajo las siguientes condiciones y excepciones según los fragmentos:
+
+**1. Pérdida inmediata del beneficio (si aplica al momento de la sanción):**
+*   El estudiante pierde el beneficio de ser becario a partir de la fecha de la notificación de la sanción [1].
+*   Este beneficio no es acumulable con otras becas, apoyos económicos o créditos condonables otorgados por la Universidad o terceros [2][4].
+
+**2. Pérdida durante el periodo de suspensión (derechos restringidos):**
+*   Durante el doble del tiempo de la sanción, contado a partir del momento en que se autorice su reingreso, el estudiante suspendido pierde el derecho de ser becario de la Universidad [1].
+*   Para recuperar este derecho o mantenerlo tras el reingreso, el estudiante debe cumplir con las condiciones específicas de cada beca (ver punto 3).
+
+**3. Condiciones para mantener o recuperar el beneficio tras el reingreso:**
+Para que un estudiante suspendido pueda volver a ser beneficiario o mantener su beca una vez autorizado su reingreso por el Comité Curricular [3], debe cumplir con los requisitos vigentes de la beca específica:
+
+*   **Beca Legacy UTB / Beca (general):**
+    *   No contar con sanciones disciplinarias [2][4].
+    *   Aprobar mínimo el 80% de los créditos matriculados en el semestre [2][4].
+    *   Contar con un promedio general acumulado mínimo de 3,5 [2][4].
+    *   Participar en las actividades de Ecosistema universitario [2][4].
+    *   No aplazar la continuidad de sus estudios [2][4].
+    *   La beca aplica únicamente para el primer y segundo semestre académico del programa para el cual el estudiante haya sido admitido [2][4].
+
+*   **Beca Cartagenera de Desarrollo:**
+    *   Tener un promedio académico acumulado mayor o igual a 3,8 [5].
+    *   No tener faltas disciplinarias ni sanciones académicas ni disciplinarias [5].
+    *   Estar a paz y salvo con la UNIVERSIDAD por todo concepto, sin excepción [5].
+    *   Cumplir a cabalidad con los reglamentos internos y normas de la Universidad [5].
+    *   Asistir a las reuniones de carácter informativo convocadas por CARTAGENERA DE DESARROLLO o la UNIVERSIDAD [5].
+    *   La matrícula deberá realizarse en las fechas establecidas por la UNIVERSIDAD [5].
+
+**4. Restricciones adicionales:**
+*   El otorgamiento del beneficio está sujeto a la disponibilidad de recursos definida por la Universidad [2][4].
+*   En ningún caso se otorgará el estímulo académico de la matrícula en dinero [5].
+*   La aplicación de las becas no es retroactiva [5].
+
+**Conclusión:**
+Un estudiante suspendido pierde automáticamente su condición de becario desde la notificación de la sanción. Además, durante el periodo de suspensión (doble del tiempo de la sanción), carece del derecho a ser becario nuevamente. Para recuperar el beneficio tras el reingreso autorizado por el Comité Curricular [3], debe superar las condiciones académicas y disciplinarias específicas de la beca correspondiente, sin que exista retroactividad en su aplicación [5].",19.3856,0.1807,stop,750,no,[1] [2] [3] [4] [5],no,,,
+45,matricula,si,¿Cuáles son las condiciones para que un estudiante de pregrado cursa un segundo programa en doble programa?,"Un estudiante regular de cualquier programa de pregrado tiene la posibilidad de cursar a la vez un segundo programa de pregrado en la misma modalidad. Para acceder a esta opción el estudiante debe cumplir las siguientes condiciones: a. Haber completado los dos primeros periodos lectivos del programa inicial con un PPA no inferior a 3,70. b. No estar en Prueba o Recuperación Académica. c. No tener vigente una sanción disciplinaria. d. Presentar su solicitud a la dirección del segundo programa, que aprobará o no el ingreso. En caso de ser aceptado, el estudiante deberá cursar el plan de estudios vigente para el segundo programa y pagará el costo de matrícula estipulado para el programa de mayor valor.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Reglamento Estudiantil, Art. 74 y Art. 75","Para cursar un segundo programa en doble programa en la UTB, el estudiante debe cumplir las siguientes condiciones y seguir los procedimientos establecidos:
+
+**1. Requisitos previos de ingreso (condiciones obligatorias):**
+*   **Estatus académico:** Debe ser un estudiante regular de cualquier programa de pregrado [3].
+*   **Progreso curricular:** Haber completado los dos primeros periodos lectivos del programa inicial con un Promedio Ponderado Acumulado (PPA) no inferior a 3,70 [1][2][3].
+*   **Situación académica:** No estar en Prueba o Recuperación Académica [1][3].
+*   **Disciplina:** No tener vigente una sanción disciplinaria [1][3].
+*   **Momento de inicio:** El proceso puede iniciarse en cualquier momento después de aprobado el segundo semestre académico del programa inicial [2].
+
+**2. Procedimiento de solicitud y aprobación:**
+*   **Destino de la solicitud:** Debe presentar su solicitud al Director o profesional de apoyo del segundo programa (no a Registro Académico inicialmente) [1][3].
+    *   *Nota:* Para el proceso de transferencia interna posterior a la graduación del primer programa, sí se solicita directamente a Registro Académico [1].
+*   **Información requerida en la solicitud:** Nombre del estudiante, código del estudiante, programa actual, programa con el cual desea hacer doble programa y PPA (promedio acumulado) [1].
+*   **Aprobación:** El Director del segundo programa aprobará o no el ingreso [1][3].
+*   **Plan de estudios:** En caso de ser aceptado, el estudiante deberá cursar el plan de estudios vigente para el segundo programa y fijar con el director la malla académica a cursar en los siguientes semestres [1][3].
+
+**3. Condiciones específicas sobre matrícula y pagos:**
+*   **Matrícula:** El estudiante pagará la matrícula correspondiente al programa en el que se encuentre oficialmente matriculado (el primero) [1].
+*   **Cursos adicionales:** Si el estudiante tiene un PPA mayor de 4,00, el Director de Programa podrá autorizar la matrícula de un curso adicional al máximo permitido por el nivel de la carrera [1].
+*   **Transferencia interna:** El estudiante debe pagar una transferencia interna para realizar el estudio de homologación del primer programa al segundo [1].
+
+**4. Condiciones sobre trámites administrativos y equivalencias:**
+*   **Matrícula simultánea:** El estudiante matriculará materias de ambos programas, cumpliendo con los prerrequisitos establecidos en cada malla [1].
+*   **Intercambio:** Puede realizar intercambio para continuar estudios en otra universidad nacional o internacional, siempre que se verifique y apruebe la equivalencia de los cursos por parte de los Directores de programa (con procesos administrados por Internacionalización) [1][2].
+*   **Pruebas Saber Pro:** Se puede homologar la prueba del primer programa para el segundo, con una vigencia de dos años desde la recepción de resultados. Si la terminación académica del segundo programa ocurre después de estos dos años, se debe tomar nuevamente la prueba [2].
+
+**5. Condiciones sobre Trabajo de Grado y Prácticas Profesionales:**
+*   **Trabajo de Grado (General):** Para que el trabajo sea válido en ambos programas, debe ser aprobado por los comités curriculares de ambos programas [2].
+    *   *Facultades de Ciencias Sociales y Humanidades y Economía y Negocios:* Podrán realizar un único Trabajo de Grado. El estudiante decidirá a qué Comité presentar la modalidad, siempre y cuando presente un aval del otro Director de Programa [4].
+    *   *Facultad de Ingeniería:* Deberán presentar su trabajo bajo el reglamento de dicha Facultad. Será válido en las otras facultades si el anteproyecto lleva un aval del respectivo Director de Programa de estas últimas [5].
+*   **Prácticas Profesionales:** Pueden ser válidas para el segundo programa si, al inscribir, se indica que busca una práctica para doble programa. El sitio y el plan de trabajo deben ser aprobados por ambas direcciones de programa [2].
+
+**6. Vigencia y derogaciones:**
+*   Las condiciones anteriores se rigen bajo el Reglamento Estudiantil actualizado (Resolución 06 de 2020), el cual deroga al Reglamento Estudiantil contenido en la Resolución 03 del 2 de agosto de 2017 y sus modificaciones posteriores [4].",25.2797,0.1785,stop,979,no,[1] [2] [3] [4] [5],no,,,
+46,sin_respuesta,no,¿Cuántos estudiantes quedaron en Prueba Académica Parcial al finalizar el periodo 2025-1?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículos 68-69; describen estados académicos, no el conteo de estudiantes por periodo.","SIN_EVIDENCIA
+
+Los fragmentos proporcionados contienen información sobre los requisitos para ingresar a Prueba Académica Parcial (Artículo 68), las consecuencias de no cumplir con ellos y la matrícula asistida para quienes ya están en esa condición (Artículo 70). Sin embargo, ningún fragmento incluye datos estadísticos, tablas de resultados o reportes que especifiquen el número exacto de estudiantes que quedaron en Prueba Académica Parcial al finalizar el periodo 2025-1. La Tabla 2 del Fragmento [2] muestra la población total matriculada por año y modalidad, pero no desglosa las condiciones académicas (como estar en prueba) para periodos específicos dentro de los años listados.",6.4794,0.197,stop,162,no,[2],,,,
+47,becas_financiacion,si,¿Qué porcentaje de descuento ofrece la Beca Premio Liderazgo Caribe?,La beca Premio Liderazgo Caribe ofrece un 98% de descuento que cubre el total de semestres del plan de estudio de eleccion,https://www.utb.edu.co/financiamiento-estudiantil/becas/premio-liderazgo-caribe/,Página consultada.,"La Beca Premio Liderazgo Caribe ofrece un **98%** de descuento sobre la matrícula financiera [1].
+
+**Condiciones y detalles aplicables:**
+*   **Cobertura:** Cubre el número total de semestres del plan de estudios del programa académico de pregrado presencial elegido [1].
+*   **Población objetivo:** Está dirigida a jóvenes que se destacan por su excelente rendimiento académico, hayan nacido y residan en la Costa Caribe colombiana (aunque esta descripción específica aparece en el fragmento sobre la ""Beca a la Excelencia y Talento Caribe"", ambos premios comparten el nombre de ""Premio Liderazgo Caribe"" y la misma estructura de cobertura del 98% en los textos proporcionados) [4].
+*   **Vigencia:** La fecha de cierre para el segundo periodo del 2026 es el 27 de mayo de 2026 [2].
+*   **Ganadores confirmados (Segundo periodo 2026):**
+    *   JOSE JULIAN CASTELLAR CASTRO - FINANZAS Y NEGOCIOS INTERNACIONALES [3].
+    *   SAMUEL EZEQUIEL RAMIREZ TORREZ - INGENIERÍA DE SISTEMAS Y COMPUTACIÓN [3].
+
+**Nota sobre excepciones o diferencias:**
+No se encontraron fragmentos que establezcan condiciones distintas para el ""Premio Liderazgo Caribe"" en comparación con la ""Beca a la Excelencia y Talento Caribe"" respecto al porcentaje de descuento (ambos indican 98%), pero sí existen requisitos específicos para *mantener* cualquier beca de este tipo (no tener sanciones, estar al día con pagos, condiciones de vulnerabilidad SISBÉN IV, ser estudiante regular) [5]. Además, existe una obligación futura para los beneficiarios que devenguen ingresos superiores a 2 SMMLV de destinar un porcentaje de sus ingresos mensuales como reciprocidad [5].",10.8725,0.2045,stop,412,no,[1] [2] [3] [4] [5],si,,,
+48,becas_financiacion,si,¿Cuáles son los requisitos específicos de la Beca Puerto Bahía?,"Ser bachiller recién egresado o con máximo un año de graduación de una de las siguientes instituciones educativas: José María Córdoba de Pasacaballos, Técnica de Pasacaballos, Nuestra Señora del Buen Aire, Santa Ana, Ararca, Caño del Oro, Bocachica y Barú. Tener entre 16 y 20 años, Ser estudiante nuevo, que ingrese por primera vez a la Universidad. Tener como resultado de la Prueba SABER 11 un puntaje mínimo de 280., No ser beneficiario de algún subsidio, patrocinio o beca diferente, ya sea de carácter privado o público.",https://www.utb.edu.co/financiamiento-estudiantil/becas/puerto-bahia/,Página consultada.,"SIN_EVIDENCIA. Los fragmentos proporcionados describen el programa ""Puerto Bahía"" y sus beneficios generales (100% de matrícula, transporte y alimentación), pero no listan los requisitos específicos para aplicar a dicha beca (como edad, promedio mínimo, estrato o procedencia comunitaria). Solo se detallan los requisitos para la ""Beca Cartagenera de Desarrollo"" [4] y los requisitos para mantener el ""Premio a la Excelencia y Talento Caribe"" [5], ni se especifican las fechas exactas de la convocatoria para Puerto Bahía más allá de una mención genérica en el fragmento [2].",4.3154,0.1961,stop,138,no,[2] [4] [5],si,,,
+49,becas_financiacion,si,¿Cuál es el monto o cobertura del Crédito ICETEX para programas de pregrado de la UTB?,Icetex ofrece un credito del 100% de la carrera en cualquier universidad pero tambien existen otros planes donde se prestan o condonan porcentajes mas pequeños de la carrera,https://web.icetex.gov.co/creditos/tu-eliges/pregrado,"Planes de financiación para pregrado; la p?gina indica cr?ditos de hasta 100% de matr?cula, sin cobertura UTB espec?fica verificada",En el momento no cuento con esa información debido a que no se encuentra en la página oficial de la UTB.,1.208,0.3688,stop,6,si,,no,,,
+50,sin_respuesta,no,¿Cuántos estudiantes perdieron la calidad de estudiante por bajo rendimiento académico durante 2025?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículo 69; describe la causal, pero no publica estadísticas anuales de estudiantes afectados.","SIN_EVIDENCIA
+
+Los fragmentos proporcionados contienen información sobre estrategias para reducir la deserción, tasas de crecimiento poblacional, participación en programas de bienestar (ECO), y consecuencias del bajo rendimiento (prohibición de reinicio/reingreso según el Reglamento Estudiantil 2026). Sin embargo, **ningún fragmento especifica la cantidad exacta de estudiantes que perdieron la calidad de estudiante por bajo rendimiento académico durante el año 2025**.",4.4843,0.2169,stop,100,no,,,,,
+51,sin_respuesta,no,¿Cuántos estudiantes quedaron en Prueba Académica Total después del periodo 2025-1?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículos 68-69; contienen los criterios, no los resultados estadísticos de un periodo.","SIN_EVIDENCIA.
+
+Los fragmentos proporcionados contienen información sobre los requisitos para entrar a Recuperación Académica (ARTÍCULO 69), la matrícula asistida (ARTÍCULO 70), estadísticas de población estudiantil y tasas de crecimiento (FRAGMENTOS [3]), fechas del calendario académico (FRAGMENTO [5]) y disposiciones de vigencia del reglamento. Sin embargo, **ningún fragmento menciona el número específico de estudiantes que quedaron en Prueba Académica Total** después del periodo 2025-1 ni proporciona datos desglosados por condición académica (Prueba Académica Parcial, Prueba Académica Total o Recuperación) para ese periodo específico.",6.4256,0.2284,stop,153,no,[3] [5],,,,
+52,sin_respuesta,no,¿Cuántos estudiantes estuvieron en Recuperación Académica durante 2025?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Glosario y artículos 68-69; definen la condición, pero no reportan cantidades por año.","SIN_EVIDENCIA.
+
+Los fragmentos proporcionados definen las condiciones para entrar y salir de la condición de Recuperación Académica (Reglamento-Estudiantil-2026, ARTÍCULO 69), establecen reglas sobre el retiro de cursos para estudiantes en esta condición (Reglamento-Estudiantil-2026, ARTÍCULO 40) y detallan la población estudiantil total por nivel y modalidad (Informe-de-Gestion-2025_, Tabla 2). Sin embargo, ningún fragmento contiene el dato numérico específico de cuántos estudiantes se encontraron en condición de Recuperación Académica durante el año 2025.",6.4694,0.1994,stop,149,no,,,,,
+53,distinciones,parcial,¿Qué estudiantes recibieron la distinción de Estudiante de Honor en 2025?,"Los estudiantes de honor del primer periodo de 2025 fueron: Juliana Isabel Ortíz Guardo (Administración de Empresas, PPA 4,64); Nicole María Vera Reyes (Arquitectura, PPA 4,52); Alejandro Patrón Montero (Ciencia de Datos, PPA 4,80); Marcos Andrés Molinares Bolaños (Ciencia Política y Relaciones Internacionales, PPA 4,75); María Paula Vásquez Sánchez (Comunicación Social, PPA 4,63); Ying Lin Li (Contaduría Pública, PPA 4,55); Camila Sofía Narváez Pérez (Derecho, PPA 4,59); Stefany Julieth Díaz Cequeira (Economía, PPA 4,39); Yugeimi Andrea Granados Morón (Finanzas y Negocios Internacionales, PPA 4,78); Santiago García Maza (Ingeniería Ambiental, PPA 4,76); Daniela Del Carmen González Julio (Ingeniería Biomédica, PPA 4,70); Camilo Andrés Rodríguez Lavalle (Ingeniería Civil, PPA 4,42); Ana Sofía Meza Herrera (Ingeniería de Sistemas y Computación, PPA 4,77); Jesús David Tovar Serrano (Ingeniería Eléctrica, PPA 4,64); Danna Sofía Quintero Martínez (Ingeniería Electrónica, PPA 4,60); Vanessa Sofía Diago Rodríguez (Ingeniería Industrial, PPA 4,81); Rosa Angélica González Viola (Ingeniería Mecánica, PPA 4,69); Juan Pablo Arroyo García (Ingeniería Mecatrónica, PPA 4,69); Karla Sofía Arrieta Arroyo (Ingeniería Naval, PPA 4,39); Ernesto Carlos Vega Gómez (Ingeniería Química, PPA 4,54); Valeria Yanez Londoño (Marketing y Transformación Digital, PPA 4,59); y Sharick Yeray Nadjar Gaviria (Psicología, PPA 4,68). Esta información corresponde exclusivamente al primer periodo académico de 2025; el informe no presenta el listado del segundo periodo.",https://www.utb.edu.co/wp-content/uploads/2026/06/Informe-de-Gestion-2025_.pdf,Página 37; contiene los estudiantes de honor del primer periodo de 2025,"Los estudiantes que recibieron la distinción de **Estudiante de Honor** en el primer periodo de 2025 son los siguientes, según la Tabla 5 del Informe de Gestión 2025 [3]:
+
+*   Ortíz Guardo Juliana Isabel (Administración de Empresas) - PPA: 4,64
+*   Vera Reyes Nicole María (Arquitectura) - PPA: 4,52
+*   Patrón Montero Alejandro (Ciencia de Datos) - PPA: 4,80
+*   Molinares Bolaños Marcos Andrés (Ciencia Política y Relaciones Internacionales) - PPA: 4,75
+*   Vásquez Sánchez María Paula (Comunicación Social) - PPA: 4,63
+*   Lin Li Ying (Contaduría Pública) - PPA: 4,55
+*   Narváez Pérez Camila Sofía (Derecho) - PPA: 4,59
+*   Díaz Cequeira Stefany Julieth (Economía) - PPA: 4,39
+*   Granados Morón Yugeimi Andrea (Finanzas y Negocios Internacionales) - PPA: 4,78
+*   García Maza Santiago (Ingeniería Ambiental) - PPA: 4,76
+*   González Julio Daniela Del Carmen (Ingeniería Biomédica) - PPA: 4,70
+*   Rodríguez Lavalle Camilo Andrés (Ingeniería Civil) - PPA: 4,42
+*   Meza Herrera Ana Sofía (Ingeniería de Sistemas y Computación) - PPA: 4,77
+*   Tovar Serrano Jesús David (Ingeniería Eléctrica) - PPA: 4,64
+*   Quintero Martínez Danna Sofía (Ingeniería Electrónica) - PPA: 4,60
+*   Diago Rodríguez Vanessa Sofía (Ingeniería Industrial) - PPA: 4,81
+*   González Viola Rosa Angélica (Ingeniería Mecánica) - PPA: 4,69
+*   Arroyo García Juan Pablo (Ingeniería Mecatrónica) - PPA: 4,69
+*   Arrieta Arroyo Karla Sofía (Ingeniería Naval) - PPA: 4,39
+*   Vega Gómez Ernesto Carlos (Ingeniería Química) - PPA: 4,54
+*   Yanez Londoño Valeria (Marketing y Transformación Digital) - PPA: 4,59
+*   Nadjar Gaviria Sharick Yeray (Psicología) - PPA: 4,68
+
+**Condiciones y requisitos aplicables para obtener la distinción:**
+Para ser incluido en esta lista, los estudiantes debían cumplir con los requisitos del Artículo 87 del Reglamento Estudiantil [2]:
+1.  Ser estudiante de pregrado entre el segundo y el penúltimo nivel.
+2.  Obtener el primer PPA (Promedio Ponderado Acumulado) de su Escuela respectivamente.
+3.  Haber cursado y aprobado el número mínimo de créditos acumulados exigidos para su periodo según el plan de estudios [2].
+4.  No haber reprobado cursos de su plan de estudios [2].
+5.  No haber tenido sanciones disciplinarias y/o académicas [2].
+
+**Criterios de desempate:**
+En caso de coincidencia en promedio, se considera primero el número de créditos cursados y segundo los decimales siguientes del promedio [2].
+
+**Beneficios asociados a la distinción (no aplicables a todos los estudiantes listados si no cumplieron requisitos adicionales específicos para cada beneficio):**
+*   Descuento del 100% para un curso de inglés por extensión UTB (sujeto a apertura, punto de equilibrio y cupo) [1].
+*   Distinción académica en ceremonia pública [1].
+*   Taller de liderazgo y habilidades comunicativas [1].
+*   Vigencia de tres (3) años desde la fecha de emisión; intransferible y no canjeable [1].
+
+**Nota sobre la vigencia:**
+La Resolución No. 02 de 2024 deroga resoluciones anteriores, estableciendo las reglas vigentes para el otorgamiento [5]. Los datos corresponden al primer periodo de 2025 [3].",25.0426,0.1858,stop,967,no,[1] [2] [3] [5],si,,,
+54,sin_respuesta,no,¿Cuántas solicitudes de reingreso fueron aprobadas por la UTB durante 2025?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículo 28; describe el reingreso, pero no informa resultados ni conteos anuales.","SIN_EVIDENCIA. Los fragmentos proporcionados mencionan el proceso de reingreso en la página de la UTB y datos generales sobre participación estudiantil, pero no contienen cifras específicas sobre el número de solicitudes de reingreso aprobadas durante 2025.",3.1859,0.3532,stop,59,no,,,,,
+55,sin_respuesta,no,¿Qué calificación final obtuvo cada estudiante de pregrado en práctica profesional durante 2025-1?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículo 51; establece calificaciones mínimas, no incluye calificaciones individuales.","SIN_EVIDENCIA
+
+No existe evidencia en los fragmentos proporcionados que especifique las calificaciones finales obtenidas por los estudiantes de pregrado en la modalidad de **práctica profesional** durante el periodo 2025-1. Los fragmentos [4] listan a los ""Estudiantes de Honor"" y ""Estudiantes Meritorios"" con sus promedios ponderados acumulados (PPA), pero no desglosan las notas específicas del requisito de práctica profesional ni confirman que estas calificaciones correspondan al periodo 2025-1 para todos los estudiantes, sino solo a los seleccionados por mérito académico general.",5.7317,0.2008,stop,135,no,[4],,,,
+56,sin_respuesta,no,¿Cuántos estudiantes reprobaron cursos presenciales por no cumplir el mínimo de asistencia durante 2025?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículo 67; establece el mínimo de asistencia, no publica estadísticas de reprobación.","SIN_EVIDENCIA.
+
+Los fragmentos proporcionados contienen la norma que establece el porcentaje mínimo de asistencia (80%) para estudiantes presenciales y las consecuencias de no cumplirlo (reprobación con calificación mínima) [1], así como datos sobre la población estudiantil total, tasas de crecimiento y participación en programas de bienestar (ECO) durante 2025 [2][3]. Sin embargo, **ningún fragmento incluye el número específico de estudiantes que reprobaron cursos presenciales por falta de asistencia durante el año 2025**. Por lo tanto, no es posible responder a la pregunta con los datos disponibles.",4.9488,0.2048,stop,134,no,[1] [2] [3],,,,
+57,sin_respuesta,no,¿Cuántos estudiantes recibieron cada tipo de sanción disciplinaria en la UTB durante 2025?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículo 110; describe sanciones, pero no ofrece un registro estadístico anual.",En el momento no cuento con esa información debido a que no se encuentra en la página oficial de la UTB.,1.449,0.2115,stop,6,si,,,,,

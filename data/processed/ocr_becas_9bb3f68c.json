@@ -1,0 +1,87 @@
+{
+  "tipo": "pdf",
+  "titulo": "Resolución No. 02 de 2024 - Política de becas y estímulos para estudiantes de pregrado",
+  "fuente_url": "https://www.utb.edu.co/wp-content/uploads/2025/05/Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf",
+  "archivo_origen": "data\\raw\\docs\\Res-No-2-de-Consejo-Academico-Politica-de-Becas-y-Estimulos-para-estudiantes-de-pregrado.pdf",
+  "sha256_origen": "9bb3f68c1bbedfce3889a98e8deed023893d7ade40c0b93ad4e5652d2829c5c3",
+  "extractor_version": "qwen-vision-revision-visual-v1",
+  "extraido_en": "2026-11-27T04:41:29.086716+00:00",
+  "modelo_transcripcion": {
+    "name": "qwen3.5:9b",
+    "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+    "details": {
+      "parent_model": "model.gguf",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "9.0B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 4096,
+      "runner": "llamacpp"
+    }
+  },
+  "revision": {
+    "tipo_revision": "visual_IA",
+    "revisor": "agente; cotejo de las cuatro páginas renderizadas del PDF original",
+    "consenso_humano": false,
+    "alcance": "Artículos, parágrafos, requisitos, porcentajes, cifras, fechas, negaciones y responsables cotejados con las imágenes. Las marcas ILEGIBLE corresponden a firmas manuscritas, no a disposiciones normativas.",
+    "paginas": {
+      "1": {
+        "verificada": true,
+        "sha256_texto": "5f8ff391bb9269a0a05e26aeffa1b2be45bdc7ca25ea5ac31d0c966cdc26e5fc",
+        "sha256_imagen": "f195e58a7c637b03f4b13784d57ae8e35469abe14d039f1f697020146863585f"
+      },
+      "2": {
+        "verificada": true,
+        "sha256_texto": "231e3e2e59181187e1b86a8f126623be198c92b7e3f1c8cb4f58c155eff40f4a",
+        "sha256_imagen": "d86daa01a65241bc439f80b50fe385bdae222cc2eb07a2248832b15b91bcdd65",
+        "correcciones": [
+          {
+            "antes": "UTB\nUniversidad Tecnológica de Bolívar\n\n",
+            "despues": ""
+          }
+        ],
+        "observacion": "Se elimina una reproducción del logotipo que el OCR añadió: no aparece en la segunda página."
+      },
+      "3": {
+        "verificada": true,
+        "sha256_texto": "b18d1d851a0d4b8c59759827a43a6afcb2b9649161e3eaf4bef31f4ba838e3b8",
+        "sha256_imagen": "ecd04672bdeb29e2872a952bd7671d5126395d736207beddb60e4714c0ee8540"
+      },
+      "4": {
+        "verificada": true,
+        "sha256_texto": "fb9a08b971bfb1b38b7b724a0d856a2cb55a56a85b3a4751054e71244f2acc32",
+        "sha256_imagen": "3a182ebda06f115a4c350ede188fbd8c095a742a99f59efc7ec70d61d2f54f86"
+      }
+    }
+  },
+  "paginas": [
+    {
+      "pagina": 1,
+      "texto": "UTB\nUniversidad Tecnológica de Bolívar\n\nCONSEJO ACADÉMICO\nRESOLUCIÓN No. 02 DE 2024\n\nCONSEJO ACADÉMICO\nRESOLUCIÓN No. 02 DE 2024\n\nPOR MEDIO DE LA CUAL SE APRUEBA LA POLÍTICA DE BECAS Y ESTÍMULOS PARA ESTUDIANTES DE PREGRADO\n\nEl Consejo Académico de la Universidad Tecnológica de Bolívar (UTB), en uso de sus facultades que le confieren los Estatutos Generales y\n\nCONSIDERANDO\n\n1. Que es función del Consejo Académico establecer las políticas de desarrollo académico, y aprobar las normas y reglamentos que regulan la actividad académica de la Universidad.\n2. Que la Universidad Tecnológica de Bolívar (UTB) se distingue como una institución universitaria privada y sin ánimo de lucro que ha consolidado una sólida reputación tanto a nivel regional como nacional.\n3. En línea con su compromiso con la excelencia académica, la UTB promueve activamente el buen desempeño académico de sus estudiantes. Esto incluye fomentar el aprendizaje temprano del inglés, así como desarrollar hábitos, herramientas y competencias esenciales para el éxito profesional.\n4. Que el Consejo Académico en su sesión No. 05 del 18 de julio de 2024, aprobó la política de estímulos y becas para estudiantes de pregrado.\n5. Que el Consejo Académico en su sesión No.05 del 18 de julio de 2024, autorizó y concedió a las distintas Facultades, Escuelas e Institutos para que en sus programas, otorguen las distinciones a los Estudiante de Honor y Estudiante Meritorio, que cumplan con los requisitos establecidos en el Reglamento estudiantil.\n\nRESUELVE\n\nARTÍCULO 1. Distinción estudiante de honor y estudiante meritorio\n\nAdemás de los requisitos establecidos en el artículo 87 del Reglamento Estudiantil (aquí) para otorgar las distinciones de Estudiante de Honor y Estudiante Meritorio de cada programa de pregrado, los estudiantes beneficiados podrán acceder a:\n\n1. Estudiante de Honor:\na) Descuento del 100% para un curso de inglés por extensión UTB, sujeto a la apertura del curso con su respectivo punto de equilibrio y cupo máximo por cohorte.\nb) Distinción académica en ceremonia pública.\nc) Taller de liderazgo y habilidades comunicativas.\nd) Este estímulo es intransferible, no canjeable y tiene una vigencia de tres (3) años a partir de la fecha de emisión de la distinción, para ser redimido únicamente por el beneficiario.\n\n2. Estudiante Meritorio:\na) Descuento del 50% para un curso de inglés por extensión UTB, sujeto a la apertura del curso con su respectivo punto de equilibrio y cupo máximo por cohorte.\n\nAprobado en Acta del Consejo Académico N° 02 del 19 de julio de 2024\nPágina 1 de 4",
+      "needs_ocr": false,
+      "revision_visual": "IA; pendiente consenso humano"
+    },
+    {
+      "pagina": 2,
+      "texto": "CONSEJO ACADÉMICO\nRESOLUCIÓN No. 02 DE 2024\n\nb) Distinción académica en ceremonia pública.\nc) Taller de liderazgo y habilidades comunicativas.\nd) Este estímulo es intransferible, no canjeable y tiene una vigencia de tres (3) años a partir de la fecha de emisión de la distinción, para ser redimido únicamente por el beneficiario.\n\nParágrafo 1: La oficina de Admisión y Registro Académico es la responsable de presentar ante el Consejo Académico los estudiantes beneficiarios y asegurar que se cumplan los términos y condiciones establecidos.\n\nParágrafo 2: el descuento podrá ser redimido para otro curso ofrecido por extensión UTB siempre y cuando haya cumplido con el requisito formativo de inglés establecido en el artículo 78 parágrafo 2 del Reglamento Estudiantil.\n\nARTÍCULO 2. Estímulos por dominio del inglés B2\nObjetivo:\n1. Promover la adquisición temprana del nivel B2 de inglés entre los estudiantes de pregrado.\n2. Incentivar la inscripción temprana en los cursos de inglés complementarios (inglés 6, 7 y 8).\n\nEstímulo: Descuento del 50% en la matrícula de pregrado del siguiente semestre para los estudiantes más destacados, según los criterios específicos. La Vicerrectoría Administrativa designará el número de cupos disponibles por semestre.\n\nProceso de postulación: los aspirantes deben inscribirse y proporcionar evidencia de sus logros.\n\nRequisitos de inscripción:\na) No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera.\nb) No tener sanciones disciplinarias ni académicas en la hoja de vida.\nc) Clasificación Saber 11: inglés 1, 2 o 3 (A1/A2)\nd) Certificar nivel B2 en inglés al momento de la inscripción. No podrán inscribirse quienes homologuen hasta inglés 5 (B1) al ingresar a la universidad\n\nProceso de selección:\na) Haber alcanzado el nivel B2 en un lapso de máximo 5 periodos académicos.\nb) Tomar y aprobar el examen de dominio del Centro de Idiomas de la UTB con nivel B2 en cada una de las 4 habilidades (habla, escucha, lectura y escritura).\nc) Solo se aceptará el examen de dominio del Centro de Idiomas para evaluar el nivel de competencia. El estudiante asume el costo de la prueba. Si el estudiante está matriculado en los cursos de inglés por extensión UTB, su examen de dominio no tendrá costo.\nd) Criterios de desempate basado en PPA.\n\nParágrafo 1: El estudiante podrá inscribirse en cada convocatoria que se abra; sin embargo, los beneficios otorgados por alcanzar el nivel B2 en inglés solo podrán ser obtenidos una vez por estudiante.\n\nAprobado en Acta del Consejo Académico N° 02 del 19 de julio de 2024\nPágina 2 de 4",
+      "needs_ocr": false,
+      "revision_visual": "IA; pendiente consenso humano"
+    },
+    {
+      "pagina": 3,
+      "texto": "CONSEJO ACADÉMICO\nRESOLUCIÓN No. 02 DE 2024\n\nParágrafo 2: La unidad académica encargada de la enseñanza de inglés es la responsable de coordinar y administrar el proceso de inscripción de los aspirantes. Verificar que los candidatos cumplan con los requisitos establecidos. Organizar la postulación del examen de dominio y asegurar que se realice de manera justa y consistente. Mantener un registro detallado de los resultados de los exámenes y de los estudiantes seleccionados.\n\nARTÍCULO 3. Beca a la Excelencia y desempeño integral (All-round Scholarship)\nObjetivo: Reconocer a estudiantes que demuestren excelencia académica, perfil de líderes y participación en actividades extracurriculares institucionales.\n\nBeneficios de la Beca:\na) Beca del 100% de la matrícula de pregrado. La Vicerrectoría Administrativa designará el número de cupos disponibles por semestre.\nb) Desarrollo Personal: Talleres de liderazgo y habilidades comunicativas, mentoría personalizada.\nc) Distinción académica en ceremonia pública\n\nProceso de postulación: los aspirantes deben inscribirse y proporcionar evidencia de sus logros.\n\nCriterios de selección:\na) Desempeño Académico: PPA superior a 4.0.\nb) Participación en actividades extracurriculares en la UTB: semilleros de investigación, grupos institucionales de voluntariado, representación en órganos colegiados, la Academia de Liderazgo para Alumnos (ALAS), el programa Ubuntu de monitorías académicas, el de Asesores TAE o como líderes de grupos estudiantiles.\nc) Logros en competencias/instancias externas a la UTB: congresos, concursos nacionales o internacionales, becas de movilidad, modelo de naciones unidas, entre otros.\n\nEvaluación:\na) Los estudiantes preseleccionados realizarán presentación ante el Consejo Académico/Comité Rectoral.\nb) Un comité designado por Vicerrectoría Académica evaluará las aplicaciones según rúbrica establecida.\nc) Notificación antes del inicio del siguiente semestre de pregrado.\n\nParágrafo 1: El estudiante podrá inscribirse en cada convocatoria que se abra; sin embargo, la beca a la Excelencia y desempeño integral (All-round Scholarship) solo podrá ser obtenida una vez por estudiante.\n\nParágrafo 2: Ecosistema Universitario será la unidad encargada de difundir la información en los diferentes canales institucionales. Recibir y revisar las aplicaciones de los estudiantes, verificando que cumplan con los criterios de elegibilidad. Facilitar el proceso de evaluación en el comité designado por la Vicerrectoría Académica.\n\nAprobado en Acta del Consejo Académico N° 02 del 19 de julio de 2024\nPágina 3 de 4",
+      "needs_ocr": false,
+      "revision_visual": "IA; pendiente consenso humano"
+    },
+    {
+      "pagina": 4,
+      "texto": "CONSEJO ACADÉMICO\nRESOLUCIÓN No. 02 DE 2024\n\nARTÍCULO 4. Estímulos a estudiantes con puntajes sobre salientes en el examen Saber Pro\nEl Reglamento Estudiantil en el parágrafo “e” del artículo 72 establece como requisito para grado de estudiantes de pregrado, obtener un mínimo de 100 puntos en el promedio de las competencias genéricas.\n\nConsulta la Resolución No. 05 de 2023 (aquí) para conocer los incentivos destinados a:\n* Estudiantes en los 10 primeros puestos nacionales en las pruebas Saber Pro, según el listado emitido por el ICFES.\n* Estudiantes entre los puestos 11 y 20 a nivel nacional en las pruebas Saber Pro, según el listado emitido por el ICFES.\n* Estudiantes con los 3 mejores puntajes en la UTB y con 35 puntos por encima de la media nacional en Pruebas Saber Pro.\n* Estudiantes entre los puestos 4 al 10 con los puntajes más altos en la UTB y con 25 puntos por encima de la media nacional en Pruebas Saber Pro.\n\nParágrafo: La oficina de Planeación y Gestión de la Calidad se encargará de la verificación de los puntajes, la notificación a los estudiantes beneficiarios y la coordinación con otras dependencias para la entrega de los estímulos correspondientes.\n\nARTÍCULO 5. Los beneficios otorgados a través de esta política de estímulos y becas no son acumulables con otros beneficios o descuentos ofrecidos por la universidad. Esto significa que un estudiante que ya reciba otro tipo de beca o descuento aplicable a su matrícula no podrá sumar el porcentaje de esta beca a dicho beneficio. En tales casos, se aplicará únicamente el beneficio de mayor valor económico o el más favorable para el estudiante.\n\nARTÍCULO 6. La presente Resolución rige a partir de la fecha de su expedición.\n\nDado en Cartagena de Indias D. T. H y C., a los diez y nueve (19) días del mes de julio de 2024.\n\nPublíquese y cúmplase.\n\nPara constancia firman\n\n[ILEGIBLE]\nALBERTO ROA VARELO\nRector\n\n[ILEGIBLE]\nANA MARIA HORRILLO C.\nSecretaria General\n\nAprobado en Acta del Consejo Académico N° 02 del 19 de julio de 2024\nPágina 4 de 4",
+      "needs_ocr": false,
+      "revision_visual": "IA; pendiente consenso humano"
+    }
+  ]
+}
