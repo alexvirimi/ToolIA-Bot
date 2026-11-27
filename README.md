@@ -6,6 +6,18 @@ estudiantes, aspirantes, docentes y administrativos realicen preguntas en lengua
 sobre reglamentos, manual de convivencia, calendario académico, procesos administrativos,
 requisitos, servicios y demás información publicada en la página web.
 
+## Descarga semanal de fuentes en Azure
+
+El [Job de Azure Container Apps](deploy/azure/README.md) ejecuta
+`scripts/download_data_azure.py` los lunes a las 03:00 a. m. de Colombia
+y guarda los resultados en Azure Files. `scripts/download_data.py` sigue
+disponible para descargas manuales.
+
+## Demo del chatbot con Docker
+
+La [guía de Docker Compose](deploy/bot/README.md) explica cómo probar el chatbot
+por consola con Ollama y llevarlo a una VM Linux de Azure.
+
 ## Instalación y ejecución
 
 **Requisitos previos:** Python 3.14.

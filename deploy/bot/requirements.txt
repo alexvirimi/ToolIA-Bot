@@ -1,0 +1,5 @@
+chromadb==1.5.9
+langchain-core==1.8.4
+langchain-ollama==1.1.0
+numpy==2.5.5
+requests==2.34.2
