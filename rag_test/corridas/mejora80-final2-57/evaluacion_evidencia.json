@@ -1,0 +1,597 @@
+{
+  "corrida": "mejora80-final2-57",
+  "huella_salidas": "e924e84ae12002a92a717fb786fc8ece9b9dbc1c090bd319c252d2732d444833",
+  "revisor": "IA; revisi?n de consistencia y contenido, consenso humano pendiente",
+  "base_revision": "mejora80-final-57.anotaciones.json",
+  "respuestas": [
+    {
+      "id": "1",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde las notas m?nimas espec?ficas (Consultorio Jur?dico 3.5, Trabajo de Grado 3.50) y aclara que no hay nota general ?nica en los fragmentos. Coincide con art. 51.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "2",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye PPA 3.20, Prueba Acad?mica Parcial y condici?n de cr?ditos acumulados superiores al primer nivel. Coincide con art. 68 completo.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "3",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Asistencia m?nima 80% y reprobaci?n con calificaci?n m?nima. Coincide con art. 67.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "4",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Semana 12, p?rdida de calidad de estudiante regular, autorizaciones para Prueba/Recuperaci?n y prohibici?n de retiro total en Recuperaci?n. Coincide con art. 39.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "5",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay estad?sticas de expulsiones por plagio en 2025.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "6",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Estudiante de Honor: descuento 100%, vigencia 3 a?os. Coincide con Res. 02/2024 art. 1.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "7",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Estudiante Meritorio: descuento 50%, vigencia 3 a?os. Coincide con Res. 02/2024 art. 1.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "8",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Descuento 50% matr?cula siguiente semestre y Vicerrector?a Administrativa designa cupos. Coincide con art. 2.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "9",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Todos los requisitos de inscripci?n B2: no reprobados/cancelados, no sanciones, Saber 11 ingl?s 1-3, certificar B2, no homologar ingl?s 5. Coincide con art. 2.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "10",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Una sola vez por estudiante (par?grafo 1 art. 2).",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "11",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Beneficios: matr?cula 100%, talleres, mentor?a, distinci?n p?blica. Coincide con art. 3.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "12",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "PPA superior a 4.0, actividades extracurriculares, logros externos. Coincide con art. 3.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "13",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Presentaci?n ante Consejo, comit? con r?brica, notificaci?n antes del siguiente semestre. Coincide con art. 3.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "14",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Una sola vez por estudiante (par?grafo 1 art. 3).",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "15",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Ecosistema Universitario difunde y procesa aplicaciones. Coincide con art. 3 par?grafo 2.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "16",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "No acumulables, beneficio de mayor valor o m?s favorable. Coincide con art. 5.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "17",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Distingue dos reg?menes (Res. 05/2023 derogada y Res. 01/2025 vigente), reconoce derogaci?n, conserva umbral 40 puntos y oficina Planeaci?n y Gesti?n de Calidad. Coincide con Res. 01/2025 y art. 4.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Ambos reg?menes est?n en el contexto recuperado.",
+      "fragmentos_evidencia": [
+        1,
+        2,
+        4
+      ]
+    },
+    {
+      "id": "18",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Oficina de Planeaci?n y Gesti?n de la Calidad verifica puntajes y notifica. Coincide con art. 4.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "19",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Cubre 50% dos primeros semestres, pero omite que continuidad est? condicionada.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "20",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "5 condiciones de continuidad, omite no acumulable y disponibilidad de recursos.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "21",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "PPA 3.20 pregrado, 3.50 posgrado. Coincide con art. 78.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "22",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Puntaje global m?nimo 100, aplica desde 2024. Coincide con art. 78.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "23",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "No es requisito general, es requisito de grado para ingresantes desde 2024. Coincide con art. 78 par?grafo 2.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "24",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Summa Cum Laude, valores de persona integral, postulaci?n decano con aprobaci?n. Coincide con art. 82.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "25",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "PPA 1% m?s alto, no reprobados, no sanciones, duraci?n plan de estudios. Coincide con art. 83.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "26",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "PPA 3% m?s alto, no reprobados, no sanciones, duraci?n plan de estudios. Coincide con art. 84.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "27",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye PAP, condici?n de cr?ditos acumulados y PPA inferior a 3.20. Coincide con art. 68.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "28",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Prueba Acad?mica Total para siguiente periodo desde Prueba Parcial sin PPA 3.20. Coincide con art. 68.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "29",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Recuperaci?n Acad?mica con PPP 3.20 pero PPA < 3.20, continuidad inmediata y autorizaci?n. Coincide con art. 69.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "30",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Exclusi?n por bajo rendimiento: PAT sin PPP 3.20, o Recuperaci?n sin PPA 3.20. Coincide con arts. 68-69.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "31",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Pregrado 3.0, posgrado 3.5, pr?ctica profesional pregrado 3.5. Coincide con art. 51.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "32",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Asistencia m?nima 80%, reprobaci?n con calificaci?n m?nima. Coincide con art. 67.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "33",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye semana 12, p?rdida calidad, excepciones pr?cticas profesionales y estados acad?micos. Coincide con art. 39.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "34",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "?ltimo d?a h?bil cuarta semana de cada ciclo (virtual). Coincide con art. 40.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "35",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "18 cr?ditos o m?ximo nivel programa, excepci?n hasta 20 con PPA > 4.00. Coincide con art. 36.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "36",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Presencial 16 semanas, virtual 20 semanas en 4 ciclos de 5. Coincide con arts. 35 y 37.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "37",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "Afirma que ninguna solicitud despu?s de tercera semana es aceptada; texto dice que desde cuarta semana no hay reembolso, no que no se aceptan solicitudes.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "38",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "T?tulo bachiller, Saber 11 y documentos se apoyan en Inscripciones Pregrado; falta formalizar ante Admisiones y Registro y plazos del art. 23.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "39",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye los 5 tipos de admisi?n (primera vez, reinicio, reingreso, transferencia externa e interna). Coincide con art. 25.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "40",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye Recuperaci?n Acad?mica, excluidos por bajo rendimiento y expulsados. Coincide con art. 28 par. 3.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "41",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Homologaci?n max 50%, Vicerrector?a puede ajustar. Coincide con art. 29.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "42",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "48 horas de trabajo por cr?dito. Coincide con art. 42.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "43",
+      "etiqueta": "abstencion_fallo",
+      "fidelidad": "",
+      "observaciones": "No determina efecto de sanci?n sobre distinciones; art. 110 no fue recuperado.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "44",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Pierde beneficio desde notificaci?n, doble tiempo desde reingreso. Coincide con art. 98.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "45",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "2 periodos, PPA 3.70, no Prueba/Recuperaci?n, no sanci?n vigente, solicitud director. Omite misma modalidad y matr?cula programa mayor valor.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "46",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay conteo de estudiantes en Prueba Acad?mica Parcial 2025-1.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "47",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "98% descuento matr?cula, cubre semestres del plan de estudios. Coincide con web Premio Liderazgo Caribe.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "48",
+      "etiqueta": "abstencion_fallo",
+      "fidelidad": "",
+      "observaciones": "No lista requisitos espec?ficos Puerto Bah?a aunque est?n en p?gina recuperada.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "49",
+      "etiqueta": "abstencion_fallo",
+      "fidelidad": "",
+      "observaciones": "No hay cobertura ICETEX pregrado en fragmentos.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "50",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay conteo de excluidos por bajo rendimiento 2025.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "51",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay conteo de estudiantes en Prueba Acad?mica Total 2025-1.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "52",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay conteo de estudiantes en Recuperaci?n Acad?mica 2025.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "53",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Lista 22 estudiantes pero se trunca (verificaci?n pendiente).",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El contexto incluye los datos solicitados.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "54",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay conteo de solicitudes de reingreso aprobadas 2025.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "55",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay calificaciones finales de pr?ctica profesional 2025-1.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "56",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay conteo de reprobados por asistencia 2025.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "57",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No hay desglose de sanciones disciplinarias 2025.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
+      "fragmentos_evidencia": []
+    }
+  ]
+}

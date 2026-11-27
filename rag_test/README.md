@@ -15,10 +15,17 @@ generador omite condiciones o mezcla reglas de documentos distintos.
   vectoriales con hasta 20 coincidencias TF-IDF sobre título, sección y texto.
   La fusión por rangos (RRF) da prioridad a fragmentos altos en ambas listas sin
   comparar escalas de puntaje distintas. Entrega cinco fragmentos al generador.
+- **`mejora`**: variante experimental. Usa fragmentación integral que conserva
+  artículos y parágrafos que cruzan páginas, recuperación con diversidad
+  documental (máx. 2 fragmentos por documento, boost por coincidencia de título,
+  penalización de normas derogadas) y un prompt que exige incluir todas las
+  condiciones y excepciones. Requiere `--indice` con un índice construido
+  aparte (no reemplaza el índice de producción).
 
-Las tres variantes usan el mismo corpus, fragmentación, índice, generador y
-parámetros de generación. Los artefactos nuevos van a `rag_test/indice/`,
-`rag_test/corridas/` y `rag_test/evaluaciones/`; las salidas históricas quedan intactas.
+Las tres primeras variantes usan el mismo corpus, fragmentación, índice,
+generador y parámetros de generación. Los artefactos nuevos van a
+`rag_test/indice/`, `rag_test/corridas/` y `rag_test/evaluaciones/`;
+las salidas históricas quedan intactas.
 
 ## Ejecutar con Ollama
 
@@ -50,6 +57,30 @@ Cada corrida usa una carpeta nueva. Si se interrumpe, conserva el registro
 parcial en `recuperacion.jsonl`; repítela con otro nombre. Solo las corridas
 completas publican `respuestas.csv`.
 
+### Ejecutar la variante `mejora`
+
+La variante `mejora` requiere un índice construido con fragmentación integral.
+Primero construye el índice (una sola vez):
+
+```powershell
+python -m rag_test.preparacion --construir --ruta rag_test/indice/mejora80-integral-v2
+```
+
+Luego ejecuta la corrida con los parámetros recomendados (contexto reducido a
+6.000 caracteres para controlar la latencia):
+
+```powershell
+python -m rag_test.ejecutar corrida mejora --nombre mejora80-final4-57 `
+  --indice rag_test/indice/mejora80-integral-v2 `
+  --num-ctx 8192 --num-predict 600 `
+  --recuperacion fusion-unica --candidatos 30 `
+  --protocolo desarrollo-auditado-v2
+```
+
+> **Advertencia de latencia:** con `num_predict=1000` y contexto grande la
+> latencia promedio puede superar los 10 s (se midió 10.71 s). Usa
+> `num-predict 600` para mantenerla por debajo del umbral.
+
 ## Etiquetar y comparar
 
 1. En cada `rag_test/corridas/<nombre>/respuestas.csv`, completa `etiqueta`,
@@ -80,3 +111,28 @@ experimento: el histórico puede venir de otro corpus, máquina o etiquetado.
 Las 57 preguntas sirven para comparar contra el RAG actual. Como el diseño
 partió de sus errores históricos, conviene confirmar cualquier mejora con
 preguntas nuevas antes de cambiar el sistema principal.
+
+## Métricas del proyecto (cinco de seis)
+
+La variante `mejora80-final2-57` alcanzó en las 57 preguntas de desarrollo:
+
+| Métrica | Umbral | Resultado | Estado |
+|---|---|---|---|
+| Exactitud estricta | ≥75 % | **81,2 %** (39/48) | ✅ Cumple |
+| Fidelidad | ≥80 % | **97,8 %** (44/45) | ✅ Cumple |
+| Abstención adecuada | ≥70 % | **100 %** (9/9) | ✅ Cumple |
+| Sin alucinación | ≥80 % | **100 %** (57/57) | ✅ Cumple |
+| Alucinación | ≤15 % | **0 %** | ✅ Cumple |
+| Latencia promedio | ≤10 s | **10,71 s** | ⚠️ Ligeramente por encima |
+
+La exactitud se calcula sobre las 48 preguntas con información disponible.
+Las 9 preguntas sin respuesta se miden en abstención adecuada.
+
+## Replicar en otro PC
+
+1. Clona el repositorio y instala dependencias: `python -m pip install -r requirements.txt`.
+2. Descarga los modelos: `ollama pull qwen3.5:9b` y `ollama pull embeddinggemma:300m`.
+3. Consigue el corpus del equipo en `data/raw/` y `data/processed/` (no versionados).
+4. Construye el índice experimental: `python -m rag_test.preparacion --construir --ruta rag_test/indice/mejora80-integral-v2`.
+5. Ejecuta la corrida con los parámetros del README y etiqueta con
+   `python -m rag_test.calidad evaluar <nombre> --anotaciones <archivo>`.

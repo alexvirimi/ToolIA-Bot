@@ -51,7 +51,10 @@ def cargar_corrida(carpeta: Path):
     return info, metricas, dict(zip(df["id"], df["etiqueta"]))
 
 
-def comparar(nombres):
+def comparar(nombres, cambios_permitidos=()):
+    permitidos = set(cambios_permitidos)
+    if permitidos - {"huella_indice", "num_predict", "num_ctx", "formato"}:
+        raise ValueError("Solo se permiten cambios explícitos de índice o límites de generación.")
     if len(set(nombres)) != len(nombres):
         raise ValueError("Cada nombre de corrida debe ser distinto.")
     control, metricas_control, etiquetas_control = cargar_corrida(CORRIDAS / nombres[0])
@@ -60,8 +63,12 @@ def comparar(nombres):
     resultados = {nombres[0]: {"variante": "control", "metricas": metricas_control}}
     for nombre in nombres[1:]:
         info, metricas, etiquetas = cargar_corrida(CORRIDAS / nombre)
+        claves = set(info["config_compartida"]) | set(control["config_compartida"])
+        diferencias = {c: {"control": control["config_compartida"].get(c), "variante": info["config_compartida"].get(c)}
+                       for c in claves if control["config_compartida"].get(c) != info["config_compartida"].get(c)}
         if (info["huella_preguntas"] != control["huella_preguntas"]
-                or info["config_compartida"] != control["config_compartida"]):
+                or set(diferencias) - permitidos
+                or info.get("protocolo", "historico") != control.get("protocolo", "historico")):
             raise ValueError(f"{nombre}: preguntas, modelos, parámetros o índice distintos al control.")
 
         cambios = [
@@ -79,6 +86,7 @@ def comparar(nombres):
             "metricas": metricas,
             "delta_vs_control_pp_o_segundos": deltas,
             "cambios_etiqueta": cambios,
+            "cambios_configuracion_declarados": diferencias,
         }
 
     return {
@@ -86,6 +94,7 @@ def comparar(nombres):
         "n_preguntas": control["n_preguntas"],
         "huella_preguntas": control["huella_preguntas"],
         "config_compartida": control["config_compartida"],
+        "factores_experimentales_permitidos": sorted(permitidos),
         "nota": "HitFuente@5 estima coincidencia documental por URL, no recall de evidencia.",
         "resultados": resultados,
     }
@@ -95,11 +104,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("corridas", type=nombre_local, nargs="+", help="Primero el control.")
     parser.add_argument("--nombre", type=nombre_local, required=True, help="Nombre nuevo del informe.")
+    parser.add_argument("--permitir-cambios", nargs="*", choices=("huella_indice", "num_predict", "num_ctx", "formato"), default=[],
+                        help="Factores experimentales explícitos; modelos, preguntas y protocolo siguen siendo obligatoriamente iguales.")
     args = parser.parse_args()
     if len(args.corridas) < 2:
         parser.error("Indica el control y al menos una variante para comparar.")
     try:
-        informe = comparar(args.corridas)
+        informe = comparar(args.corridas, args.permitir_cambios)
         destino = CARPETA / "evaluaciones" / args.nombre
         destino.mkdir(parents=True, exist_ok=False)
         guardar_json(destino / "comparacion.json", informe)
