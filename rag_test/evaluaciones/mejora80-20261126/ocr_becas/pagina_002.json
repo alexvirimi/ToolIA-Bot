@@ -1,0 +1,22 @@
+{
+  "model": "qwen3.5:9b",
+  "created_at": "2026-11-27T04:38:23.9423996Z",
+  "message": {
+    "role": "assistant",
+    "content": "UTB\nUniversidad Tecnológica de Bolívar\n\nCONSEJO ACADÉMICO\nRESOLUCIÓN No. 02 DE 2024\n\nb) Distinción académica en ceremonia pública.\nc) Taller de liderazgo y habilidades comunicativas.\nd) Este estímulo es intransferible, no canjeable y tiene una vigencia de tres (3) años a partir de la fecha de emisión de la distinción, para ser redimido únicamente por el beneficiario.\n\nParágrafo 1: La oficina de Admisión y Registro Académico es la responsable de presentar ante el Consejo Académico los estudiantes beneficiarios y asegurar que se cumplan los términos y condiciones establecidos.\n\nParágrafo 2: el descuento podrá ser redimido para otro curso ofrecido por extensión UTB siempre y cuando haya cumplido con el requisito formativo de inglés establecido en el artículo 78 parágrafo 2 del Reglamento Estudiantil.\n\nARTÍCULO 2. Estímulos por dominio del inglés B2\nObjetivo:\n1. Promover la adquisición temprana del nivel B2 de inglés entre los estudiantes de pregrado.\n2. Incentivar la inscripción temprana en los cursos de inglés complementarios (inglés 6, 7 y 8).\n\nEstímulo: Descuento del 50% en la matrícula de pregrado del siguiente semestre para los estudiantes más destacados, según los criterios específicos. La Vicerrectoría Administrativa designará el número de cupos disponibles por semestre.\n\nProceso de postulación: los aspirantes deben inscribirse y proporcionar evidencia de sus logros.\n\nRequisitos de inscripción:\na) No haber cancelado o reprobado ninguno de los cursos matriculados, ni haber estado en Prueba Académica durante la carrera.\nb) No tener sanciones disciplinarias ni académicas en la hoja de vida.\nc) Clasificación Saber 11: inglés 1, 2 o 3 (A1/A2)\nd) Certificar nivel B2 en inglés al momento de la inscripción. No podrán inscribirse quienes homologuen hasta inglés 5 (B1) al ingresar a la universidad\n\nProceso de selección:\na) Haber alcanzado el nivel B2 en un lapso de máximo 5 periodos académicos.\nb) Tomar y aprobar el examen de dominio del Centro de Idiomas de la UTB con nivel B2 en cada una de las 4 habilidades (habla, escucha, lectura y escritura).\nc) Solo se aceptará el examen de dominio del Centro de Idiomas para evaluar el nivel de competencia. El estudiante asume el costo de la prueba. Si el estudiante está matriculado en los cursos de inglés por extensión UTB, su examen de dominio no tendrá costo.\nd) Criterios de desempate basado en PPA.\n\nParágrafo 1: El estudiante podrá inscribirse en cada convocatoria que se abra; sin embargo, los beneficios otorgados por alcanzar el nivel B2 en inglés solo podrán ser obtenidos una vez por estudiante.\n\nAprobado en Acta del Consejo Académico N° 02 del 19 de julio de 2024\nPágina 2 de 4"
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 19330251600,
+  "load_duration": 52869600,
+  "prompt_eval_count": 2429,
+  "prompt_eval_cached_count": 0,
+  "prompt_eval_duration": 3109787000,
+  "eval_count": 686,
+  "eval_duration": 15926023000,
+  "pagina": 2,
+  "sha256_pdf": "9bb3f68c1bbedfce3889a98e8deed023893d7ade40c0b93ad4e5652d2829c5c3",
+  "sha256_imagen": "d86daa01a65241bc439f80b50fe385bdae222cc2eb07a2248832b15b91bcdd65",
+  "sha256_texto": "231e3e2e59181187e1b86a8f126623be198c92b7e3f1c8cb4f58c155eff40f4a",
+  "verificado": false
+}
