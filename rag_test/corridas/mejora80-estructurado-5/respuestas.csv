@@ -1,0 +1,41 @@
+﻿id,categoria,tiene_respuesta,pregunta,respuesta_referencia,fuente_url,pagina_o_seccion,respuesta_modelo,latencia_s,latencia_recuperacion_s,fin_generacion,tokens_generados,abstencion_auto,citas_validas,hit_fuente_at_5,etiqueta,fidelidad,observaciones
+1,calificaciones,si,¿Cuál es la calificación mínima aprobatoria para un curso de pregrado en la UTB?,"3,0 para cursos de pregrado y 3,5 para la práctica profesional de pregrado.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 51 del Reglamento Estudiantil,"La calificación mínima aprobatoria es de 3.5.
+
+Condiciones:
+- Se aplica al final del semestre para cursos como Consultorio Jurídico.
+- La nota se basa en desempeño, interés en asesorías, evaluación de informes y actuación ante despachos judiciales.
+- No se califican casos archivados por desinterés del usuario o sin despliegue de actuación.
+- Faltar sin justificación a más del 20% de los turnos asignados resulta en reprobar con nota de 0.5.
+
+Excepciones:
+- Los casos archivados por desinterés del usuario no se califican.
+- Los casos sin despliegue de actuación no se califican.
+
+Fuentes: [1] [2]",7.4355,1.5615,stop,201,no,[1] [2],no,,,
+2,estados_academicos,si,¿Qué Promedio Ponderado Acumulado (PPA) debe mantener un estudiante de pregrado y qué pasa si al finalizar un periodo no lo logra?,"Debe mantener un PPA mínimo de 3,20. Si al finalizar el periodo queda por debajo, pasa a Prueba Académica Parcial para el siguiente periodo. La aplicación del art. 68 exige créditos matriculados acumulados superiores a los correspondientes al primer nivel del programa.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 68 del Reglamento Estudiantil,"Un estudiante de pregrado debe mantener un Promedio Ponderado Acumulado (PPA) mínimo de 3,20. Si al finalizar un periodo no logra obtener un PPA igual o superior a 3,20, quedará en condición de Prueba Académica Parcial para el siguiente periodo.
+
+Condiciones:
+- Aplica cuando los créditos matriculados acumulados sean mayores que los correspondientes al primer nivel del programa.
+- El cálculo del PPA se realiza sumando los productos de los créditos por la calificación definitiva y dividiendo entre el total de créditos cursados, expresado con dos decimales aproximado por defecto.
+
+Fuentes: [1] [2]",5.8474,0.2053,stop,189,no,[1] [2],no,,,
+3,asistencia,si,¿Qué porcentaje mínimo de asistencia se exige en la modalidad presencial y qué ocurre si no se cumple?,"Mínimo 80% de las sesiones de clase. Si no se cumple, el estudiante reprueba el curso con la calificación mínima establecida en el Reglamento.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 67 del Reglamento Estudiantil,"Se exige un mínimo del 80% de asistencia a las sesiones de clase. Si no se cumple este porcentaje, el estudiante reprobará con la calificación mínima establecida en el Reglamento.
+
+Condiciones:
+- Aplica exclusivamente a estudiantes de modalidad presencial.
+- La falta sin justificación válida incurre en esta restricción.
+
+Fuentes: [1]",4.1069,0.1947,stop,115,no,[1],no,,,
+4,matricula,si,¿Hasta qué semana puede retirar cursos un estudiante de pregrado presencial y qué pasa si retira todos?,"Hasta el último día hábil de la semana 12 del periodo académico. Si retira todos sus cursos, pierde la calidad de estudiante regular. Las prácticas requieren autorización previa para retirarse. En Prueba o Recuperación Académica se requiere autorización de la dirección; en Recuperación no se permite retirar todos los cursos.",https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,Artículo 39 del Reglamento Estudiantil,"Un estudiante regular de pregrado en modalidad presencial podrá retirar cursos hasta el último día hábil de la decimosegunda (12a) semana. En caso de retirar todos sus cursos, perdería la calidad de estudiante regular.
+
+Condiciones:
+- El estudiante debe ser regular y estar en modalidad presencial.
+- Las prácticas profesionales no podrán ser retiradas salvo autorización previa de la dirección de programa.
+- Los estudiantes en Prueba Académica o Recuperación Académica requieren autorización de su respectiva dirección de programa para retirar cursos; los de Recuperación Académica no pueden solicitar el retiro de la totalidad de sus cursos.
+
+Excepciones:
+- Las prácticas profesionales no podrán ser retiradas, salvo autorización previa de la dirección de programa.
+- Los estudiantes en Prueba Académica o Recuperación Académica requieren autorización para retirar cursos; los de Recuperación Académica no pueden retirar la totalidad.
+
+Fuentes: [1]",7.3368,0.1943,stop,239,no,[1],no,,,
+5,sin_respuesta,no,¿Cuántos estudiantes fueron sancionados con expulsión por plagio durante 2025?,NO_HAY_INFORMACION,https://www.utb.edu.co/wp-content/uploads/2026/05/Reglamento-Estudiantil-2026-actualizado_compressed.pdf,"Artículo 110; el Reglamento define las sanciones, pero no publica estadísticas anuales de casos.",En el momento no cuento con esa información debido a que no se encuentra en la página oficial de la UTB.,2.3971,0.2406,stop,42,si,,,,,

@@ -1,0 +1,619 @@
+{
+  "corrida": "mejora80-integral-57-v2",
+  "huella_salidas": "ef443e2df4446739a267cee0521fcb3220d661b32754ef89bf1f1d1b6217bb50",
+  "revisor": "IA; consenso humano pendiente",
+  "base_revision": "rag_test\\evaluaciones\\mejora80-20261126\\mejora80-corpus-57.anotaciones.json",
+  "respuestas": [
+    {
+      "id": "1",
+      "etiqueta": "abstencion_fallo",
+      "fidelidad": "",
+      "observaciones": "No responde la nota general de 3,0 del art. 51; los fragmentos recuperados solo aportan notas de casos específicos.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "Falta la nota mínima general de 3,0 del art. 51; solo hay casos especiales.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "2",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Acierta PPA mínimo 3,20 y Prueba Académica Parcial; omite la condición del art. 68 sobre créditos acumulados superiores a los del primer nivel.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 68 completo conserva la condición de créditos en su continuación de página.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "3",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Indica asistencia mínima del 80% y reprobación con la calificación mínima; coincide con el art. 67 recuperado.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 67: asistencia del 80% y reprobación con la calificación mínima.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "4",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Acierta semana 12 y pérdida de la calidad de estudiante regular; omite las autorizaciones especiales y que en Recuperación Académica no se permite retirar todos los cursos.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 39 completo: semana 12, retiro total, autorizaciones y excepción de Recuperación.",
+      "fragmentos_evidencia": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "5",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "Reconoce que no hay estadísticas de expulsiones por plagio en 2025; no inventa un número de estudiantes.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "6",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Identifica ahora el 100% de Honor y la vigencia de tres años, respaldados por la resolución recuperada; omite apertura, punto de equilibrio y cupo máximo y las restricciones de uso del estímulo.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El fragmento 2 distingue Honor, porcentaje, apertura/cupo y vigencia completa.",
+      "fragmentos_evidencia": [
+        2
+      ]
+    },
+    {
+      "id": "7",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Identifica el 50% de Meritorio y los tres años de vigencia; faltan condiciones de apertura, punto de equilibrio/cupo y restricciones del estímulo.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 1 une ambas páginas, conservando porcentaje, apertura y vigencia de Meritorio.",
+      "fragmentos_evidencia": [
+        2
+      ]
+    },
+    {
+      "id": "8",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde descuento del 50% en matrícula siguiente y Vicerrectoría Administrativa responsable de los cupos; ambos constan en el art. 2 recuperado.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 2 contiene monto, semestre y designación de cupos.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "9",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye los cuatro requisitos de inscripción y la restricción de homologación. Los criterios adicionales se identifican correctamente como proceso de selección y están en las fuentes.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 2 contiene la inscripción completa y distingue el proceso de selección.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "10",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde una sola vez por estudiante, respaldado por el parágrafo 1 del art. 2 en el fragmento 2.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 2 ahora conserva entero el parágrafo de una vez.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "11",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Enumera los beneficios propios de All-round y añade una digresión que identifica expresamente transporte/alimentación bajo SPEC LNG como una beca específica, no un beneficio general nuevo de la política.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 3 enumera todos los beneficios propios y la asignación de cupos.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "12",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye PPA superior a 4,0, participación extracurricular y logros externos, con ejemplos y postulación respaldados por el art. 3.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Los tres criterios completos están en el art. 3.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "13",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Describe presentación ante Consejo/Comité Rectoral, evaluación por comité con rúbrica y notificación antes del siguiente semestre.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 3 completo incluye evaluación y fecha relativa de notificación.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "14",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Indica una sola obtención por estudiante de acuerdo con el parágrafo 1 del art. 3.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El fragmento 1 contiene íntegro el parágrafo de obtención única.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "15",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Identifica Ecosistema Universitario y sus funciones de difusión, recepción/revisión y facilitación de evaluación, respaldadas por el parágrafo 2 del art. 3.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 3 completo contiene el parágrafo 2 sobre Ecosistema.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "16",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde no acumulación y aplicación del beneficio de mayor valor económico o más favorable, conforme al art. 5.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 5 completo con no acumulación y selección del beneficio favorable.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "17",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "Presenta como actuales incentivos de la Res.05/2023, derogada expresamente por Res.01/2025, o los mezcla sin distinguir vigencia. La referencia v2 corrige esa omision del conjunto original.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperan todos los beneficios actuales con sus condiciones y vigencia de la Res.01/2025 completa; las categorias de 2023 no sustituyen esa evidencia.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "18",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Identifica correctamente Planeación y Gestión de la Calidad para verificar puntajes y notificar, según el art. 4 recuperado.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El parágrafo del art. 4 identifica la oficina solicitada.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "19",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Acierta cobertura del 50% en los dos primeros semestres, pero omite que la continuidad del beneficio está condicionada; la propia fuente recuperada lo advierte.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Cobertura del 50%, dos semestres y condiciones de continuidad disponibles.",
+      "fragmentos_evidencia": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "20",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Enumera las cinco condiciones de continuidad y la disponibilidad de recursos; omite la no acumulación con otras becas, apoyos o créditos condonables recogida en el mismo fragmento.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Están las cinco condiciones, disponibilidad y no acumulación.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "21",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Distingue correctamente los mínimos: PPA 3,20 para pregrado y 3,50 para posgrado; ambos valores están respaldados por los fragmentos.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 78 identifica los dos mínimos para optar al título.",
+      "fragmentos_evidencia": [
+        5
+      ]
+    },
+    {
+      "id": "22",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde mínimo de 100 y aplicación a pruebas desde 2024. La denominación de competencias genéricas proviene de la web y el reglamento recuperado respalda el puntaje global mínimo.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 78 completo identifica puntaje global mínimo y periodo de aplicación.",
+      "fragmentos_evidencia": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "23",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "Afirma el requisito B2, pero mezcla con graduación la exclusión de inscripción por homologar inglés 5 propia del estímulo; además no conserva la cohorte desde 2024.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Newsletter: requisito de grado B2 para pregrado presencial ingresado desde 2024; otros trámites se deben distinguir.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "24",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye Summa Cum Laude, valoración de integridad y postulación del decano con aprobación previa, al terminar pregrado; coincide con el art. 82.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 82 con las tres condiciones de Alcatraz de Oro.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "25",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Reproduce las cuatro condiciones del art. 83 y la excepción de duración para doble programa, respaldadas por los fragmentos.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 83 con condiciones y excepción de duración para doble programa.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "26",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Enumera las cuatro condiciones de Cum Laude y la excepción de duración para doble programa. La excepción consta en el art. 83 también recuperado, aunque las citas de esa frase son imprecisas.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 84 aporta condiciones y el art. 83, parágrafo, aporta excepción para estas distinciones.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "27",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Acierta Prueba Académica Parcial en el periodo siguiente, pero omite la condición de créditos acumulados superiores a los del primer nivel.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 68 completo conserva transición y condición de créditos.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "28",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde Prueba Académica Total para el siguiente periodo cuando se inicia en Prueba Parcial y no se alcanza PPA 3,20; coincide con el art. 68.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 68 completo contiene la transición PAP a PAT.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "29",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Identifica Recuperación, PPP/PPA y conserva continuidad inmediata y autorización de la dirección del art. 69.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "El art. 69 completo contiene umbrales, continuidad y autorización.",
+      "fragmentos_evidencia": [
+        3
+      ]
+    },
+    {
+      "id": "30",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Distingue correctamente exclusión tras Recuperación y exclusión al iniciar en PAT sin PPP/PPA mínimos; conserva la condición de créditos del art. 68 completo.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Arts. 68 y 69 completos distinguen las dos condiciones de exclusión.",
+      "fragmentos_evidencia": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "31",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Distingue los tres mínimos del art. 51: pregrado 3,0; posgrado 3,5; práctica profesional de pregrado 3,5.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 51: mínimos de pregrado, posgrado y práctica profesional.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "32",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde asistencia mínima del 80% y reprobación con la calificación mínima, conforme al art. 67 recuperado.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 67 con porcentaje y consecuencia.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "33",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Acierta semana 12 y pérdida de la calidad de estudiante regular; omite las autorizaciones especiales y la prohibición de retiro total en Recuperación Académica del art. 39.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 39 con plazo, consecuencia y excepciones.",
+      "fragmentos_evidencia": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "34",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde el plazo consultado: último día hábil de la cuarta semana de cada ciclo, respaldado por el art. 40; no lo confunde con la semana 12 de presencial.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 40: cuarta semana de cada ciclo; contiene las restricciones aplicables.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "35",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "Presenta el límite anterior de 18 como respuesta sin advertir la modificación explícita a 18,5 del otro fragmento. La referencia auditada incorpora Res. 03 de 2026.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 36 modificado por Res. 03 de 2026: 18,5 y autorización hasta 20 con PPA mayor de 4,00.",
+      "fragmentos_evidencia": [
+        2
+      ]
+    },
+    {
+      "id": "36",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Distingue 16 semanas en presencial y 20 en virtual, divididas en cuatro ciclos de cinco semanas; coincide con los arts. 35 y 37.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Arts. 35 y 37: 16 semanas y 20 semanas en cuatro ciclos de cinco.",
+      "fragmentos_evidencia": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "37",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "Acierta los porcentajes, pero afirma que ninguna solicitud posterior a la tercera semana será aceptada; el texto citado fija su redacción del plazo en la cuarta. Añade además una relación condicional de devolución al acudiente que la FAQ no expresa así.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 122 entre páginas conserva retiro autorizado y todos los porcentajes, incluido el cese desde semana cuatro.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "38",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Título de bachiller, Saber 11 y documentos se apoyan en Inscripciones Pregrado; falta formalizar ante Admisiones y Registro dentro de los plazos del art. 23.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "Faltan la formalización ante Admisiones y Registro y los plazos del art. 23.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "39",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "Solo describe primera vez a posgrado y afirma que no hay otras modalidades, aunque el fragmento 5 describe transferencia interna. Faltan los cinco tipos del art. 25.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No están reinicio, reingreso y transferencia interna.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "40",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "Acierta exclusión por rendimiento y expulsión, pero añade restricciones del reinicio y del estímulo B2 como impedimentos de reingreso; además omite Recuperación Académica.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "No se recuperó la prohibición de reingreso en Recuperación Académica.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "41",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Indica límite del 50% y posibilidad de ajuste por la Vicerrectoría Académica según convenios específicos, conforme al art. 29 parágrafo 2.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 29: 50% y ajuste por convenios de la Vicerrectoría.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "42",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Responde 48 horas de trabajo del estudiante por crédito, respaldadas por el art. 42 y el Manual de Gestión Curricular.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 42: 48 horas totales por crédito.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "43",
+      "etiqueta": "abstencion_fallo",
+      "fidelidad": "",
+      "observaciones": "No determina el efecto de una sanción sobre las distinciones; no recupera las disposiciones aplicables. El corpus sí contiene la prohibición del art. 110.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "Falta la prohibición general del art. 110.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "44",
+      "etiqueta": "parcial",
+      "fidelidad": "no",
+      "observaciones": "Acierta la pérdida desde la notificación, pero omite doble tiempo desde el reingreso autorizado y generaliza condiciones de una beca Cartagenera específica a la respuesta sobre suspensión general.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Art. 98: pérdida desde la notificación y doble tiempo desde reingreso.",
+      "fragmentos_evidencia": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "45",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "Incluye dos periodos previos, PPA mínimo 3,70, ausencia de Prueba/Recuperación y sanción vigente, y solicitud al segundo programa; omite misma modalidad, plan vigente y matrícula del programa de mayor valor.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "Faltan plan vigente y matrícula del programa de mayor valor; el contexto tampoco siempre contiene misma modalidad.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "46",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No inventa el conteo de Prueba Académica Parcial en 2025-1; las reglas, calendarios y estadísticas de otros años no responden ese dato.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "47",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Identifica cobertura del 98% en la web y distingue los beneficios históricos del 100% atribuyéndolos a sus periodos; los porcentajes están respaldados por los fragmentos.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "La web recuperada indica cobertura del 98% y duración del plan de estudios.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "48",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye los cinco requisitos principales y conserva que el video es solo para los seis preseleccionados; los datos adicionales de inscripción están respaldados.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "Requisitos completos y condición del video solo para seis preseleccionados.",
+      "fragmentos_evidencia": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "49",
+      "etiqueta": "incorrecta",
+      "fidelidad": "no",
+      "observaciones": "No responde cobertura ICETEX de pregrado: mezcla diplomados con crédito directo UTB del 70%, que es un producto distinto.",
+      "evidencia_suficiente": "no",
+      "justificacion_evidencia": "La cobertura de pregrado no aparece; los fragmentos tratan otras líneas o renovación. Se mantiene la limitación de la referencia externa.",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "50",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No inventa un conteo de excluidos en 2025, ausente en las fuentes. La explicación auxiliar simplifica indebidamente la exclusión a PPA inferior a 3,20 sin conservar la condición previa de PAT y PPP.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "51",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "Se abstiene de contar estudiantes en Prueba Académica Total en 2025-1; los fragmentos contienen reglas o estadísticas de población general y de otros periodos, no el conteo solicitado.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "52",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "Reconoce que no hay cifras de estudiantes en Recuperación Académica durante 2025; no convierte calendarios ni población general en un conteo no publicado.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "53",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "La lista se trunca después de 19 nombres, hasta Arrieta Arroyo; faltan Vega Gómez, Yanez Londoño y Nadjar Gaviria. Ahora el contexto sí contiene completos los 22 nombres, por lo que la omisión restante es de generación.",
+      "evidencia_suficiente": "si",
+      "justificacion_evidencia": "La tabla 5 contiene ahora los 22 nombres completos y su alcance de primer periodo; la tabla 6 siguiente se distingue por su encabezado.",
+      "fragmentos_evidencia": [
+        1
+      ]
+    },
+    {
+      "id": "54",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "No inventa cuántas solicitudes de reingreso se aprobaron en 2025; los fragmentos no contienen ese registro estadístico.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "55",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "Distingue promedios de estudiantes destacados, normas y calendarios de las notas individuales de práctica 2025-1, que no están publicadas en el contexto.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "56",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "Se abstiene de inventar el número de reprobados. Como error auxiliar, ubica 5.352 matriculados en el segundo periodo de 2025, cuando la tabla corresponde al primer periodo; ese dato no permite calcular reprobación por asistencia.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    },
+    {
+      "id": "57",
+      "etiqueta": "abstencion",
+      "fidelidad": "",
+      "observaciones": "Se abstiene de inventar un desglose de sanciones disciplinarias en 2025; los fragmentos recuperados no publican cantidades por tipo de sanción.",
+      "evidencia_suficiente": "",
+      "justificacion_evidencia": "",
+      "fragmentos_evidencia": []
+    }
+  ],
+  "nota_version": "Referencia v2: derogacion expresa de Res.05/2023 por Res.01/2025. Salidas originales conservadas."
+}

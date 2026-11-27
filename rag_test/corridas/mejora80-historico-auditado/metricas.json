@@ -1,0 +1,137 @@
+{
+  "metricas": {
+    "n_total": 57,
+    "n_con_respuesta": 48,
+    "n_con_respuesta_total": 47,
+    "n_con_respuesta_parcial": 1,
+    "n_sin_respuesta": 9,
+    "exactitud_%": 33.3,
+    "exactitud_con_parciales_%": 70.8,
+    "tasa_alucinacion_%": 0.0,
+    "tasa_abstencion_total_%": 29.8,
+    "tasa_abstencion_adecuada_%": 100.0,
+    "tasa_abstencion_fallo_%": 16.7,
+    "latencia_promedio_s": 3.79,
+    "latencia_max_s": 11.8,
+    "conteo_etiquetas": {
+      "parcial": 18,
+      "correcta": 16,
+      "abstencion": 9,
+      "abstencion_fallo": 8,
+      "incorrecta": 6
+    },
+    "exactitud_por_categoria_%": {
+      "admisiones": 80.0,
+      "asistencia": 100.0,
+      "becas_financiacion": 52.9,
+      "calificaciones": 50.0,
+      "distinciones": 80.0,
+      "estados_academicos": 83.3,
+      "general": 100.0,
+      "ingles": 0.0,
+      "matricula": 85.7,
+      "web_becas": 100.0
+    },
+    "exactitud_ic": {
+      "valor_%": 33.3,
+      "aciertos": 16,
+      "total": 48,
+      "ic95_inf_%": 21.7,
+      "ic95_sup_%": 47.5
+    },
+    "alucinacion_ic": {
+      "valor_%": 0.0,
+      "aciertos": 0,
+      "total": 57,
+      "ic95_inf_%": 0.0,
+      "ic95_sup_%": 6.3
+    },
+    "abstencion_ic": {
+      "valor_%": 100.0,
+      "aciertos": 9,
+      "total": 9,
+      "ic95_inf_%": 70.1,
+      "ic95_sup_%": 100.0
+    },
+    "abstencion_fallo_ic": {
+      "valor_%": 16.7,
+      "aciertos": 8,
+      "total": 48,
+      "ic95_inf_%": 8.7,
+      "ic95_sup_%": 29.6
+    },
+    "fidelidad_ic": {
+      "valor_%": 77.5,
+      "aciertos": 31,
+      "total": 40,
+      "ic95_inf_%": 62.5,
+      "ic95_sup_%": 87.7
+    },
+    "recall_at_k_ic": {
+      "valor_%": 55.6,
+      "aciertos": 25,
+      "total": 45,
+      "ic95_inf_%": 41.2,
+      "ic95_sup_%": 69.1
+    }
+  },
+  "objetivos": {
+    "exactitud_estricta": {
+      "valor_%": 33.3,
+      "aciertos": 16,
+      "total": 48,
+      "ic95_inf_%": 21.7,
+      "ic95_sup_%": 47.5,
+      "umbral_%": 80.0,
+      "cumple": false
+    },
+    "fidelidad": {
+      "valor_%": 77.5,
+      "aciertos": 31,
+      "total": 40,
+      "ic95_inf_%": 62.5,
+      "ic95_sup_%": 87.7,
+      "umbral_%": 80.0,
+      "cumple": false
+    },
+    "evidencia_suficiente_at_5": {
+      "valor_%": 58.3,
+      "aciertos": 28,
+      "total": 48,
+      "ic95_inf_%": 44.3,
+      "ic95_sup_%": 71.2,
+      "umbral_%": 80.0,
+      "cumple": false
+    },
+    "abstencion_adecuada": {
+      "valor_%": 100.0,
+      "aciertos": 9,
+      "total": 9,
+      "ic95_inf_%": 70.1,
+      "ic95_sup_%": 100.0,
+      "umbral_%": 80.0,
+      "cumple": true
+    },
+    "sin_alucinacion": {
+      "valor_%": 100.0,
+      "aciertos": 57,
+      "total": 57,
+      "ic95_inf_%": 93.7,
+      "ic95_sup_%": 100.0,
+      "umbral_%": 80.0,
+      "cumple": true
+    }
+  },
+  "guardas": {
+    "alucinacion_<=15%": true,
+    "latencia_media_<=10s": true
+  },
+  "latencia_p95_s": 8.564,
+  "truncadas": 0,
+  "cumple_cinco_metas_muestrales": false,
+  "revision": "IA; consenso humano pendiente",
+  "nota": "Cobertura suficiente@5 es revisión del contenido, no coincidencia de URL. No certifica generalización ni consenso humano.",
+  "corrida": "mejora80-historico-auditado",
+  "huella_preguntas": "8682f478575d1a4ddfb830ff126c5d49a784733b0ec5a3fc49b587b8a20acc91",
+  "huella_salidas": "8a04b29c6dbbf52ef8b52adc81dd33d723bc5544f8195e865744cd6da59be0a0"
+}
