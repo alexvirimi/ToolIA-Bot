@@ -1,5 +1,3 @@
-from prompts import base_prompt
-from config import get_llm
 import argparse
 import json
 import time
@@ -13,6 +11,9 @@ from langchain_core.output_parsers import StrOutputParser
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from prompts import base_prompt
+from config import get_llm
 
 
 PREGUNTAS_CSV = ROOT / "data" / "preguntas.csv"

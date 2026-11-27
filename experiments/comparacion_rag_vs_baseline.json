@@ -1,0 +1,52 @@
+{
+  "tabla": {
+    "exactitud_con_parciales_%": {
+      "baseline": 14.6,
+      "rag": 72.9,
+      "delta_pp": 58.3
+    },
+    "exactitud_estricta_%": {
+      "baseline": 2.1,
+      "rag": 45.8
+    },
+    "alucinacion_%": {
+      "baseline": 47.4,
+      "rag": 0.0,
+      "delta_pp": -47.4
+    },
+    "abstencion_adecuada_%": {
+      "baseline": 100.0,
+      "rag": 100.0
+    },
+    "abstencion_total_%": {
+      "baseline": 33.3,
+      "rag": 29.8
+    },
+    "abstencion_fallo_%": {
+      "baseline": 20.8,
+      "rag": 16.7
+    },
+    "latencia_promedio_s": {
+      "baseline": 3.81,
+      "rag": 3.79
+    },
+    "fidelidad_%": {
+      "rag": 77.5
+    },
+    "recall_at_5_%": {
+      "rag": 55.6
+    }
+  },
+  "umbrales": {
+    "exactitud >= 75% y +15 pp sobre línea base": false,
+    "fidelidad >= 80%": false,
+    "alucinación <= 15%": true,
+    "abstención adecuada >= 70%": true,
+    "latencia promedio <= 10 s": true,
+    "Recall@5 >= 80%": false
+  },
+  "umbrales_cumplidos": "3/6",
+  "supera_baseline_en_exactitud_y_alucinacion": true,
+  "exito_segun_propuesta": false,
+  "nota": "La exactitud considera respuestas correctas y parciales. La abstención adecuada se calcula sobre preguntas sin información documental. abstencion_fallo identifica abstenciones ante información disponible. None = sin dato."
+}
