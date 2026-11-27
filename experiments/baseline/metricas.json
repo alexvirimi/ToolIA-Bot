@@ -9,13 +9,13 @@
   "tasa_alucinacion_%": 47.4,
   "tasa_abstencion_total_%": 33.3,
   "tasa_abstencion_adecuada_%": 100.0,
-  "tasa_abstencion_fallo_%": 16.7,
+  "tasa_abstencion_fallo_%": 20.8,
   "latencia_promedio_s": 3.81,
   "latencia_max_s": 11.99,
   "conteo_etiquetas": {
     "alucinacion": 27,
-    "abstencion": 11,
-    "abstencion_fallo": 8,
+    "abstencion_fallo": 10,
+    "abstencion": 9,
     "parcial": 6,
     "incorrecta": 4,
     "correcta": 1
@@ -54,10 +54,10 @@
     "ic95_sup_%": 100.0
   },
   "abstencion_fallo_ic": {
-    "valor_%": 16.7,
-    "aciertos": 8,
+    "valor_%": 20.8,
+    "aciertos": 10,
     "total": 48,
-    "ic95_inf_%": 8.7,
-    "ic95_sup_%": 29.6
+    "ic95_inf_%": 11.7,
+    "ic95_sup_%": 34.3
   }
 }

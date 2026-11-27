@@ -61,6 +61,27 @@ def validar_etiquetas(df):
 def _pct(condicion):
     return round(condicion.mean() * 100, 1) if len(condicion) else None
 
+def validar_abstenciones(df):
+    errores = df[
+        (
+            (df["etiqueta"] == "abstencion") &
+            (df["tiene_respuesta"] != "no")
+        ) |
+        (
+            (df["etiqueta"] == "abstencion_fallo") &
+            (df["tiene_respuesta"] == "no")
+        )
+    ]
+
+    if not errores.empty:
+        print("ADVERTENCIA: inconsistencias en abstenciones")
+        print(
+            errores[["id", "tiene_respuesta", "etiqueta"]]
+            .to_string(index=False)
+        )
+        return False
+
+    return True
 
 def calcular(df):
     """Métricas comunes."""
@@ -71,15 +92,25 @@ def calcular(df):
     con_parcial = df[df["tiene_respuesta"] == "parcial"]
     sin = df[df["tiene_respuesta"] == "no"]
 
-    # Abstenciones
-    abstenciones = df["etiqueta"].isin([
-        "abstencion",
-        "abstencion_fallo"
-    ])
-    # Abstenciones cuando no existe información
-    abstencion = sin["etiqueta"] == "abstencion"
-    # Abstenciones cuando sí existe información
-    abstencion_fallo = con["etiqueta"] == "abstencion_fallo"
+    # Máscaras de disponibilidad documental
+    sin_info = df["tiene_respuesta"] == "no"
+    con_info = df["tiene_respuesta"].isin(["si", "parcial"])
+
+    # Abstenciones adecuadas
+    abstencion_adecuada = (
+        sin_info & (df["etiqueta"] == "abstencion")
+    )
+
+    # Abstenciones por fallo:
+    # el modelo se abstiene aunque exista información disponible.
+    abstencion_fallo = (
+        con_info & df["etiqueta"].isin(
+            ["abstencion", "abstencion_fallo"]
+        )
+    )
+
+    # Total de abstenciones
+    abstenciones = abstencion_adecuada | abstencion_fallo
 
     return {
         "n_total": int(len(df)),
@@ -97,11 +128,9 @@ def calcular(df):
         # Abstención total sobre todas las preguntas
         "tasa_abstencion_total_%": _pct(abstenciones),
         # Abstención adecuada: preguntas sin información
-        "tasa_abstencion_adecuada_%": _pct(abstencion),
+        "tasa_abstencion_adecuada_%": _pct(abstencion_adecuada[sin_info]),
         # Abstención incorrecta: existe información disponible
-        "tasa_abstencion_fallo_%": _pct(
-            abstencion_fallo
-        ),
+        "tasa_abstencion_fallo_%": _pct(abstencion_fallo[con_info]),
 
         # Latencia
         "latencia_promedio_s": round(df["latencia_s"].mean(), 2),
@@ -118,6 +147,6 @@ def calcular(df):
         # Intervalos de confianza
         "exactitud_ic": proporcion((con["etiqueta"] == "correcta").sum(), len(con)),
         "alucinacion_ic": proporcion((df["etiqueta"] == "alucinacion").sum(), len(df)),
-        "abstencion_ic": proporcion((sin["etiqueta"] == "abstencion").sum(), len(sin)),
-        "abstencion_fallo_ic": proporcion((con["etiqueta"] == "abstencion_fallo").sum(), len(con)),
+        "abstencion_ic": proporcion(abstencion_adecuada.sum(), sin_info.sum()),
+        "abstencion_fallo_ic": proporcion(abstencion_fallo.sum(), con_info.sum()),
     }

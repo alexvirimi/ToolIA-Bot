@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
-from metricas import calcular, cargar_respuestas, proporcion, validar_etiquetas
+from metricas import calcular, cargar_respuestas, proporcion, validar_etiquetas, validar_abstenciones
 
 
 DIR = ROOT / "experiments"
@@ -33,6 +33,9 @@ def cargar(nombre):
     error = validar_etiquetas(df)
     if error:
         raise SystemExit(f"[{nombre}] {error}")
+    if not validar_abstenciones(df):
+            print("Error en la validación de las abstenciones.")
+            return
     return df
 
 
@@ -76,20 +79,27 @@ def _delta(a, b):
 
 
 def comparar(rag, base):
-    """ Comparación entre LLM base y con RAG """
+    """Comparación entre LLM base y con RAG."""
 
     # Exactitud experimental: correcta + parcial
-    ex_r, ex_b = rag["exactitud_%"], base["exactitud_%"]
-    al_r, al_b = rag["tasa_alucinacion_%"], base["tasa_alucinacion_%"]
+    ex_r = rag["exactitud_con_parciales_%"]
+    ex_b = base["exactitud_con_parciales_%"]
 
-    # Abstención adecuada: preguntas sin información
+    # Exactitud estricta: solamente correcta
+    ex_estricta_r = rag["exactitud_%"]
+    ex_estricta_b = base["exactitud_%"]
+
+    al_r = rag["tasa_alucinacion_%"]
+    al_b = base["tasa_alucinacion_%"]
+
     ab_r = rag["tasa_abstencion_adecuada_%"]
 
-    # Indicadores adicionales
     ab_total = rag["tasa_abstencion_total_%"]
     ab_fallo = rag["tasa_abstencion_fallo_%"]
+
     fid = _v(rag.get("fidelidad_ic"))
     rec = _v(rag.get("recall_at_k_ic"))
+
     d_ex = _delta(ex_r, ex_b)
 
     criterios = {
@@ -108,7 +118,7 @@ def comparar(rag, base):
     return {
         "tabla": {
             "exactitud_con_parciales_%": {"baseline": ex_b, "rag": ex_r, "delta_pp": d_ex},
-            "exactitud_estricta_%": {"baseline": base["exactitud_%"], "rag": rag["exactitud_%"]},
+            "exactitud_estricta_%": {"baseline": ex_estricta_b, "rag": ex_estricta_r},
             "alucinacion_%": {"baseline": al_b, "rag": al_r, "delta_pp": _delta(al_r, al_b)},
             "abstencion_adecuada_%": {"baseline": base["tasa_abstencion_adecuada_%"], "rag": ab_r},
             "abstencion_total_%": {"baseline": base["tasa_abstencion_total_%"], "rag": ab_total},

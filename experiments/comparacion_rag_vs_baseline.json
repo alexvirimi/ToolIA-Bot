@@ -1,37 +1,37 @@
 {
   "tabla": {
     "exactitud_con_parciales_%": {
-      "baseline": 2.2,
-      "rag": 45.7,
-      "delta_pp": 43.5
+      "baseline": 14.6,
+      "rag": 72.9,
+      "delta_pp": 58.3
     },
     "exactitud_estricta_%": {
-      "baseline": 2.2,
-      "rag": 45.7
+      "baseline": 2.1,
+      "rag": 45.8
     },
     "alucinacion_%": {
-      "baseline": 47.3,
+      "baseline": 47.4,
       "rag": 0.0,
-      "delta_pp": -47.3
+      "delta_pp": -47.4
     },
     "abstencion_adecuada_%": {
       "baseline": 100.0,
       "rag": 100.0
     },
     "abstencion_total_%": {
-      "baseline": 32.7,
-      "rag": 29.1
+      "baseline": 33.3,
+      "rag": 29.8
     },
     "abstencion_fallo_%": {
-      "baseline": 15.2,
-      "rag": 15.2
+      "baseline": 20.8,
+      "rag": 16.7
     },
     "latencia_promedio_s": {
       "baseline": 3.81,
-      "rag": 3.7
+      "rag": 3.79
     },
     "fidelidad_%": {
-      "rag": null
+      "rag": 77.5
     },
     "recall_at_5_%": {
       "rag": 55.6
@@ -39,7 +39,7 @@
   },
   "umbrales": {
     "exactitud >= 75% y +15 pp sobre línea base": false,
-    "fidelidad >= 80%": null,
+    "fidelidad >= 80%": false,
     "alucinación <= 15%": true,
     "abstención adecuada >= 70%": true,
     "latencia promedio <= 10 s": true,

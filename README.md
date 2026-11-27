@@ -1,9 +1,9 @@
 # ToolIA-Bot
 
-“ToolIA-Bot” será un chatbot universitario diseñado para centralizar y facilitar el acceso a la 
-información institucional de la Universidad Tecnológica de Bolívar (UTB). Permitirá que 
-estudiantes, aspirantes, docentes y administrativos realicen preguntas en lenguaje natural 
-sobre reglamentos, manual de convivencia, calendario académico, procesos administrativos, 
+“ToolIA-Bot” será un chatbot universitario diseñado para centralizar y facilitar el acceso a la
+información institucional de la Universidad Tecnológica de Bolívar (UTB). Permitirá que
+estudiantes, aspirantes, docentes y administrativos realicen preguntas en lenguaje natural
+sobre reglamentos, manual de convivencia, calendario académico, procesos administrativos,
 requisitos, servicios y demás información publicada en la página web.
 
 ## Descarga semanal de fuentes en Azure
@@ -22,27 +22,36 @@ por consola con Ollama y llevarlo a una VM Linux de Azure.
 
 **Requisitos previos:** Python 3.14.
 
-1. Instalar Ollama: https://ollama.com/download
+1. Instalar Ollama: <https://ollama.com/download>
 2. Descargar el modelo:
+
    ```bash
    ollama pull qwen3.5:9b
    ```
+
 3. (Recomendado) Crear un entorno virtual:
+
    ```bash
    python -m venv .venv
    .venv\Scripts\activate 
       # O
    .\.venv314\Scripts\Activate.ps1 # Windows (Mac/Linux: source .venv/bin/activate)
    ```
+
 4. Instalar dependencias:
+
    ```bash
    pip install -r requirements.txt
    ```
+
 5. Ejecutar la línea base (con Ollama abierto):
+
    ```bash
    python src/baseline/run_experiment.py
    ```
+
 6. Calcular las métricas, después de etiquetar `experiments/baseline/respuestas.csv`:
+
    ```bash
    python src/evaluate.py
    ```
@@ -117,6 +126,7 @@ Todos los comandos se ejecutan desde la raíz del proyecto, con Ollama abierto y
 entorno activado.
 
 1. Instalar prerrequisitos
+
    ```powershell
    ollama pull qwen3.5:9b
    ollama pull embeddinggemma:300m
@@ -124,6 +134,7 @@ entorno activado.
    ```
 
 2. Construir el índice vectorial
+
    ```powershell
    python src/embeddings.py --construir
    ```
@@ -137,14 +148,17 @@ entorno activado.
    ```
 
 3. Verificar la recuperación (sin LLM)
+
    ```powershell
    python src/embeddings.py --pregunta "¿Qué se propone la UTB para mejorar la calidad de la formación que ofrece?"
    ```
+
    Devuelve los 5 fragmentos más similares con su procedencia (documento, página,
    sección, URL). Si estos fragmentos no tienen relación con la pregunta, el problema
    está en el índice y no en el generador.
 
 4. Hacer preguntas al chatbot RAG
+
    ```powershell
    python src/rag/rag.py                                   # chat por consola
    python src/rag/rag.py --pregunta "¿Qué se propone la UTB para mejorar la calidad de la formación que ofrece?" --json   # realizar una sola pregunta especifica
@@ -152,8 +166,8 @@ entorno activado.
 
    Cada respuesta incluye las fuentes citadas y la latencia. Si el contexto recuperado
    no alcanza, el bot responde que no cuenta con esa información en las fuentes
-   oficiales. 
-   Opciones: 
+   oficiales.
+   Opciones:
    - `--k`: fragmentos a recuperar, 5 por defecto
    - `--umbral`: similitud mínima del mejor fragmento; por debajo de ella, el bot se abstiene sin
    llamar al LLM; desactivado por defecto.
@@ -178,8 +192,8 @@ entorno activado.
    - `recuperacion.jsonl`: fragmentos recuperados por pregunta (para el análisis de errores).
    - `run_info.json`: modelo, parámetros, prompt e información del índice de la corrida.
 
-   Si se interrumpe, al ejecutar de nuevo retoma las preguntas pendientes. 
-   Se pueden probar diferentes configuración, por ejemplo otros umbrales, para esto haz uso 
+   Si se interrumpe, al ejecutar de nuevo retoma las preguntas pendientes.
+   Se pueden probar diferentes configuración, por ejemplo otros umbrales, para esto haz uso
    de otro nombre para no mezclar corridas:
 
    ```powershell
@@ -193,6 +207,7 @@ entorno activado.
    (¿la respuesta está respaldada por los fragmentos recuperados?).
 
 7. Calcular métricas y comparar con la línea base
+
    ```powershell
    python src/rag/metricas_rag.py
    ```
