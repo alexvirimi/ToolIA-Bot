@@ -13,6 +13,11 @@ El [Job de Azure Container Apps](deploy/azure/README.md) ejecuta
 y guarda los resultados en Azure Files. `scripts/download_data.py` sigue
 disponible para descargas manuales.
 
+## Demo del chatbot con Docker
+
+La [guía de Docker Compose](deploy/bot/README.md) explica cómo probar el chatbot
+por consola con Ollama y llevarlo a una VM Linux de Azure.
+
 ## Instalación y ejecución
 
 **Requisitos previos:** Python 3.14.

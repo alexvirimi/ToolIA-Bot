@@ -29,7 +29,7 @@ $etiqueta = "toolia-download:v1"  # Usa otra etiqueta al cambiar el script o sou
 
 $servidor = az acr show --name $registro --query loginServer --output tsv
 $region = az containerapp env show --resource-group $grupo --name $entorno --query location --output tsv
-az acr build --registry $registro --image $etiqueta --file Dockerfile.azure .
+az acr build --registry $registro --image $etiqueta --file deploy/azure/Dockerfile .
 
 $parametros = @(
     "environmentName=$entorno"
