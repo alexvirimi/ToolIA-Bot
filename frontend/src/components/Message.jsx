@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 import SourceCard from "./SourceCard.jsx";
 
 function prepararCitas(texto, fuentes) {
@@ -66,7 +68,7 @@ export default function Message({ mensaje, onReintentar }) {
   return (
     <article id={`msg-${mensaje.id}`} className="mensaje mensaje-asistente">
       <div className="texto">
-        <ReactMarkdown remarkPlugins={[remarkGfm]} components={componentes} disallowedElements={["img"]}>
+        <ReactMarkdown remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]} components={componentes} disallowedElements={["img"]}>
           {prepararCitas(mensaje.texto, fuentes)}
         </ReactMarkdown>
       </div>

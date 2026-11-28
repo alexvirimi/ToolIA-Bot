@@ -25,7 +25,6 @@ if MODO_RAG not in ("historico", "mejora"):
     raise SystemExit("TOOLIA_RAG debe ser 'historico' o 'mejora'.")
 RUTA_INDICE_MEJORA = Path(os.environ.get(
     "TOOLIA_INDICE_MEJORA", ROOT / "rag_test" / "indice" / "mejora80-integral-v2"))
-# Parámetros del LLM de la corrida medida de la variante mejora
 NUM_CTX_MEJORA = int(os.environ.get("TOOLIA_NUM_CTX", "8192"))
 NUM_PREDICT_MEJORA = int(os.environ.get("TOOLIA_NUM_PREDICT", "600"))
 
@@ -117,6 +116,12 @@ class PreguntaIn(BaseModel):
 
 @app.get("/api/salud")
 def salud():
+    return {"ok": True, "modelo": MODEL_NAME, "rag": MODO_RAG,
+            "fragmentos": recursos["indice"].estado["count"]}
+
+
+@app.get("/health")
+def health():
     return {"ok": True, "modelo": MODEL_NAME, "rag": MODO_RAG,
             "fragmentos": recursos["indice"].estado["count"]}
 
