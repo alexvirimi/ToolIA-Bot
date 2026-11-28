@@ -20,7 +20,7 @@ Columna **Capa**:
 | 4 | 17 | ¿Qué estímulos existen en la Resolución 01 de 2025 y cómo difieren de la anterior? | Distingue dos regímenes (Res. 05/2023 derogada y Res. 01/2025 vigente), conserva umbral 40 puntos y oficina Planeación y Gestión de Calidad. | Identifica erróneamente la norma vigente como Resolución 01 de 2024; identifica correctamente que difiere de la derogada, pero termina truncada por límite de tokens. | Incorrecta | Mixta | Recall@5 = sí, pero la generación se corta al llegar al límite de 1.000 tokens (num_predict). Además, identifica mal la resolución vigente (01/2024 en lugar de 01/2025). Hipótesis: aumentar num_predict o resumir antes de generar. |
 | 5 | 20 | ¿Cuáles son las condiciones de continuidad de la Beca Legacy UTB en el segundo semestre? | 5 condiciones de continuidad, omite no acumulable y disponibilidad de recursos. | Identifica correctamente que la Beca Legacy cubre 50 % dos primeros semestres, pero omite condiciones específicas de continuidad (aprobación del 80 %, promedio 3,5, etc.). | Parcial | Generación | Recall@5 = sí. El modelo reconoce que hay condiciones pero no las detalla todas. Mismo patrón en ID 19 (omite no acumulable y disponibilidad de recursos). Hipótesis: el prompt no pide enumerar todas las condiciones. |
 | 6 | 23 | ¿Es requisito demostrar nivel B2 de inglés para graduarse de un pregrado presencial? | No es requisito general, es requisito de grado para ingresantes desde 2024. Coincide con art. 78 parágrafo 2. | Identifica que el requisito aplica a estudiantes de pregrado desde 2024, pero confunde con requisitos de inscripción al estímulo B2 y transfiere restricciones de homologación. | Incorrecta | Generación | Recall@5 = sí, pero el modelo transfiere requisitos de un contexto (inscripción al estímulo B2) a otro (requisito de grado). Error de contaminación entre documentos similares. |
-| 7 | 24 | ¿Cuáles son las condiciones para obtener la distinción Alcatraz de Oro y Summa Cum Laude? | Identifica correctamente las tres condiciones para Alcatraz de Oro. Confunde Summa Cum Laude con Egresado Cum Laude (atribuye 3 % en lugar del 1 %). | Incorrecta | Generación | Recall@5 = sí, pero el modelo confunde dos distinciones académicas diferentes (Summa Cum Laude vs Egresado Cum Laude) y sus porcentajes. |
+| 7 | 24 | ¿Cuáles son las condiciones para obtener la distinción Alcatraz de Oro y Summa Cum Laude? | [referencia pendiente] | Identifica correctamente las tres condiciones para Alcatraz de Oro. Confunde Summa Cum Laude con Egresado Cum Laude (atribuye 3 % en lugar del 1 %). | Incorrecta | Generación | Recall@5 = sí, pero el modelo confunde dos distinciones académicas diferentes (Summa Cum Laude vs Egresado Cum Laude) y sus porcentajes. |
 | 8 | 22 | ¿Cuál es el puntaje global mínimo de Saber Pro y desde cuándo aplica? | Puntaje global mínimo 100, aplica desde 2024. Coincide con art. 78. | Atribuye erróneamente la derogación de la Res. 05/2023 a la Res. 01/2026, cuando fue la Res. 01/2025. | Incorrecta | Generación | El núcleo del dato es correcto (100 puntos, desde 2024), pero el modelo añade información normativa incorrecta sobre la derogación. |
 | 9 | 48 | ¿Cuáles son los requisitos específicos de la Beca Puerto Bahía? | Cinco requisitos (colegio de origen, edad 16–20, estudiante nuevo, Saber 11 ≥ 280, sin otra beca). | Enumera los requisitos correctos pero indica que el video se exige a todos. | Incorrecta | Generación | Recall@5 = sí; fidelidad = no. La fuente pide el video solo a los seis preseleccionados, no a todos. Error de condición añadida no respaldada por el contexto. |
 | 10 | 53 | ¿Qué estudiantes recibieron la distinción de Estudiante de Honor en 2025? | 22 estudiantes del primer periodo de 2025 (Informe de Gestión 2025, p. 37); no hay listado del segundo periodo. | Lista 19 de los 22; omite a Vera Reyes, García Maza y Nadjar Gaviria. | Parcial | Generación | Recall@5 = sí; fidelidad = sí; latencia alta (27,09 s es el máximo). Omisión al reproducir una lista larga. El chunk del PDF pudo cortar parte de la tabla o el modelo omitió filas. |
@@ -107,7 +107,27 @@ Cruce de la presencia del dato clave en el top 5 (por contenido) con la etiqueta
 2. **Contaminación entre documentos similares:** ID 6, 7, 23 confunden requisitos del estímulo B2 con distinciones o requisitos de grado. Necesita un prompt más estricto sobre no mezclar fuentes.
 3. **Fallas de recuperación residuales:** 4 de 48 preguntas (8,3 %) siguen sin el dato en el top 5. El índice y la estrategia de recuperación (fusión) ya cubren la mayoría, pero quedan huecos en documentos específicos.
 
-## 4. Umbrales de éxito
+## 4. Mejoras implementadas frente a la línea base y el RAG original
+
+El RAG mejorado (`mejora80-final2-57`) introduce tres cambios principales respecto a la línea base y al RAG original, que explican el salto en las métricas:
+
+### 4.1. Recuperación por fusión densa+léxica con diversidad
+
+La línea base no recupera fragmentos (responde solo con el LLM). El RAG original usaba recuperación semántica simple. El RAG mejorado implementa un recuperador `RecuperadorDiverso` con método de fusión que combina búsqueda densa (embeddings) y léxica, con 30 candidatos y agrupación por artículo/documento normativo breve. Esto aumenta la probabilidad de que al menos uno de los cinco fragmentos entregados sea pertinente, elevando el Recall@5 operacional al 89,6 %.
+
+### 4.2. Prompt más conciso (PROMPT_CONCISO)
+
+El RAG mejorado utiliza un prompt de sistema más breve y directo, que instruye al modelo a responder solo con la evidencia de los fragmentos, a no añadir información no solicitada y a citar cada afirmación con su número de fragmento. Esto reduce la contaminación entre documentos y las alucinaciones, llevando la tasa de alucinación a 0,0 %.
+
+### 4.3. Regla de abstención SIN_EVIDENCIA
+
+Cuando ningún fragmento permite responder la pregunta, el modelo escribe únicamente SIN_EVIDENCIA, lo que se traduce en una etiqueta de abstención adecuada en lugar de una respuesta incorrecta o alucinada. Esto contribuye a que la abstención adecuada sea del 100 % y la abstención por fallo baje al 8,3 %.
+
+### 4.4. Parámetros del LLM ajustados
+
+Se mantienen temperatura 0, seed 42 y `qwen3.5:9b` como modelo, pero se ajusta `num_ctx` a 8192 y `num_predict` a 600 para equilibrar longitud de respuesta y latencia, aunque la latencia promedio sigue por encima del umbral de 10 s.
+
+## 5. Umbrales de éxito
 
 | Métrica | Umbral | Resultado RAG mejorado | Cumple | Por qué se cumple o no se cumple |
 | --- | --- | --- | --- | --- |
@@ -120,7 +140,7 @@ Cruce de la presencia del dato clave en el top 5 (por contenido) con la etiqueta
 
 El RAG mejorado cumple **5 de 6 umbrales**. Con el criterio de éxito de la propuesta (≥ 5 de 6), el proyecto **alcanza el éxito declarado**.
 
-## 5. Consideraciones
+## 6. Consideraciones
 
 - **Latencia como único cuello de botella:** La latencia promedio (10,71 s) supera el umbral de 10 s. Esto se debe a respuestas largas (ID 53 con 27,09 s) y al límite de generación. Se recomienda ajustar `num_predict` y comprimir el contexto.
 - **Una sola corrida y 57 preguntas:** Los intervalos de confianza son amplios (por ejemplo, 52,5 %–78,3 % para la exactitud estricta). Sería bueno repetir la evaluación 3 a 5 veces con semilla fijada.
@@ -128,7 +148,7 @@ El RAG mejorado cumple **5 de 6 umbrales**. Con el criterio de éxito de la prop
 - **Datos personales:** El ID 53 incluye nombres y PPA de estudiantes publicados en el Informe de Gestión. Aunque son datos públicos, conviene mencionar en IA responsable que el asistente puede difundir datos personales de fuentes públicas.
 - **Evitar sobreajuste a las 57 preguntas:** Al corregir el pipeline mirando estos casos, los resultados posteriores quedarán inflados. Reservar un subconjunto nuevo como prueba final.
 
-## 6. Conclusiones
+## 7. Conclusiones
 
 El RAG mejorado (`mejora80-final2-57`) alcanza una exactitud con parciales de 75,0 %, elimina las alucinaciones por etiqueta (0,0 %) y el Recall@5 operacional alcanza 89,6 %. El sistema cumple **5 de los 6 umbrales** y alcanza el **éxito según la propuesta**.
 
