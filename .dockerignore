@@ -6,6 +6,8 @@
 !deploy/bot/
 !deploy/bot/Dockerfile
 !deploy/bot/requirements.txt
+!deploy/web/
+!deploy/web/Dockerfile.web
 !scripts/
 !scripts/download_data_azure.py
 !data/
@@ -16,3 +18,10 @@
 !src/prompts.py
 !src/rag/
 !src/rag/rag.py
+!src/api/
+!src/api/app.py
+!src/chat/
+!src/chat/chat.py
+!frontend/
+frontend/node_modules
+frontend/dist
