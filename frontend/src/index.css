@@ -33,6 +33,7 @@ body,
 #root {
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 body {
@@ -70,7 +71,10 @@ textarea {
 .app {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100vh;
   height: 100dvh;
+  min-height: 0;
   overflow: hidden;
 }
 
@@ -78,6 +82,7 @@ textarea {
 .encabezado {
   flex: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
@@ -94,9 +99,18 @@ textarea {
   display: flex;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.marca:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+  border-radius: 4px;
 }
 
 .marca-logo {
+  flex: none;
   color: var(--blue);
 }
 
@@ -110,6 +124,7 @@ textarea {
   flex-wrap: wrap;
   justify-content: flex-end;
   gap: 16px;
+  min-width: 0;
 }
 
 .boton {
@@ -135,6 +150,7 @@ textarea {
 .landing {
   position: relative;
   flex: 1;
+  min-height: 0;
   display: grid;
   place-items: center;
   padding: 0 24px 10vh;
@@ -185,8 +201,11 @@ textarea {
 
 /* Conversación */
 .chat {
-  flex: 1;
+  flex: 1 1 0;
+  min-height: 0;
+  overscroll-behavior: contain;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 32px 24px 24px;
 }
 
@@ -433,6 +452,7 @@ a.fuente:hover {
 
 .composer textarea {
   flex: 1;
+  min-width: 0;
   min-height: 46px;
   padding: 12px 8px 12px 24px;
   border: 0;
@@ -472,6 +492,7 @@ a.fuente:hover {
 
 .pie {
   flex: none;
+  width: 100%;
   padding: 12px 24px 14px;
   background: var(--paper);
 }
@@ -486,15 +507,21 @@ a.fuente:hover {
 @media (max-width: 640px) {
   .encabezado {
     padding: 10px 16px;
+    gap: 8px;
   }
 
   .acciones {
+    flex: 1 1 auto;
     gap: 8px;
   }
 
   .boton {
     padding: 8px 14px;
     font-size: 12px;
+  }
+
+  .pie {
+    padding: 10px 16px 12px;
   }
 
   .chat {
@@ -522,6 +549,41 @@ a.fuente:hover {
 
   .forma-cuarto {
     display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .encabezado {
+    padding-inline: 12px;
+  }
+
+  .encabezado.con-linea {
+    align-items: flex-start;
+  }
+
+  .acciones {
+    gap: 6px;
+  }
+
+  .boton {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .chat {
+    padding: 16px 12px 12px;
+  }
+
+  .pie {
+    padding: 8px 12px 10px;
+  }
+
+  .composer textarea {
+    padding-left: 14px;
+  }
+
+  .aviso {
+    font-size: 10px;
   }
 }
 
