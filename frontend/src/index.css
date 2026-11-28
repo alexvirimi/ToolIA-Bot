@@ -118,7 +118,7 @@ textarea {
   padding: 10px 24px;
   border: 0;
   border-radius: 8px;
-  background: var(--gray-200);
+  background: var(--amber);
   color: var(--ink);
   font-size: 13px;
   font-weight: 500;
@@ -207,7 +207,7 @@ textarea {
   max-width: min(450px, 85%);
   padding: 14px 24px;
   border-radius: 12px;
-  background: var(--gray-200);
+  background: color-mix(in srgb, var(--cyan) 14%, white);
 }
 
 .mensaje-usuario p {
@@ -322,13 +322,13 @@ textarea {
   gap: 20px;
   padding: 18px 24px;
   border-radius: 8px;
-  background: var(--gray-100);
+  background: color-mix(in srgb, var(--fuente-color) 12%, white);
   color: inherit;
   text-decoration: none;
 }
 
 a.fuente:hover {
-  background: var(--gray-200);
+  background: color-mix(in srgb, var(--fuente-color) 18%, white);
 }
 
 .fuente.resaltada {
@@ -338,6 +338,17 @@ a.fuente:hover {
 
 .fuente-icono {
   flex: none;
+  color: white;
+}
+
+.fuente-icono-fondo {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--fuente-color);
 }
 
 .fuente-texto {

@@ -7,7 +7,10 @@ import SourceCard from "./SourceCard.jsx";
 
 function prepararCitas(texto, fuentes) {
   const validas = new Set(fuentes.map((f) => f.n));
-  return texto.replace(/\[(\d+)\]/g, (m, n) => (validas.has(Number(n)) ? `[\\[${n}\\]](#cita-${n})` : m));
+  return texto
+    .replace(/\$(?=[^$]*\\geq?)([^$]*)\$/g, (_, expresion) => expresion.replace(/\\geq?/g, "≥"))
+    .replace(/\\geq?/g, "≥")
+    .replace(/\[(\d+)\]/g, (m, n) => (validas.has(Number(n)) ? `[\\[${n}\\]](#cita-${n})` : m));
 }
 
 export default function Message({ mensaje, onReintentar }) {

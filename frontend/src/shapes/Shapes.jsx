@@ -116,4 +116,12 @@ export function Cuarto({ size = 40, ...props }) {
 }
 
 export const FORMAS_FUENTES = [Molinete, Aspas, Hojas, Flor, Cuarto];
-export const COLORES_FUENTES = ["var(--blue)", "var(--violet)", "var(--mint)", "var(--azure)", "var(--amber)"];
+export const COLORES_FUENTES = [
+  "var(--blue)",
+  "var(--cyan)",
+  "var(--azure)",
+  "var(--violet)",
+  "var(--amber)",
+  "var(--mint)",
+  "var(--lime)",
+];
