@@ -112,21 +112,6 @@ Las 57 preguntas sirven para comparar contra el RAG actual. Como el diseño
 partió de sus errores históricos, conviene confirmar cualquier mejora con
 preguntas nuevas antes de cambiar el sistema principal.
 
-## Métricas del proyecto (cinco de seis)
-
-La variante `mejora80-final2-57` alcanzó en las 57 preguntas de desarrollo:
-
-| Métrica | Umbral | Resultado | Estado |
-|---|---|---|---|
-| Exactitud estricta | ≥75 % | **81,2 %** (39/48) | ✅ Cumple |
-| Fidelidad | ≥80 % | **97,8 %** (44/45) | ✅ Cumple |
-| Abstención adecuada | ≥70 % | **100 %** (9/9) | ✅ Cumple |
-| Sin alucinación | ≥80 % | **100 %** (57/57) | ✅ Cumple |
-| Alucinación | ≤15 % | **0 %** | ✅ Cumple |
-| Latencia promedio | ≤10 s | **10,71 s** | ⚠️ Ligeramente por encima |
-
-La exactitud se calcula sobre las 48 preguntas con información disponible.
-Las 9 preguntas sin respuesta se miden en abstención adecuada.
 
 ## Replicar en otro PC
 

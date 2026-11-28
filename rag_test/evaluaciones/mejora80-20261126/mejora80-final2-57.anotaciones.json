@@ -11,7 +11,14 @@
       "observaciones": "Responde las notas m?nimas espec?ficas (Consultorio Jur?dico 3.5, Trabajo de Grado 3.50) y aclara que no hay nota general ?nica en los fragmentos. Coincide con art. 51.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ]
     },
     {
       "id": "2",
@@ -22,6 +29,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -33,6 +47,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -44,6 +65,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -64,6 +92,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -75,6 +110,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -86,6 +128,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -95,7 +144,14 @@
       "observaciones": "Todos los requisitos de inscripci?n B2: no reprobados/cancelados, no sanciones, Saber 11 ingl?s 1-3, certificar B2, no homologar ingl?s 5. Coincide con art. 2.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "10",
@@ -106,6 +162,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -117,6 +180,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -126,7 +196,14 @@
       "observaciones": "PPA superior a 4.0, actividades extracurriculares, logros externos. Coincide con art. 3.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "13",
@@ -137,6 +214,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -148,6 +232,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -159,6 +250,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -170,6 +268,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -183,6 +288,13 @@
         1,
         2,
         4
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -194,6 +306,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -205,6 +324,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -214,7 +340,14 @@
       "observaciones": "5 condiciones de continuidad, omite no acumulable y disponibilidad de recursos.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "21",
@@ -225,6 +358,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -236,6 +376,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -245,7 +392,14 @@
       "observaciones": "No es requisito general, es requisito de grado para ingresantes desde 2024. Coincide con art. 78 par?grafo 2.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "24",
@@ -256,6 +410,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -267,6 +428,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -278,6 +446,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -289,6 +464,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -300,6 +482,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -311,6 +500,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -320,7 +516,14 @@
       "observaciones": "Exclusi?n por bajo rendimiento: PAT sin PPP 3.20, o Recuperaci?n sin PPA 3.20. Coincide con arts. 68-69.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "31",
@@ -331,6 +534,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -342,6 +552,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -353,6 +570,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -364,6 +588,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -375,6 +606,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -386,6 +624,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -395,7 +640,14 @@
       "observaciones": "Afirma que ninguna solicitud despu?s de tercera semana es aceptada; texto dice que desde cuarta semana no hay reembolso, no que no se aceptan solicitudes.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "38",
@@ -406,6 +658,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -417,6 +676,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -428,6 +694,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -439,6 +712,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -450,6 +730,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -459,7 +746,14 @@
       "observaciones": "No determina efecto de sanci?n sobre distinciones; art. 110 no fue recuperado.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "44",
@@ -468,7 +762,14 @@
       "observaciones": "Pierde beneficio desde notificaci?n, doble tiempo desde reingreso. Coincide con art. 98.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "45",
@@ -479,6 +780,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -499,6 +807,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -508,7 +823,14 @@
       "observaciones": "No lista requisitos espec?ficos Puerto Bah?a aunque est?n en p?gina recuperada.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "49",
@@ -517,7 +839,14 @@
       "observaciones": "No hay cobertura ICETEX pregrado en fragmentos.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "50",
@@ -555,6 +884,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {

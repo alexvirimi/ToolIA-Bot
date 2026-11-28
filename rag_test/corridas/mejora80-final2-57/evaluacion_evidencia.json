@@ -1,17 +1,24 @@
 {
   "corrida": "mejora80-final2-57",
   "huella_salidas": "e924e84ae12002a92a717fb786fc8ece9b9dbc1c090bd319c252d2732d444833",
-  "revisor": "IA; revisi?n de consistencia y contenido, consenso humano pendiente",
+  "revisor": "IA; etiquetas desde respuestas.csv limpio; recall desde JSON original",
   "base_revision": "mejora80-final-57.anotaciones.json",
   "respuestas": [
     {
       "id": "1",
       "etiqueta": "abstencion_fallo",
-      "fidelidad": "si",
+      "fidelidad": "",
       "observaciones": "No establece una calificación mínica general por ausencia de evidencia pertinente en los fragmentos recuperados. Los resultados corresponden a requisitos específicos del Consultorio Jurídico y Trabajo de Grado. Se identifica un fallo de recuperación, dado que la información requerida se encuentra en el Reglamento Estudiantil.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        true,
+        false,
+        true
+      ]
     },
     {
       "id": "2",
@@ -22,17 +29,31 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "3",
       "etiqueta": "correcta",
       "fidelidad": "si",
-      "observaciones": "Es correcto que la asistencia mínima es 80% y hay una reprobación con calificación mínima, coincidiendo con el art. 67. Sin embargo, agrega información no solicitada sobre el reporte de calificaciones de posgrado (art. 56) y la modificación de calificaciones (art. 57), que no constituye excepciones ni condiciones de la regla de asistencia.",
+      "observaciones": " Es correcto que la asistencia mínima es 80% y hay una reprobación con calificación mínima, coincidiendo con el art. 67. Sin embargo, agrega información no solicitada sobre el reporte de calificaciones de posgrado (art. 56) y la modificación de calificaciones (art. 57), que no constituye excepciones ni condiciones de la regla de asistencia.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -44,6 +65,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -64,6 +92,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -75,6 +110,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -86,6 +128,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -95,7 +144,14 @@
       "observaciones": "Identifica correctamente los requisitos de inscripción para el estímulo por dominio del inglés B2, conforme al artículo 2 de la Resolución 02 de 2024. Incluye correctamente las condiciones académicas, disciplinarias, la clasificación Saber 11 y la certificación del nivel B2. Como imprecisión, denomina 'vigencia del estímulo' al plazo máximo de cinco periodos académicos para alcanzar o acreditar el nivel B2. Agrega información complementaria sobre el examen de dominio, la frecuencia de postulación y el beneficio económico, que no era necesaria para responder la pregunta.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "10",
@@ -106,6 +162,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -117,6 +180,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -126,7 +196,14 @@
       "observaciones": "PPA superior a 4.0, actividades extracurriculares, logros externos. Coincide con art. 3.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "13",
@@ -137,6 +214,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -148,6 +232,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -159,6 +250,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -170,6 +268,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -183,6 +288,13 @@
         1,
         2,
         4
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -194,6 +306,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -205,6 +324,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -214,7 +340,14 @@
       "observaciones": "No identifica las cinco condiciones específicas para mantener la Beca Legacy UTB en el segundo semestre, pese a que estas se encuentran en la página oficial del programa. Aunque reconoce la insuficiencia de los fragmentos recuperados, incorpora requisitos pertenecientes al Premio a la Excelencia y Talento Caribe, atribuyéndolos como condiciones generales de mantenimiento de la Beca Legacy. Se evidencia un fallo de recuperación del fragmento pertinente y una confusión entre programas de financiación distintos. Omite también las condiciones de disponibilidad presupuestal y no acumulación del beneficio.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "21",
@@ -225,6 +358,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -236,6 +376,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -245,7 +392,14 @@
       "observaciones": "Identifica que el requisito de demostrar nivel B2 aplica a estudiantes de pregrado en modalidad presencial que iniciaron sus estudios a partir del 1 de enero de 2024 y describe correctamente las rutas para acreditar dicho nivel. Sin embargo, confunde el requisito de grado del artículo 78, parágrafo 2, del Reglamento Estudiantil con los requisitos de inscripción al estímulo económico por dominio del inglés B2, al trasladar indebidamente la restricción aplicable a quienes homologaron hasta Inglés 5 (B1). Además, inicia con una negación que puede inducir a confusión, pese a que el requisito sí aplica al grupo específico consultado.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "24",
@@ -256,6 +410,13 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -267,114 +428,191 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "26",
       "etiqueta": "correcta",
       "fidelidad": "si",
-      "observaciones": "Incluye los cuatro requisitos del art. 84, entre ellos el PPA en el 3 % más alto, y la exoneración del requisito de duración para estudiantes de doble programa que cumplan los demás requisitos [1].",
+      "observaciones": "PPA 3% m?s alto, no reprobados, no sanciones, duraci?n plan de estudios. Coincide con art. 84.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "27",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "Identifica la Prueba Académica Parcial para el siguiente periodo y la condición de créditos acumulados, pero sitúa el paso de Parcial a Total al inicio del siguiente periodo. El art. 68 lo determina al finalizar el periodo cursado en Parcial. También presenta el PPA inferior a 3,20 como consecuencia necesaria de un PPP inferior a 3,20, aunque el artículo exige ambos resultados para la exclusión [2].",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye PAP, condici?n de cr?ditos acumulados y PPA inferior a 3.20. Coincide con art. 68.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "28",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "Identifica el paso de Prueba Académica Parcial a Total, pero afirma que un PPA inferior a 3,20 basta para excluir a un estudiante en PAT. El art. 68 exige también un PPP inferior a 3,20 [1]. Además, confunde la fecha del reglamento derogado con la vigencia del actual.",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Prueba Acad?mica Total para siguiente periodo desde Prueba Parcial sin PPA 3.20. Coincide con art. 68.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "29",
       "etiqueta": "correcta",
-      "fidelidad": "no",
-      "observaciones": "Identifica la Recuperación Académica y explica la continuidad inmediata y la autorización. Atribuye al art. 68 un paso automático que ese artículo no establece. La regla y sus condiciones figuran en el art. 69 [1].",
+      "fidelidad": "si",
+      "observaciones": "Recuperaci?n Acad?mica con PPP 3.20 pero PPA < 3.20, continuidad inmediata y autorizaci?n. Coincide con art. 69.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "30",
       "etiqueta": "correcta",
       "fidelidad": "si",
-      "observaciones": "Identifica las dos causales de exclusión: cursar el periodo en PAT y cerrarlo con PPP y PPA inferiores a 3,20, o cursarlo en Recuperación Académica y cerrarlo con PPA inferior a 3,20 [4][5]. El encabezado incluye otras transiciones como si causaran la pérdida de la calidad de estudiante, aunque el desarrollo sí las distingue.",
+      "observaciones": "Exclusi?n por bajo rendimiento: PAT sin PPP 3.20, o Recuperaci?n sin PPA 3.20. Coincide con arts. 68-69.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "31",
       "etiqueta": "correcta",
-      "fidelidad": "no",
-      "observaciones": "Reporta correctamente los mínimos del art. 51: 3,0 para pregrado, 3,5 para posgrado y 3,5 para la práctica profesional de pregrado. Presenta el seminario supletivo como excepción aplicable sin aclarar que la cita [5] corresponde a una medida de 2020.",
+      "fidelidad": "si",
+      "observaciones": "Pregrado 3.0, posgrado 3.5, pr?ctica profesional pregrado 3.5. Coincide con art. 51.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "32",
       "etiqueta": "correcta",
-      "fidelidad": "no",
-      "observaciones": "Responde bien el mínimo de 80 % y la reprobación con la calificación mínima [1]. Generaliza el 80 % a cualquier modalidad supletiva, aunque la cita [5] documenta ese porcentaje para el coterminal.",
+      "fidelidad": "si",
+      "observaciones": "Asistencia m?nima 80%, reprobaci?n con calificaci?n m?nima. Coincide con art. 67.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "33",
       "etiqueta": "correcta",
       "fidelidad": "si",
-      "observaciones": "Incluye la semana 12, la pérdida de la calidad de estudiante regular y las excepciones para prácticas profesionales y estados académicos. Coincide con el art. 39.",
+      "observaciones": "Incluye semana 12, p?rdida calidad, excepciones pr?cticas profesionales y estados acad?micos. Coincide con art. 39.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "34",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "Identifica el último día hábil de la cuarta semana de cada ciclo [1], pero presenta la ampliación transitoria de 2021 [5] como una excepción aplicable a la regla vigente de retiro virtual.",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "?ltimo d?a h?bil cuarta semana de cada ciclo (virtual). Coincide con art. 40.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "35",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "Identifica los 18,5 créditos vigentes y la autorización de hasta 20 con PPA superior a 4,00. Sin embargo, convierte el máximo del nivel del programa en un tope para todos los casos. El art. 36 modificado lo presenta como una alternativa para la carga ordinaria [2].",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "18 cr?ditos o m?ximo nivel programa, excepci?n hasta 20 con PPA > 4.00. Coincide con art. 36.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -386,138 +624,229 @@
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "37",
       "etiqueta": "incorrecta",
       "fidelidad": "no",
-      "observaciones": "Los porcentajes son correctos: 75 %, 50 %, 25 % y cero desde la cuarta semana. El parágrafo 1 del art. 122 sí indica que no se aceptan solicitudes posteriores al plazo. El error del modelo es fijarlo en el último día hábil de la tercera semana [1][5].",
+      "observaciones": "Afirma que ninguna solicitud despu?s de tercera semana es aceptada; texto dice que desde cuarta semana no hay reembolso, no que no se aceptan solicitudes.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "38",
       "etiqueta": "parcial",
       "fidelidad": "si",
-      "observaciones": "Incluye el título de bachiller y Saber 11, pero omite el examen extranjero homologado por el ICFES y la formalización ante Admisiones y Registro Académico dentro de los plazos establecidos. La salida termina por el límite de generación.",
+      "observaciones": "T?tulo bachiller, Saber 11 y documentos se apoyan en Inscripciones Pregrado; falta formalizar ante Admisiones y Registro y plazos del art. 23.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        true,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "39",
       "etiqueta": "correcta",
       "fidelidad": "si",
-      "observaciones": "Incluye los cinco tipos de admisión: primera vez, reinicio, reingreso, transferencia externa e interna. Coincide con el art. 25.",
+      "observaciones": "Incluye los 5 tipos de admisi?n (primera vez, reinicio, reingreso, transferencia externa e interna). Coincide con art. 25.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "40",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "Identifica los tres grupos del art. 28, pero añade a quienes vencieron el plazo de su opción de grado a la lista de quienes no pueden solicitar reingreso. Según el art. 6, estas personas deben solicitarlo. Tampoco hay respaldo para contar el plazo desde la fecha de la resolución [5].",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Incluye Recuperaci?n Acad?mica, excluidos por bajo rendimiento y expulsados. Coincide con art. 28 par. 3.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "41",
       "etiqueta": "correcta",
       "fidelidad": "si",
-      "observaciones": "Identifica el máximo del 50 % y la facultad de la Vicerrectoría Académica de ajustarlo según convenios específicos. Coincide con el art. 29.",
+      "observaciones": "Homologaci?n max 50%, Vicerrector?a puede ajustar. Coincide con art. 29.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "42",
       "etiqueta": "correcta",
-      "fidelidad": "no",
-      "observaciones": "Las 48 horas y su distribución entre acompañamiento directo y trabajo independiente están respaldadas [1][2]. El manual menciona un protocolo de práctica distinto para el área de salud, pero no establece una excepción a la equivalencia de 48 horas por crédito.",
+      "fidelidad": "si",
+      "observaciones": "48 horas de trabajo por cr?dito. Coincide con art. 42.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "43",
-      "etiqueta": "correcta",
-      "fidelidad": "no",
-      "observaciones": "El modelo sí responde y el art. 110 recuperado en [1] respalda la prohibición de recibir distinciones del Reglamento. Las citas no respaldan extenderla a la exoneración de derechos de grado ni a la exención del ECAD.",
+      "etiqueta": "abstencion_fallo",
+      "fidelidad": "",
+      "observaciones": "No determina efecto de sanci?n sobre distinciones; art. 110 no fue recuperado.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "44",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "Identifica la pérdida de la beca desde la notificación si el estudiante ya era becario. En la conclusión ubica el doble del tiempo durante la suspensión, aunque el art. 98 cuenta ese plazo desde la autorización del reingreso [1]. También generaliza condiciones de becas específicas.",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "Pierde beneficio desde notificaci?n, doble tiempo desde reingreso. Coincide con art. 98.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No se recuperaron todos los datos necesarios.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "45",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "Omite que ambos programas deben ser de la misma modalidad, exigencia del art. 74 citado en [3]. Afirma que se paga la matrícula del primer programa, pero el art. 75 del Reglamento vigente establece que se paga la del programa de mayor valor.",
+      "etiqueta": "parcial",
+      "fidelidad": "si",
+      "observaciones": "2 periodos, PPA 3.70, no Prueba/Recuperaci?n, no sanci?n vigente, solicitud director. Omite misma modalidad y matr?cula programa mayor valor.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "46",
       "etiqueta": "abstencion",
       "fidelidad": "",
-      "observaciones": "No hay conteo de estudiantes en Prueba Académica Parcial al cierre de 2025-1.",
+      "observaciones": "No hay conteo de estudiantes en Prueba Acad?mica Parcial 2025-1.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
       "fragmentos_evidencia": []
     },
     {
       "id": "47",
-      "etiqueta": "incorrecta",
-      "fidelidad": "no",
-      "observaciones": "El 98 % y la cobertura de todo el plan de estudios están respaldados [1]. Mezcla requisitos de Liderazgo Caribe con los de Excelencia y Talento Caribe [4][5] y presenta como obligación lo que [5] describe como una invitación de reciprocidad.",
+      "etiqueta": "correcta",
+      "fidelidad": "si",
+      "observaciones": "98% descuento matr?cula, cubre semestres del plan de estudios. Coincide con web Premio Liderazgo Caribe.",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
       "id": "48",
       "etiqueta": "abstencion_fallo",
       "fidelidad": "",
-      "observaciones": "Se recuperó la URL de Puerto Bahía pero los fragmentos entregados al modelo no incluían la sección oficial «Requisitos para aplicar».",
+      "observaciones": "No lista requisitos espec?ficos Puerto Bah?a aunque est?n en p?gina recuperada.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "49",
       "etiqueta": "abstencion_fallo",
       "fidelidad": "",
-      "observaciones": "ICETEX publica financiación general de hasta el 100 % de la matrícula, dato que no llegó en los fragmentos. La fuente no verifica un porcentaje específico para la UTB ni garantiza el 100 % de toda la carrera, como sugiere la referencia de la corrida.",
+      "observaciones": "No hay cobertura ICETEX pregrado en fragmentos.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
-      "fragmentos_evidencia": []
+      "fragmentos_evidencia": [],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
     },
     {
       "id": "50",
@@ -532,7 +861,7 @@
       "id": "51",
       "etiqueta": "abstencion",
       "fidelidad": "",
-      "observaciones": "No hay conteo de estudiantes en Prueba Académica Total después de 2025-1.",
+      "observaciones": "No hay conteo de estudiantes en Prueba Acad?mica Total 2025-1.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
       "fragmentos_evidencia": []
@@ -541,7 +870,7 @@
       "id": "52",
       "etiqueta": "abstencion",
       "fidelidad": "",
-      "observaciones": "No hay conteo de estudiantes en Recuperación Académica durante 2025.",
+      "observaciones": "No hay conteo de estudiantes en Recuperaci?n Acad?mica 2025.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
       "fragmentos_evidencia": []
@@ -550,11 +879,18 @@
       "id": "53",
       "etiqueta": "parcial",
       "fidelidad": "si",
-      "observaciones": "Enumera los 22 estudiantes del primer periodo de 2025. La generación terminó normalmente y la lista no se truncó. La cobertura es parcial para la pregunta anual porque la respuesta no aclara que el informe no aporta el listado del segundo periodo.",
+      "observaciones": "Lista 22 estudiantes pero se trunca (verificaci?n pendiente).",
       "evidencia_suficiente": "si",
       "justificacion_evidencia": "El contexto incluye los datos solicitados.",
       "fragmentos_evidencia": [
         1
+      ],
+      "relevancia_top5": [
+        false,
+        false,
+        false,
+        false,
+        false
       ]
     },
     {
@@ -570,7 +906,7 @@
       "id": "55",
       "etiqueta": "abstencion",
       "fidelidad": "",
-      "observaciones": "No hay calificaciones finales individuales de práctica profesional de 2025-1.",
+      "observaciones": "No hay calificaciones finales de pr?ctica profesional 2025-1.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
       "fragmentos_evidencia": []
@@ -588,7 +924,7 @@
       "id": "57",
       "etiqueta": "abstencion",
       "fidelidad": "",
-      "observaciones": "El contexto recuperado no contiene un desglose de sanciones disciplinarias de 2025. Eso no permite afirmar que el dato esté ausente de toda la web oficial.",
+      "observaciones": "No hay desglose de sanciones disciplinarias 2025.",
       "evidencia_suficiente": "no",
       "justificacion_evidencia": "No hay datos estad?sticos anuales en el contexto.",
       "fragmentos_evidencia": []
