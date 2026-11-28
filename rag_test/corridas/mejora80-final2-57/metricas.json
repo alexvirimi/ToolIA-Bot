@@ -1,0 +1,182 @@
+{
+  "metricas": {
+    "n_total": 57,
+    "n_con_respuesta": 48,
+    "n_con_respuesta_total": 47,
+    "n_con_respuesta_parcial": 1,
+    "n_sin_respuesta": 9,
+    "exactitud_%": 66.7,
+    "exactitud_con_parciales_%": 75.0,
+    "tasa_alucinacion_%": 0.0,
+    "tasa_abstencion_total_%": 22.8,
+    "tasa_abstencion_adecuada_%": 100.0,
+    "tasa_abstencion_fallo_%": 8.3,
+    "latencia_promedio_s": 10.71,
+    "latencia_max_s": 27.09,
+    "conteo_etiquetas": {
+      "correcta": 32,
+      "abstencion": 9,
+      "incorrecta": 8,
+      "abstencion_fallo": 4,
+      "parcial": 4
+    },
+    "exactitud_por_categoria_%": {
+      "admisiones": 80.0,
+      "asistencia": 100.0,
+      "becas_financiacion": 70.6,
+      "calificaciones": 50.0,
+      "distinciones": 60.0,
+      "estados_academicos": 100.0,
+      "general": 100.0,
+      "ingles": 0.0,
+      "matricula": 85.7,
+      "web_becas": 50.0
+    },
+    "exactitud_ic": {
+      "valor_%": 66.7,
+      "aciertos": 32,
+      "total": 48,
+      "ic95_inf_%": 52.5,
+      "ic95_sup_%": 78.3
+    },
+    "alucinacion_ic": {
+      "valor_%": 0.0,
+      "aciertos": 0,
+      "total": 57,
+      "ic95_inf_%": 0.0,
+      "ic95_sup_%": 6.3
+    },
+    "abstencion_ic": {
+      "valor_%": 100.0,
+      "aciertos": 9,
+      "total": 9,
+      "ic95_inf_%": 70.1,
+      "ic95_sup_%": 100.0
+    },
+    "abstencion_fallo_ic": {
+      "valor_%": 8.3,
+      "aciertos": 4,
+      "total": 48,
+      "ic95_inf_%": 3.3,
+      "ic95_sup_%": 19.6
+    },
+    "fidelidad_ic": {
+      "valor_%": 93.2,
+      "aciertos": 41,
+      "total": 44,
+      "ic95_inf_%": 81.8,
+      "ic95_sup_%": 97.7
+    }
+  },
+  "metricas_complementarias": {
+    "exactitud_estricta_%": {
+      "valor_%": 66.7,
+      "aciertos": 32,
+      "total": 48,
+      "ic95_inf_%": 52.5,
+      "ic95_sup_%": 78.3
+    },
+    "exactitud_con_parciales_%": {
+      "valor_%": 75.0,
+      "aciertos": 36,
+      "total": 48,
+      "ic95_inf_%": 61.2,
+      "ic95_sup_%": 85.1
+    },
+    "tasa_alucinacion_%": 0.0,
+    "tasa_alucinacion_baseline_%": 47.4,
+    "fidelidad_%": {
+      "valor_%": 93.2,
+      "aciertos": 41,
+      "total": 44,
+      "ic95_inf_%": 81.8,
+      "ic95_sup_%": 97.7
+    },
+    "recall_at_5_operacional": {
+      "valor_%": 89.6,
+      "aciertos": 43,
+      "total": 48,
+      "ic95_inf_%": 77.8,
+      "ic95_sup_%": 95.5
+    }
+  },
+  "objetivos": {
+    "exactitud_con_parciales": {
+      "valor_%": 75.0,
+      "aciertos": 36,
+      "total": 48,
+      "ic95_inf_%": 61.2,
+      "ic95_sup_%": 85.1,
+      "umbral_%": 75.0,
+      "baseline_%": 14.6,
+      "delta_vs_baseline_pp": 60.4,
+      "mejora_minima_baseline_pp": 15,
+      "cumple": true
+    },
+    "fidelidad": {
+      "valor_%": 93.2,
+      "aciertos": 41,
+      "total": 44,
+      "ic95_inf_%": 81.8,
+      "ic95_sup_%": 97.7,
+      "umbral_%": 80.0,
+      "cumple": true
+    },
+    "alucinacion": {
+      "valor_%": 0.0,
+      "aciertos": 0,
+      "total": 57,
+      "ic95_inf_%": 0.0,
+      "ic95_sup_%": 6.3,
+      "umbral_maximo_%": 15.0,
+      "cumple": true
+    },
+    "abstencion_adecuada": {
+      "valor_%": 100.0,
+      "aciertos": 9,
+      "total": 9,
+      "ic95_inf_%": 70.1,
+      "ic95_sup_%": 100.0,
+      "umbral_%": 70.0,
+      "cumple": true
+    },
+    "latencia_promedio": {
+      "valor_s": 10.708,
+      "umbral_maximo_s": 10.0,
+      "cumple": false
+    },
+    "recall_at_5_operacional": {
+      "valor_%": 89.6,
+      "aciertos": 43,
+      "total": 48,
+      "ic95_inf_%": 77.8,
+      "ic95_sup_%": 95.5,
+      "umbral_%": 80.0,
+      "cumple": true
+    }
+  },
+  "comparacion_baseline": {
+    "exactitud_con_parciales_baseline_%": 14.6,
+    "exactitud_con_parciales_rag_%": 75.0,
+    "delta_exactitud_pp": 60.4,
+    "alucinacion_baseline_%": 47.4,
+    "alucinacion_rag_%": 0.0,
+    "supera_baseline_en_exactitud_y_alucinacion": true
+  },
+  "resumen_cumplimiento": {
+    "metas_cumplidas": 5,
+    "metas_totales": 6,
+    "metas_pendientes": [],
+    "evaluacion_completa": true,
+    "cumple_al_menos_5_de_6": true,
+    "exito_segun_propuesta": true
+  },
+  "latencia_p95_s": 25.09,
+  "truncadas": 2,
+  "revision": "Etiquetado actualizado; consenso humano independiente pendiente",
+  "nota": "Recall@5 se operacionaliza como porcentaje de preguntas con respuesta documental que tienen al menos un fragmento pertinente entre los cinco recuperados. Requiere marcar manualmente la relevancia de los cinco fragmentos por pregunta. No es el recall clásico de fragmentos sobre todos los relevantes del corpus. evidencia_suficiente_at_5 y hit_fuente_at_5 se reportan aparte y no sustituyen esta medición.",
+  "corrida": "mejora80-final2-57",
+  "huella_preguntas": "5f3928a00203841d0412274c26728abea6249f5f22eec7251d1a1c97ac139147",
+  "huella_salidas": "e924e84ae12002a92a717fb786fc8ece9b9dbc1c090bd319c252d2732d444833",
+  "baseline": "experiments\\baseline\\respuestas.csv"
+}
