@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "src" / "rag"))
 
 from prompts import MENSAJE_ABSTENCION
-from rag.rag import AsistenteRAG, construir_fuentes, formatear_contexto, mostrar
+from rag import AsistenteRAG, construir_fuentes, formatear_contexto, mostrar
 
 SALIDAS = ("exit", "quit", "salir", "terminar")
 CORTESIAS = [
@@ -100,7 +100,6 @@ class AsistenteChat(AsistenteRAG):
         t0 = time.perf_counter()
         cortesia = respuesta_cortesia(pregunta)
         if cortesia:
-            self.historial.append((pregunta, cortesia))
             return {
                 "pregunta": pregunta, "pregunta_reformulada": pregunta, "respuesta": cortesia,
                 "abstencion": False, "motivo_abstencion": None, "citas_en_respuesta": False,
