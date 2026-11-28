@@ -15,7 +15,9 @@
 
   --columna: 758px;
   --alto-encabezado: 64px;
-  --fuente: "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fuente:
+    "Raleway Variable", "Raleway", system-ui, -apple-system, "Segoe UI",
+    sans-serif;
 
   color-scheme: light;
 }

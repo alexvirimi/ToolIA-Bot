@@ -1,4 +1,5 @@
 import argparse
+import os
 import sys
 import threading
 import time
@@ -20,7 +21,7 @@ from config import MODEL_NAME, get_llm
 from embeddings import cargar_indice
 
 DIST = ROOT / "frontend" / "dist"
-CARPETA_CHATS = ROOT / "chats"
+CARPETA_CHATS = Path(os.environ.get("TOOLIA_CHATS", ROOT / "chats"))
 MAX_SESIONES = 100
 INACTIVIDAD_S = 30 * 60
 K = 5

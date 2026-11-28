@@ -1,0 +1,12 @@
+# Con TOOLIA_DOMAIN definido (ej. toolia.midominio.com) Caddy obtiene
+# el certificado HTTPS automáticamente. Sin definirlo usa "localhost".
+{$TOOLIA_DOMAIN:localhost} {
+	encode gzip
+
+	# Respuestas del LLM pueden tardar; no cortar la petición
+	reverse_proxy web:8000 {
+		transport http {
+			response_header_timeout 300s
+		}
+	}
+}

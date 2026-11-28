@@ -1,0 +1,6 @@
+# Copia este archivo a terraform.tfvars y complétalo. NO lo subas a git.
+subscription_id  = "00000000-0000-0000-0000-000000000000"
+dns_label        = "toolia-utb-demo"   # debe ser único en la región
+allowed_ssh_cidr = "190.0.0.1/32"      # tu IP pública (busca "cuál es mi IP")
+# location       = "eastus2"
+# vm_size        = "Standard_D8s_v5"

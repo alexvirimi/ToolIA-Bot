@@ -228,3 +228,7 @@ __marimo__/
 */pages.json
 */pyautogui.lock
 .DS_Store
+
+infra/terraform/.terraform/
+infra/terraform/*.tfstate*
+infra/terraform/terraform.tfvars

@@ -11,7 +11,17 @@ services:
       interval: 5s
       timeout: 5s
       retries: 12
+    # Si la VM tiene GPU NVIDIA (serie NC de Azure) y instalaste el
+    # NVIDIA Container Toolkit, descomenta:
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
 
+  # Chatbot por consola (uso puntual: construir el índice, pruebas)
   bot:
     profiles: ["cli"]
     build:
@@ -27,6 +37,51 @@ services:
       - ../../data:/app/data:ro
       - indice:/var/lib/toolia
 
+  # API + sitio web
+  web:
+    build:
+      context: ../..
+      dockerfile: deploy/web/Dockerfile.web
+    restart: unless-stopped
+    environment:
+      OLLAMA_HOST: "http://ollama:11434"
+      TOOLIA_INDICE: /var/lib/toolia/indice
+      TOOLIA_CHATS: /var/lib/toolia-chats
+    depends_on:
+      ollama:
+        condition: service_healthy
+    volumes:
+      - ../../data:/app/data:ro
+      - indice:/var/lib/toolia
+      - chats:/var/lib/toolia-chats
+    ports:
+      - "127.0.0.1:8000:8000"   # solo para pruebas desde la propia VM
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://127.0.0.1:8000/api/salud', timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  # HTTPS público (80/443) hacia la web
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    depends_on:
+      - web
+    environment:
+      TOOLIA_DOMAIN: ${TOOLIA_DOMAIN:-localhost}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ../web/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
 volumes:
   modelos:
   indice:
+  chats:
+  caddy_data:
+  caddy_config:
