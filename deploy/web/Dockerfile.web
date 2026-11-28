@@ -21,6 +21,7 @@ RUN python -m pip install --no-cache-dir -r /tmp/toolia-requirements.txt \
     && install -d -o toolia -g toolia /var/lib/toolia /var/lib/toolia-chats
 
 COPY src/ src/
+COPY rag_test/ rag_test/
 COPY --from=frontend /frontend/dist frontend/dist
 
 USER toolia

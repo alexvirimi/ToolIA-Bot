@@ -20,6 +20,15 @@ from chat import AsistenteChat, RegistroChat, evento_turno
 from config import MODEL_NAME, get_llm
 from embeddings import cargar_indice
 
+MODO_RAG = os.environ.get("TOOLIA_RAG", "historico").strip().lower()
+if MODO_RAG not in ("historico", "mejora"):
+    raise SystemExit("TOOLIA_RAG debe ser 'historico' o 'mejora'.")
+RUTA_INDICE_MEJORA = Path(os.environ.get(
+    "TOOLIA_INDICE_MEJORA", ROOT / "rag_test" / "indice" / "mejora80-integral-v2"))
+# Parámetros del LLM de la corrida medida de la variante mejora
+NUM_CTX_MEJORA = int(os.environ.get("TOOLIA_NUM_CTX", "8192"))
+NUM_PREDICT_MEJORA = int(os.environ.get("TOOLIA_NUM_PREDICT", "600"))
+
 DIST = ROOT / "frontend" / "dist"
 CARPETA_CHATS = Path(os.environ.get("TOOLIA_CHATS", ROOT / "chats"))
 MAX_SESIONES = 100
@@ -36,12 +45,12 @@ sesiones = {}
 
 class Sesion:
     def __init__(self):
-        self.asistente = AsistenteChat(
-            indice=recursos["indice"], llm=recursos["llm"],
+        self.asistente = recursos["clase_asistente"](
+            indice=recursos["recuperador"], llm=recursos["llm"],
             k=K, umbral=UMBRAL, max_turnos=TURNOS_CONTEXTO,
         )
         self.registro = RegistroChat(CARPETA_CHATS)
-        self.registro.escribir({"evento": "inicio", "origen": "web", "k": K,
+        self.registro.escribir({"evento": "inicio", "origen": "web", "rag": MODO_RAG, "k": K,
                                 "umbral": UMBRAL, "turnos_contexto": TURNOS_CONTEXTO})
         self.turnos = 0
         self.ultimo_uso = time.monotonic()
@@ -80,8 +89,18 @@ def obtener_o_crear_sesion(sesion_id):
 
 @asynccontextmanager
 async def lifespan(app):
-    recursos["indice"] = cargar_indice()
-    recursos["llm"] = get_llm()
+    if MODO_RAG == "mejora":
+        from chat_mejora import AsistenteChatMejora, crear_recuperador
+        recursos["indice"] = cargar_indice(RUTA_INDICE_MEJORA)
+        recursos["recuperador"] = crear_recuperador(recursos["indice"])
+        recursos["llm"] = get_llm().model_copy(
+            update={"num_ctx": NUM_CTX_MEJORA, "num_predict": NUM_PREDICT_MEJORA})
+        recursos["clase_asistente"] = AsistenteChatMejora
+    else:
+        recursos["indice"] = cargar_indice()
+        recursos["recuperador"] = recursos["indice"]
+        recursos["llm"] = get_llm()
+        recursos["clase_asistente"] = AsistenteChat
     yield
     for sesion_id in list(sesiones):
         cerrar_sesion(sesion_id, "servidor detenido")
@@ -98,7 +117,8 @@ class PreguntaIn(BaseModel):
 
 @app.get("/api/salud")
 def salud():
-    return {"ok": True, "modelo": MODEL_NAME, "fragmentos": recursos["indice"].estado["count"]}
+    return {"ok": True, "modelo": MODEL_NAME, "rag": MODO_RAG,
+            "fragmentos": recursos["indice"].estado["count"]}
 
 
 @app.post("/api/chat")

@@ -12,10 +12,9 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
-sys.path.insert(0, str(ROOT / "src" / "rag"))
 
 from prompts import MENSAJE_ABSTENCION
-from rag import AsistenteRAG, construir_fuentes, formatear_contexto, mostrar
+from rag.rag import AsistenteRAG, construir_fuentes, formatear_contexto, mostrar
 
 SALIDAS = ("exit", "quit", "salir", "terminar")
 CORTESIAS = [
@@ -86,6 +85,10 @@ class AsistenteChat(AsistenteRAG):
             mensajes += [HumanMessage(pregunta), AIMessage(limpiar_para_historial(respuesta))]
         return mensajes
 
+    def contexto_para(self, fragmentos):
+        """Texto de contexto entregado al modelo; las variantes pueden ampliarlo."""
+        return formatear_contexto(fragmentos)
+
     def reformular(self, pregunta):
         if not self.historial:
             return pregunta
@@ -117,7 +120,7 @@ class AsistenteChat(AsistenteRAG):
         else:
             respuesta = self.chain_chat.invoke({
                 "historial": self.mensajes_historial(),
-                "contexto": formatear_contexto(fragmentos),
+                "contexto": self.contexto_para(fragmentos),
                 "pregunta": pregunta,
             }).strip()
             motivo = "llm" if MENSAJE_ABSTENCION.lower() in respuesta.lower() else None

@@ -55,3 +55,14 @@ variable "repo_branch" {
   type    = string
   default = "chore-add-frontend"
 }
+
+variable "rag_modo" {
+  description = "RAG que sirve el sitio: 'mejora' (rag_test) o 'historico' (src/rag)"
+  type        = string
+  default     = "mejora"
+
+  validation {
+    condition     = contains(["mejora", "historico"], var.rag_modo)
+    error_message = "rag_modo debe ser 'mejora' o 'historico'."
+  }
+}

@@ -77,3 +77,21 @@ def preparar_integral(documentos, ruta, cache_anterior=None):
                  "fragmentos_originales": len(fragmentos), "fragmentos_finales": len(finales), "truncamiento": False})
     guardar_json(ruta / "fragmentos.json", finales)
     return construir_indice(finales, ruta=ruta)
+
+
+def main():
+    import argparse
+    from embeddings import cargar_documentos
+
+    parser = argparse.ArgumentParser(description="Construye el índice de fragmentación integral (variante mejora).")
+    parser.add_argument("--construir", action="store_true", required=True)
+    parser.add_argument("--ruta", type=Path, default=Path(__file__).resolve().parent / "indice" / "mejora80-integral-v2")
+    parser.add_argument("--cache-anterior", type=Path, help="cache.sqlite3 de otro índice, para reutilizar embeddings idénticos")
+    args = parser.parse_args()
+    documentos, _ = cargar_documentos()
+    estado = preparar_integral(documentos, args.ruta, cache_anterior=args.cache_anterior)
+    print(f"Índice listo: {estado.get('count')} fragmentos en {args.ruta}")
+
+
+if __name__ == "__main__":
+    main()

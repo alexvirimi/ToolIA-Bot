@@ -45,7 +45,10 @@ services:
     restart: unless-stopped
     environment:
       OLLAMA_HOST: "http://ollama:11434"
+      # RAG que sirve el sitio: "historico" (src/rag) o "mejora" (rag_test)
+      TOOLIA_RAG: ${TOOLIA_RAG:-historico}
       TOOLIA_INDICE: /var/lib/toolia/indice
+      TOOLIA_INDICE_MEJORA: /var/lib/toolia/indice-mejora
       TOOLIA_CHATS: /var/lib/toolia-chats
     depends_on:
       ollama:

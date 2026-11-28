@@ -139,6 +139,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     repo_url       = var.repo_url
     repo_branch    = var.repo_branch
     domain         = local.fqdn
+    rag_modo       = var.rag_modo
   }))
 
   # Cambiar el cloud-init no debe destruir la VM (y sus modelos/índice)

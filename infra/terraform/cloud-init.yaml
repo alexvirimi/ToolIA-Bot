@@ -24,6 +24,7 @@ write_files:
       sudo -u ${admin_username} mkdir -p "$APP/data/raw" "$APP/data/processed"
 
       echo "TOOLIA_DOMAIN=${domain}" > "$APP/deploy/bot/.env"
+      echo "TOOLIA_RAG=${rag_modo}" >> "$APP/deploy/bot/.env"
       chown ${admin_username}: "$APP/deploy/bot/.env"
 
       cd "$APP"
