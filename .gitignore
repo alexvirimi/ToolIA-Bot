@@ -232,3 +232,4 @@ __marimo__/
 infra/terraform/.terraform/
 infra/terraform/*.tfstate*
 infra/terraform/terraform.tfvars
+**/.terraform.lock.hcl

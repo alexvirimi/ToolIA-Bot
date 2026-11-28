@@ -19,7 +19,7 @@ write_files:
 
       APP=/home/${admin_username}/ToolIA-Bot
       if [ ! -d "$APP" ]; then
-        sudo -u ${admin_username} git clone --branch ${repo_branch} ${repo_url} "$APP"
+        sudo -u ${admin_username} git clone ${repo_url} "$APP"
       fi
       sudo -u ${admin_username} mkdir -p "$APP/data/raw" "$APP/data/processed"
 
