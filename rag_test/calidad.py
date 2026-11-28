@@ -78,7 +78,7 @@ def _registros_con_saltos_normalizados(df, campos):
     registros = []
     for fila in df[campos].to_dict("records"):
         registros.append({
-            campo: str(valor).replace("\\r\\n", "\\n").replace("\\r", "\\n")
+            campo: str(valor).replace("\r\n", "\n").replace("\r", "\n")
             for campo, valor in fila.items()
         })
     return registros
@@ -288,7 +288,7 @@ def calcular_calidad(df, anotaciones, baseline_df):
     alucinacion_base_pct = metricas_base["tasa_alucinacion_%"]
     mejora_alucinacion = (
         alucinacion_base_pct is not None and alucinacion_rag_pct < alucinacion_base_pct)
-    supera_baseline = (
+    supera_baseline = bool(
         delta_exactitud is not None and delta_exactitud > 0 and mejora_alucinacion)
 
     latencia_media = float(df["latencia_s"].mean())
@@ -306,13 +306,13 @@ def calcular_calidad(df, anotaciones, baseline_df):
         "alucinacion": {
             **proporcion(alucinaciones, len(df)),
             "umbral_maximo_%": U_ALUCINACION,
-            "cumple": alucinacion_rag_pct <= U_ALUCINACION,
+            "cumple": bool(alucinacion_rag_pct <= U_ALUCINACION),
         },
         "abstencion_adecuada": _objetivo_proporcion(abstenciones_ok, total_sin_respuesta, U_ABSTENCION),
         "latencia_promedio": {
             "valor_s": round(latencia_media, 3),
             "umbral_maximo_s": U_LATENCIA,
-            "cumple": latencia_media <= U_LATENCIA,
+            "cumple": bool(latencia_media <= U_LATENCIA),
         },
         "recall_at_5_operacional": {
             **recall,
